@@ -1,0 +1,49 @@
+\documentclass[11pt]{article} % Párrafos en 11pt según norma 
+
+% --- Paquetes Básicos ---
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{newtxtext,newtxmath} % Times New Roman 
+\usepackage{setspace}
+\usepackage{graphicx}
+\onehalfspacing % Interlineado 1.5 
+
+% --- Configuración de Márgenes (Norma UC)  ---
+\usepackage[a4paper, 
+    left=3.81cm, 
+    right=2.54cm, 
+    top=2.54cm, 
+    bottom=2.54cm,
+    headheight=1.27cm, % Encabezado 
+    footskip=1.27cm    % Pie de página 
+]{geometry}
+
+% --- Bibliografía ISO 690-2 (Numérico)  ---
+\usepackage[style=iso-numeric, backend=biber]{biblatex}
+\addbibresource{referencias.bib}
+
+% --- Formato de Títulos  ---
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\fontsize{12}{15}\bfseries}{\thesection}{1em}{}
+
+\begin{document}
+
+\input{portada}
+
+% --- Numeración Romana para sección inicial [cite: 237] ---
+\pagenumbering{roman} 
+\tableofcontents
+\newpage
+
+% --- Numeración Arábiga para el contenido ---
+\pagenumbering{arabic} 
+
+\include{capitulo1}
+\include{capitulo2}
+\include{capitulo3}
+\include{capitulo4}
+\include{capitulo5}
+
+\printbibliography[title={REFERENCIAS BIBLIOGRÁFICAS}] % [cite: 180, 203]
+
+\end{document}

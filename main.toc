@@ -1,0 +1,51 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}PLANTEAMIENTO DEL ESTUDIO}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Planteamiento y formulación del problema}{1}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Problema General}{1}{}%
+\contentsline {subsubsection}{\numberline {1.1.2}Problemas Específicos}{1}{}%
+\contentsline {subsection}{\numberline {1.2}Objetivos}{1}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Objetivo General}{1}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Objetivos Específicos}{1}{}%
+\contentsline {subsection}{\numberline {1.3}Justificación e importancia}{1}{}%
+\contentsline {subsection}{\numberline {1.4}Delimitación del proyecto}{1}{}%
+\contentsline {subsection}{\numberline {1.5}Hipótesis y variables}{1}{}%
+\contentsline {section}{\numberline {2}PLANTEAMIENTO DEL ESTUDIO}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Planteamiento y formulación del problema}{3}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Problema General}{3}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Problemas Específicos}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Objetivos}{3}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Objetivo General}{3}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Objetivos Específicos}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Justificación e importancia}{3}{}%
+\contentsline {subsection}{\numberline {2.4}Delimitación del proyecto}{3}{}%
+\contentsline {subsection}{\numberline {2.5}Hipótesis y variables}{3}{}%
+\contentsline {section}{\numberline {3}PLANTEAMIENTO DEL ESTUDIO}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Planteamiento y formulación del problema}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Problema General}{5}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Problemas Específicos}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Objetivos}{5}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Objetivo General}{5}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Objetivos Específicos}{5}{}%
+\contentsline {subsection}{\numberline {3.3}Justificación e importancia}{5}{}%
+\contentsline {subsection}{\numberline {3.4}Delimitación del proyecto}{5}{}%
+\contentsline {subsection}{\numberline {3.5}Hipótesis y variables}{5}{}%
+\contentsline {section}{\numberline {4}PLANTEAMIENTO DEL ESTUDIO}{7}{}%
+\contentsline {subsection}{\numberline {4.1}Planteamiento y formulación del problema}{7}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Problema General}{7}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}Problemas Específicos}{7}{}%
+\contentsline {subsection}{\numberline {4.2}Objetivos}{7}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Objetivo General}{7}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Objetivos Específicos}{7}{}%
+\contentsline {subsection}{\numberline {4.3}Justificación e importancia}{7}{}%
+\contentsline {subsection}{\numberline {4.4}Delimitación del proyecto}{7}{}%
+\contentsline {subsection}{\numberline {4.5}Hipótesis y variables}{7}{}%
+\contentsline {section}{\numberline {5}PLANTEAMIENTO DEL ESTUDIO}{9}{}%
+\contentsline {subsection}{\numberline {5.1}Planteamiento y formulación del problema}{9}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Problema General}{9}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Problemas Específicos}{9}{}%
+\contentsline {subsection}{\numberline {5.2}Objetivos}{9}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}Objetivo General}{9}{}%
+\contentsline {subsubsection}{\numberline {5.2.2}Objetivos Específicos}{9}{}%
+\contentsline {subsection}{\numberline {5.3}Justificación e importancia}{9}{}%
+\contentsline {subsection}{\numberline {5.4}Delimitación del proyecto}{9}{}%
+\contentsline {subsection}{\numberline {5.5}Hipótesis y variables}{9}{}%
