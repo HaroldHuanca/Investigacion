@@ -1,0 +1,39 @@
+% --- Paquetes Necesarios ---
+\usepackage{titlesec}
+\usepackage{changepage}
+\usepackage{ragged2e} % Para una mejor justificación
+
+% --- CONFIGURACIÓN DE TÍTULOS (NOMBRE + MARGEN) ---
+
+% Título I: "CAPÍTULO 1: NOMBRE" (Sin margen izquierdo extra)
+\titleformat{\section}
+  {\normalfont\fontsize{12}{14}\bfseries\uppercase}
+  {CAPÍTULO \thesection:}{0.5em}{}
+\titlespacing{\section}{0pt}{3.5ex}{2.3ex}
+
+% Título II: "1.1 NOMBRE" (Margen de 1.5em)
+\titleformat{\subsection}
+  {\normalfont\fontsize{12}{14}\bfseries}
+  {\thesubsection}{1em}{}
+\titlespacing{\subsection}{1.5em}{3.25ex}{1.5ex}
+
+% Título III: "1.1.1 NOMBRE" (Margen de 3em)
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{12}{14}\bfseries}
+  {\thesubsubsection}{1em}{}
+\titlespacing{\subsubsection}{3em}{3.25ex}{1.5ex}
+
+% --- COMANDOS PARA TU DOCUMENTO ---
+\newcommand{\tituloI}[1]{\section{#1}}
+\newcommand{\tituloII}[1]{\subsection{#1}}
+\newcommand{\tituloIII}[1]{\subsubsection{#1}}
+
+% --- ENTORNO PARA PÁRRAFOS ALINEADOS ---
+\newenvironment{parrafo}[1]{
+    \begin{adjustwidth}{#1}{0pt}
+    \justifying
+    \setlength{\parskip}{1em}
+    \setlength{\parindent}{0pt} % Evita que la primera línea se mueva sola
+}{
+    \end{adjustwidth}
+}

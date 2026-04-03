@@ -153,8 +153,17 @@ INPUT /usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+INPUT ./estilos.tex
+INPUT ./estilos.tex
+INPUT ./estilos.tex
+INPUT ./estilos.tex
+INPUT estilos.tex
 INPUT /usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT /usr/share/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/share/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/share/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+INPUT /usr/share/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 INPUT /usr/share/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 INPUT /usr/share/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 INPUT /usr/share/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
