@@ -276,9 +276,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
+OUTPUT main.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-sc-ot1.tfm
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc
-OUTPUT main.toc
 INPUT ./capitulo1.tex
 INPUT ./capitulo1.tex
 OUTPUT capitulo1.aux

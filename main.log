@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.2)  2 APR 2026 19:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.1)  2 APR 2026 22:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -849,13 +849,13 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 8.0pt on input line 3.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 6.1pt on input line 3.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 41.
- [1{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc}])
+)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [2]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
+(Font)              scaled to size 10.95pt on input line 36.
+ [1{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc}]
 \openout2 = `capitulo1.aux'.
 
  (./capitulo1.tex [1
@@ -863,32 +863,32 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
 ]) [2]
 \openout2 = `capitulo2.aux'.
 
- (./capitulo2.tex [3
+ (./capitulo2.tex) [3
 
 
 
-]) [4]
+]
 \openout2 = `capitulo3.aux'.
 
- (./capitulo3.tex [5
+ (./capitulo3.tex) [4
 
 
 
-]) [6]
+]
 \openout2 = `capitulo4.aux'.
 
- (./capitulo4.tex [7
+ (./capitulo4.tex) [5
 
 
 
-]) [8]
+]
 \openout2 = `capitulo5.aux'.
 
- (./capitulo5.tex [9
+ (./capitulo5.tex) [6
 
 
 
-]) [10]
+]
 
 LaTeX Warning: Empty bibliography on input line 47.
 
@@ -908,16 +908,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  16785 strings out of 469453
  285444 string characters out of 5469038
- 1140091 words of memory out of 5000000
+ 1135088 words of memory out of 5000000
  45193 multiletter control sequences out of 15000+600000
  648633 words of font info for 79 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 74i,6n,79p,724b,2045s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,5n,79p,724b,1955s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on main.pdf (13 pages, 103660 bytes).
+Output written on main.pdf (8 pages, 94699 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
