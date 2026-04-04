@@ -1,0 +1,27 @@
+# --- Archivos Auxiliares de LaTeX ---
+*.aux
+*.log
+*.toc
+*.out
+*.lof
+*.lot
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdfsync
+
+# --- Bibliografía (Biber/BibTeX) ---
+*.bcf
+*.run.xml
+
+# --- Archivos de Sistema/Editores ---
+.DS_Store
+.vscode/
+*.swp
+*~
+
+# --- El PDF (Opcional) ---
+# Descomenta la siguiente línea si NO quieres subir el PDF final.
+# main.pdf

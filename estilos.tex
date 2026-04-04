@@ -1,39 +1,42 @@
 % --- Paquetes Necesarios ---
+\usepackage[utf8]{inputenc}
 \usepackage{titlesec}
 \usepackage{changepage}
-\usepackage{ragged2e} % Para una mejor justificación
+\usepackage{ragged2e} % Si falla, podemos comentar esta línea
 
-% --- CONFIGURACIÓN DE TÍTULOS (NOMBRE + MARGEN) ---
+% --- CONFIGURACIÓN DE TÍTULOS ---
 
-% Título I: "CAPÍTULO 1: NOMBRE" (Sin margen izquierdo extra)
-\titleformat{\section}
-  {\normalfont\fontsize{12}{14}\bfseries\uppercase}
-  {CAPÍTULO \thesection:}{0.5em}{}
-\titlespacing{\section}{0pt}{3.5ex}{2.3ex}
+% Título I: CENTRADO CON SALTO
+\titleformat{\section}[display]
+  {\normalfont\fontsize{12}{14}\bfseries\centering} % Quitamos \uppercase de aquí
+  {CAPÍTULO \thesection}
+  {1ex}
+  {\MakeUppercase} % Lo aplicamos directamente al cuerpo del título
+\titlespacing{\section}{0pt}{2ex}{4ex}
 
-% Título II: "1.1 NOMBRE" (Margen de 1.5em)
+% Título II: IZQUIERDA
 \titleformat{\subsection}
   {\normalfont\fontsize{12}{14}\bfseries}
   {\thesubsection}{1em}{}
-\titlespacing{\subsection}{1.5em}{3.25ex}{1.5ex}
+\titlespacing{\subsection}{0pt}{3.25ex}{1.5ex}
 
-% Título III: "1.1.1 NOMBRE" (Margen de 3em)
+% Título III: INDENTADO
 \titleformat{\subsubsection}
   {\normalfont\fontsize{12}{14}\bfseries}
   {\thesubsubsection}{1em}{}
-\titlespacing{\subsubsection}{3em}{3.25ex}{1.5ex}
+\titlespacing{\subsubsection}{1.5em}{3.25ex}{1.5ex}
 
-% --- COMANDOS PARA TU DOCUMENTO ---
+% --- COMANDOS PERSONALIZADOS ---
 \newcommand{\tituloI}[1]{\section{#1}}
 \newcommand{\tituloII}[1]{\subsection{#1}}
 \newcommand{\tituloIII}[1]{\subsubsection{#1}}
 
-% --- ENTORNO PARA PÁRRAFOS ALINEADOS ---
+% --- ENTORNO PARA PÁRRAFOS (Versión Estable) ---
 \newenvironment{parrafo}[1]{
     \begin{adjustwidth}{#1}{0pt}
-    \justifying
+    \justifying % Si da error de "Undefined control sequence", borrar esta línea
     \setlength{\parskip}{1em}
-    \setlength{\parindent}{0pt} % Evita que la primera línea se mueva sola
+    \setlength{\parindent}{0pt}
 }{
     \end{adjustwidth}
 }
