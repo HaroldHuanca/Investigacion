@@ -6,6 +6,7 @@
 \usepackage{newtxtext,newtxmath} % Times New Roman 
 \usepackage{setspace}
 \usepackage{graphicx}
+\usepackage{enumitem}
 \onehalfspacing % Interlineado 1.5 
 
 % --- Configuración de Márgenes (Norma UC)  ---
@@ -19,8 +20,13 @@
 ]{geometry}
 
 % --- Bibliografía ISO 690-2 (Numérico)  ---
-\usepackage[style=iso-numeric, backend=biber]{biblatex}
-\addbibresource{referencias.bib}
+\usepackage[
+    backend=biber,
+    style=iso-numeric, % Estilo específico para ISO 690 Numerada
+    sorting=none       % 'none' para que el [1] sea la primera cita que aparece
+]{biblatex}
+
+\addbibresource{bibliografia.bib} % Tu archivo de base de datos
 
 % --- Estilos Personalizados para Títulos y Párrafos ---
 \input{estilos}
@@ -43,6 +49,7 @@
 \include{capitulo4}
 \include{capitulo5}
 
-\printbibliography[title={REFERENCIAS BIBLIOGRÁFICAS}] % [cite: 180, 203]
+\tituloI{Referencias Bibliográficas}
+\printbibliography[heading=none]
 
 \end{document}

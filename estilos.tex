@@ -40,3 +40,61 @@
 }{
     \end{adjustwidth}
 }
+
+% --- COMANDOS PARA PÁRRAFOS SIN SANGRÍA (CORREGIDOS) ---
+
+% Párrafo para Título I
+\newcommand{\parrafoI}[1]{
+    \noindent #1\par\vspace{1em}
+}
+
+% Párrafo para Título II (Margen 2.5em)
+\newcommand{\parrafoII}[1]{
+    \begin{adjustwidth}{2.5em}{0pt}
+        \setlength{\parindent}{0pt} % Quita sangría a todos
+        \setlength{\parskip}{1em}    % Espacio entre párrafos
+        \noindent #1 \par            % El \par final es vital
+    \end{adjustwidth}
+    \vspace{0.5em}
+}
+
+% Párrafo para Título III (Margen 5em)
+\newcommand{\parrafoIII}[1]{
+    \begin{adjustwidth}{5em}{0pt}
+        \setlength{\parindent}{0pt}
+        \setlength{\parskip}{1em}
+        \noindent #1 \par
+    \end{adjustwidth}
+    \vspace{0.5em}
+}
+% --- LISTAS PERSONALIZADAS POR NIVEL ---
+
+% Lista para Nivel I (Margen 0)
+\newlist{listaI}{itemize}{1}
+\setlist[listaI]{
+    label=\textbullet,
+    nosep,
+    leftmargin=1.5em, % Espacio para que la viñeta no se salga al margen
+    topsep=0.5em,     % Espacio de 0.5em con el título
+    after=\vspace{1em}
+}
+
+% Lista para Nivel II (Alineada con Parrafo II)
+\newlist{listaII}{itemize}{1}
+\setlist[listaII]{
+    label=\textbullet,
+    nosep,
+    leftmargin=4.0em, % 2.5em del parrafo + 1.5em para la viñeta
+    topsep=0.5em,
+    after=\vspace{1em}
+}
+
+% Lista para Nivel III (Alineada con Parrafo III)
+\newlist{listaIII}{itemize}{1}
+\setlist[listaIII]{
+    label=\textbullet,
+    nosep,
+    leftmargin=5.8em, % 4.5em del parrafo + 1.5em para la viñeta
+    topsep=0.5em,     % Aquí controlamos la distancia exacta al título
+    after=\vspace{1em}
+}
