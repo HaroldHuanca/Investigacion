@@ -98,3 +98,19 @@
     topsep=0.5em,     % Aquí controlamos la distancia exacta al título
     after=\vspace{1em}
 }
+
+\newlist{listaOE}{enumerate}{1}
+\setlist[listaOE]{
+    label=\textbf{OE\arabic*}, % Define el formato OE1, OE2...
+    leftmargin=7.7em,             % Alineado con el margen del Título III
+    labelsep=1em,               % Espacio entre el código y el texto
+    nosep                       % Elimina espacios verticales excesivos
+}
+
+\newlist{listaPE}{enumerate}{1}
+\setlist[listaPE]{
+    label=\textbf{PE\arabic*}, % Define el formato PE1, PE2...
+    leftmargin=7.7em,             % Alineado con el margen del Título III
+    labelsep=1em,               % Espacio entre el código y el texto
+    nosep                       % Elimina espacios verticales excesivos
+}
