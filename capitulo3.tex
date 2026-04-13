@@ -4,33 +4,39 @@
 
 \tituloIII{Método de investigación}
 \parrafoIII{
-    Se empleará el \textbf{método analítico-sintético}. Este proceso permitirá descomponer el fenómeno del uso de la IA en sus indicadores básicos (análisis) para luego integrar los hallazgos en una interpretación global sobre la formación académica en la sede Cusco (síntesis) \cite{arias2012}. Asimismo, se aplicará el método deductivo para transitar de las teorías generales de la adopción tecnológica hacia la realidad particular del estudiante de ingeniería.
+    Se empleará el \textbf{método experimental y el hipotético-deductivo}. El método experimental permitirá manipular las entradas (prompts y algoritmos) para observar y medir las variaciones en las métricas de rendimiento computacional. Complementariamente, el método deductivo se aplicará para contrastar los resultados obtenidos frente a las leyes de la complejidad asintótica ($O$) y las teorías establecidas en las ciencias de la computación \cite{hernandez2014}.
 }
 
 \tituloIII{Tipo de investigación}
 \parrafoIII{
-    La investigación es de \textbf{tipo aplicada}. Según la finalidad, este estudio busca utilizar los conocimientos teóricos sobre inteligencia artificial para diagnosticar y proponer mejoras en las estrategias de aprendizaje de la Escuela Profesional de Ingeniería de Sistemas e Informática \cite{arias2012}.
+    La investigación es de \textbf{tipo aplicada y tecnológica}. Es aplicada debido a que busca utilizar los conocimientos de ingeniería para evaluar la viabilidad técnica del uso de código generado por IA en entornos reales de desarrollo. Es tecnológica pues propone un marco de evaluación basado en herramientas de perfilado (profiling) para mejorar la calidad del software producido en la disciplina \cite{arias2012}.
 }
 
 \tituloIII{Alcance de la investigación}
 \parrafoIII{
-    El estudio posee un \textbf{alcance descriptivo}. Su propósito es especificar las propiedades y características importantes de la población estudiantil respecto a la variable en estudio, midiendo cada dimensión de manera independiente para describir el fenómeno tal como se manifiesta en su contexto natural \cite{hernandez2014}.
+    El estudio posee un \textbf{alcance descriptivo-comparativo}. Su propósito es describir con precisión las métricas de tiempo y memoria de los algoritmos generados y, simultáneamente, comparar el desempeño entre distintos modelos de inteligencia artificial y las implementaciones óptimas de referencia \cite{hernandez2014}.
 }
 
 \tituloII{Materiales y métodos}
 
 \tituloIII{Materiales}
 \parrafoIII{
-    Para el desarrollo de la investigación se utilizarán los siguientes recursos técnicos y lógicos:
+    Para la ejecución de las pruebas de benchmarking y el procesamiento de métricas, se utilizarán los siguientes recursos:
 }
 \begin{listaIII}
-    \item \textbf{Hardware:} Computadora personal con procesador de arquitectura x86\_64 y periféricos de entrada para el procesamiento de datos.
-    \item \textbf{Software de Procesamiento:} Sistema operativo basado en el kernel Linux (distribución Arch Linux) para garantizar la estabilidad del entorno de trabajo.
-    \item \textbf{Herramientas de Análisis:} Suite estadística GNU R o Microsoft Excel para la tabulación de datos y el motor de composición de textos LaTeX (TeX Live) para la redacción del informe final.
-    \item \textbf{Instrumento:} Cuestionario digital distribuido mediante formularios web.
+    \item \textbf{Hardware:} Computadora personal con arquitectura x86\_64 (procesador multinúcleo), utilizada como entorno de ejecución "Bare Metal" para evitar la latencia de virtualización.
+    \item \textbf{Software de Base:} Sistema operativo Arch Linux, seleccionado por su mínima sobrecarga de procesos en segundo plano, permitiendo una medición más exacta de los recursos de CPU y RAM.
+    \item \textbf{Entorno de Programación:} Intérprete de Python 3.x y compilador GCC, según el lenguaje en que se generen los algoritmos de prueba.
+    \item \textbf{Instrumentos de Medición:} Herramienta \textit{Hyperfine} para la medición estadística de tiempos de ejecución y la utilidad \textit{GNU time} (o Valgrind) para el seguimiento del uso máximo de memoria residente (Peak RSS).
 \end{listaIII}
 
 \tituloIII{Métodos}
 \parrafoIII{
-    El procedimiento se dividirá en tres fases: 1) Fase de gabinete, donde se diseñará el cuestionario basado en la operacionalización de variables; 2) Fase de campo, donde se aplicará el instrumento a la muestra de estudiantes en la sede San Jerónimo; y 3) Fase de procesamiento, donde se realizará el análisis descriptivo mediante estadística de frecuencias y porcentajes.
+    El procedimiento experimental se estructurará en las siguientes fases:
 }
+\begin{listaIII}
+    \item \textbf{1) Fase de Diseño Experimental:} Selección de algoritmos de ordenación (ej. QuickSort) y grafos (ej. Dijkstra) y redacción de los prompts de prueba.
+    \item \textbf{2) Fase de Generación y Limpieza:} Obtención de los scripts de código desde los modelos de IA y revisión manual mínima para asegurar la compilación/ejecución sin alterar la lógica algorítmica.
+    \item \textbf{3) Fase de Benchmarking (Ejecución):} Ejecución automatizada de los algoritmos bajo diferentes cargas de datos ($n=10^2, 10^4, 10^6$) utilizando \textit{Hyperfine} para obtener medias y desviaciones estándar.
+    \item \textbf{4) Fase de Análisis:} Tabulación de resultados y generación de gráficas de complejidad temporal y espacial para su interpretación técnica.
+\end{listaIII}

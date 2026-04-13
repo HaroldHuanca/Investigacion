@@ -1,0 +1,64 @@
+\documentclass[11pt]{article} % Párrafos en 11pt según norma 
+
+% --- Paquetes Básicos ---
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{newtxtext,newtxmath} % Times New Roman 
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\onehalfspacing % Interlineado 1.5 
+
+% --- Configuración de Márgenes (Norma UC)  ---
+\usepackage[a4paper, 
+    left=3.81cm, 
+    right=2.54cm, 
+    top=2.54cm, 
+    bottom=2.54cm,
+    headheight=1.27cm, % Encabezado 
+    footskip=1.27cm    % Pie de página 
+]{geometry}
+
+\pagestyle{fancy} % Activa el estilo personalizado
+\fancyhf{}        % Limpia todos los encabezados y pies de página actuales
+
+% --- CONFIGURACIÓN ---
+% Si lo quieres en el PIE DE PÁGINA a la derecha:
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % Elimina la línea horizontal del encabezado
+
+% --- Bibliografía ISO 690-2 (Numérico)  ---
+\usepackage[
+    backend=biber,
+    style=iso-numeric, % Estilo específico para ISO 690 Numerada
+    sorting=none       % 'none' para que el [1] sea la primera cita que aparece
+]{biblatex}
+
+\addbibresource{bibliografia.bib} % Tu archivo de base de datos
+
+% --- Estilos Personalizados para Títulos y Párrafos ---
+\input{estilos}
+
+\begin{document}
+
+\input{portada}
+
+% --- Numeración Romana para sección inicial [cite: 237] ---
+\pagenumbering{roman} 
+\tableofcontents
+\newpage
+
+% --- Numeración Arábiga para el contenido ---
+\pagenumbering{arabic} 
+
+\include{capitulo1}
+\include{capitulo2}
+\include{capitulo3}
+\include{capitulo4}
+\include{capitulo5}
+
+\section*{Referencias Bibliográficas}
+\printbibliography[heading=none]
+
+\end{document}
