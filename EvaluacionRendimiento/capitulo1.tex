@@ -1,92 +1,91 @@
 \tituloI{PLANTEAMIENTO DEL ESTUDIO}
-\tituloII{Planteamiento y formulación del problema}
 
-\parrafoII{A nivel global, la integración de la Inteligencia Artificial Generativa (IAG) en el desarrollo de software ha marcado una tendencia hacia la automatización de la lógica algorítmica. Si bien estas herramientas prometen acelerar la codificación, investigaciones recientes indican que el código generado para problemas computacionales complejos suele presentar deficiencias en la optimización de recursos \cite{idrisov2024}. El impacto de esta problemática se manifiesta en la creación de sistemas con alta deuda técnica, donde la funcionalidad del código no garantiza su eficiencia asintótica, comprometiendo la escalabilidad y sostenibilidad de las infraestructuras digitales modernas \cite{siddiq2023}.}
+\tituloII{Planteamiento del problema}
 
-\parrafoII{En el contexto peruano, la adopción de la IAG en la educación superior tecnológica ha crecido exponencialmente sin un marco de evaluación técnica riguroso. Según reportes locales, existe una dependencia creciente hacia modelos gratuitos para resolver retos de programación \cite{indecopi2023}. La problemática nacional se centra en el riesgo de desplazar el análisis algorítmico crítico por soluciones de "caja negra" que, aunque funcionales a pequeña escala, carecen de los estándares de eficiencia requeridos por la industria informática nacional \cite{huaman2024}.}
+\parrafoII{A nivel global, la integración de la inteligencia artificial generativa en el desarrollo de software ha transformado significativamente la forma en que se construyen soluciones algorítmicas, permitiendo automatizar la generación de código y reducir los tiempos de desarrollo. No obstante, investigaciones recientes evidencian que, si bien los modelos de lenguaje de gran escala son capaces de producir soluciones funcionales, estas no siempre presentan un rendimiento computacional óptimo, especialmente en problemas algorítmicos complejos \cite{idrisov2024, niu2024efficiency}. Estudios contemporáneos han demostrado que el código generado por estos modelos puede presentar ineficiencias en términos de tiempo de ejecución y consumo de memoria, lo cual compromete su aplicabilidad en entornos donde la escalabilidad y el uso eficiente de recursos son críticos \cite{elnashar2024performance, coignion2024performance}. Asimismo, la evaluación del código generado por inteligencia artificial continúa siendo un desafío abierto, debido a la falta de métricas estandarizadas y metodologías consistentes que permitan medir su calidad y eficiencia de manera objetiva \cite{ghosh2024benchmarking, tong2024codejudge}.}
 
-\parrafoII{En el ámbito local, específicamente en la sede Cusco de la Universidad Continental, los estudiantes de Ingeniería de Sistemas e Informática emplean herramientas de IAG principalmente para resolver problemas de estructuras de datos y lógica de grafos. No obstante, se evidencia una brecha de conocimiento técnico sobre el rendimiento real de estos algoritmos generados automáticamente bajo condiciones de estrés o grandes volúmenes de datos. Esta falta de auditoría algorítmica en el entorno académico local limita la capacidad de los futuros ingenieros para discernir entre una solución óptima y una subóptima \cite{huaman2024}.}
+\parrafoII{En el contexto nacional, la adopción de herramientas de inteligencia artificial generativa en la educación superior y en la práctica profesional ha crecido de manera acelerada, impulsada por la disponibilidad de modelos de acceso gratuito y su facilidad de uso. Sin embargo, esta adopción no ha estado acompañada de un enfoque riguroso en la evaluación técnica del código generado, lo que ha derivado en una creciente dependencia de soluciones automatizadas sin un adecuado análisis de su rendimiento computacional \cite{indecopi2023}. Esta situación plantea un riesgo significativo, ya que el uso de soluciones tipo “caja negra” puede desplazar el razonamiento algorítmico crítico, limitando la capacidad de los futuros profesionales para identificar ineficiencias y optimizar soluciones en contextos reales \cite{siddiq2023}. En este escenario, la falta de evaluación empírica del rendimiento del código generado por inteligencia artificial representa una debilidad en la formación de ingenieros y en la calidad del software desarrollado.}
 
-\tituloIII{Descripción del problema}
-\parrafoII{La unidad de análisis de la presente investigación son los **algoritmos de ordenación y grafos generados por modelos de IA de acceso gratuito**. La problemática se define como la incertidumbre técnica sobre el rendimiento computacional (complejidad temporal y espacial) de dichas soluciones. Desde la ingeniería de sistemas, este problema se vincula directamente con la gestión de la eficiencia de procesos lógicos; la ausencia de métricas de desempeño sobre el código generado por IA impide una transformación digital segura y eficiente de los sistemas de información, interpretándose como una vulnerabilidad en la calidad del software educativo y profesional.}
+\parrafoII{A nivel local, en la ciudad de Cusco y particularmente en el entorno académico de la ingeniería de sistemas, se observa que los estudiantes emplean herramientas de inteligencia artificial generativa para resolver problemas relacionados con estructuras de datos y algoritmos, especialmente en áreas como ordenación y grafos. No obstante, esta práctica se realiza generalmente sin un proceso sistemático de validación del rendimiento computacional de las soluciones generadas, lo que dificulta la identificación de algoritmos subóptimos cuando se enfrentan a grandes volúmenes de datos o condiciones de alta exigencia. Estudios regionales evidencian que la adopción de estas tecnologías en el ámbito educativo no siempre está acompañada de estrategias que promuevan el análisis crítico del código generado, generando una brecha en la formación técnica de los estudiantes \cite{huaman2024}.}
 
-\tituloIII{Causas y efectos}
-\parrafoII{Entre las causas identificadas se encuentran la alta accesibilidad a modelos LLM optimizados para lenguaje natural y no para cómputo de alto rendimiento, la omisión de pruebas de perfilado (profiling) en la formación académica y la ausencia de metodologías de benchmarking integradas al currículo de ingeniería \cite{siddiq2023}. Como consecuencia, se generan efectos como la degradación del rendimiento operativo en aplicaciones desarrolladas por estudiantes, dependencia tecnológica y una disminución en la capacidad de optimización autónoma \cite{idrisov2024}.}
+\parrafoII{En este contexto, la unidad de análisis de la presente investigación está constituida por algoritmos de ordenación y grafos generados mediante modelos de inteligencia artificial generativa de acceso gratuito, los cuales son utilizados como soluciones para problemas computacionales específicos. La problemática central radica en la ausencia de evidencia empírica comparativa que permita determinar si dichos algoritmos presentan un rendimiento computacional adecuado en términos de tiempo de ejecución y consumo de memoria frente a implementaciones estándar desarrolladas bajo principios tradicionales de ingeniería de software. Esta falta de análisis sistemático limita la capacidad de validar la eficiencia de las soluciones generadas automáticamente y dificulta su adopción en entornos donde el rendimiento es un factor crítico.}
 
-\tituloIII{Análisis prospectivo}
-\parrafoII{De persistir esta problemática, la calidad de la formación profesional de los futuros ingenieros en Cusco se verá afectada por una incapacidad para gestionar sistemas de alta complejidad. A largo plazo, esto resultará en una pérdida de competitividad tecnológica y un incremento en los costos operativos de las empresas regionales debido a la implementación de software ineficiente. La investigación se hace necesaria para establecer una línea base de rendimiento que permita a la comunidad académica transitar hacia un uso de la IA basado en la evidencia técnica y la eficiencia algorítmica \cite{huaman2024}.}
+\parrafoII{La situación descrita se ve agravada por la ausencia de metodologías de benchmarking integradas en el proceso de evaluación del código generado por inteligencia artificial, así como por la limitada incorporación de herramientas de profiling en la formación académica. Como consecuencia, se generan soluciones que, aunque funcionales, pueden presentar un comportamiento ineficiente bajo condiciones de escalabilidad, lo que se traduce en un uso inadecuado de recursos computacionales y una potencial degradación del rendimiento en aplicaciones reales \cite{ghosh2024benchmarking}. Asimismo, la falta de comparación con implementaciones estándar dificulta establecer criterios objetivos que permitan determinar la calidad del código generado por inteligencia artificial.}
 
+\parrafoII{Las implicancias de esta problemática son relevantes tanto en el ámbito académico como profesional. En el contexto educativo, la dependencia de soluciones generadas por inteligencia artificial sin un análisis crítico puede limitar el desarrollo de habilidades fundamentales en el diseño y optimización de algoritmos. En el ámbito profesional, la adopción de código ineficiente puede generar sobrecostos operativos, baja escalabilidad y problemas de rendimiento en sistemas de información. A largo plazo, la ausencia de criterios técnicos para evaluar el rendimiento del código generado por inteligencia artificial puede afectar la competitividad tecnológica y la calidad del software desarrollado.}
+
+\parrafoII{En este sentido, resulta necesario realizar un análisis comparativo del rendimiento computacional de los algoritmos generados por inteligencia artificial generativa frente a implementaciones estándar, mediante el uso de técnicas de benchmarking que permitan medir de manera objetiva el tiempo de ejecución y el consumo de memoria. Esta investigación busca contribuir al desarrollo de criterios técnicos basados en evidencia empírica que permitan evaluar la eficiencia del código generado automáticamente, fortaleciendo el uso responsable de la inteligencia artificial en el desarrollo de software y promoviendo una formación más rigurosa en el ámbito de la ingeniería de sistemas.}
 \tituloII{Formulación del Problema}
 
 \tituloIII{Problema General}
-\parrafoIII{¿Cuál es el nivel de rendimiento computacional, en términos de eficiencia temporal y espacial, de los algoritmos de ordenación y grafos generados por herramientas de inteligencia artificial generativa en comparación con las implementaciones estándar de ingeniería?}
+\parrafoIII{¿Qué diferencias existen en el rendimiento computacional, en términos de tiempo de ejecución y consumo de memoria, entre los algoritmos generados por inteligencia artificial generativa y las implementaciones estándar?}
 
 \tituloIII{Problemas Específicos}
 \begin{listaPE}
-    \item ¿Cuál es la complejidad temporal (tiempo de ejecución) de los algoritmos de ordenación generados por modelos de inteligencia artificial frente a conjuntos de datos de escala creciente?
-    \item ¿Cuál es la eficiencia en el uso de memoria (complejidad espacial) de los algoritmos de rutas en grafos producidos por inteligencia artificial generativa?
-    \item ¿Cómo varía el rendimiento de los algoritmos generados cuando se aplican restricciones técnicas específicas mediante ingeniería de prompts avanzada?
+    \item ¿Cómo varía el tiempo de ejecución de los algoritmos de ordenación generados por inteligencia artificial frente a implementaciones estándar, considerando diferentes tamaños de entrada?
+    \item ¿Qué diferencias existen en el consumo de memoria de los algoritmos de grafos generados por inteligencia artificial en comparación con implementaciones estándar?
+    \item ¿Cómo influye el uso de inteligencia artificial generativa en la eficiencia computacional de los algoritmos en comparación con soluciones tradicionales?
 \end{listaPE}
 
 \tituloII{Objetivos}
 
 \tituloIII{Objetivo General}
-\parrafoIII{Evaluar el rendimiento computacional de los algoritmos de ordenación y grafos generados por inteligencia artificial generativa mediante pruebas de benchmarking para determinar su eficiencia en la resolución de problemas computacionales.}
+\parrafoIII{Analizar comparativamente el rendimiento computacional de algoritmos de ordenación y grafos generados por inteligencia artificial generativa frente a implementaciones estándar, mediante técnicas de benchmarking.}
 
 \tituloIII{Objetivos Específicos}
 \begin{listaOE}
-    \item Medir el tiempo de ejecución de los algoritmos de ordenación generados por IA bajo diferentes escenarios de carga de datos para determinar su complejidad temporal real.
-    \item Cuantificar el consumo de memoria RAM de los algoritmos de grafos generados por IA para evaluar su optimización en la gestión de recursos del sistema.
-    \item Contrastar la eficiencia de los algoritmos generados automáticamente frente a las implementaciones óptimas documentadas en la literatura técnica de ingeniería de software.    
+    \item Evaluar el tiempo de ejecución de los algoritmos de ordenación generados por inteligencia artificial en comparación con implementaciones estándar bajo diferentes tamaños de entrada.
+    \item Analizar el consumo de memoria de los algoritmos de grafos generados por inteligencia artificial frente a implementaciones estándar.
+    \item Comparar el rendimiento computacional global de los algoritmos generados por inteligencia artificial con soluciones tradicionales de referencia.
 \end{listaOE}
 
 \tituloII{Justificación de la investigación}
 
 \tituloIII{Justificación Teórica}
 \parrafoIII{
-    Desde el punto de vista teórico, esta investigación se justifica por la necesidad de validar la capacidad de razonamiento algorítmico de los modelos de lenguaje de gran escala (LLM). Según Idrisov \cite{idrisov2024}, la generación de código por IA no garantiza la optimización asintótica. Este estudio aportará datos empíricos que permitirán contrastar la teoría de la complejidad computacional con los resultados prácticos de la IA generativa, enriqueciendo el conocimiento sobre la fiabilidad de estas herramientas en la arquitectura de software.
+La investigación contribuye al análisis empírico del comportamiento de algoritmos generados por modelos de lenguaje, permitiendo contrastar los principios teóricos de la complejidad computacional con resultados experimentales. De esta manera, se aporta evidencia sobre la capacidad real de estas herramientas para producir soluciones eficientes \cite{idrisov2024}.
 }
 
 \tituloIII{Justificación Práctica}
 \parrafoIII{
-    En el plano práctico, el estudio es relevante para la comunidad de desarrolladores y estudiantes de la Universidad Continental, ya que proporcionará métricas reales de desempeño. En un entorno donde el código "caja negra" es cada vez más común, los resultados permitirán identificar si el uso de IA introduce ineficiencias críticas que podrían elevar los costos operativos en entornos de producción o nube (Cloud Computing), facilitando la creación de criterios técnicos para la auditoría de código generado por IA.
+Desde una perspectiva aplicada, los resultados permitirán establecer criterios técnicos para la evaluación del código generado por inteligencia artificial, contribuyendo a mejorar la calidad del software desarrollado en entornos académicos y profesionales.
 }
 
 \tituloIII{Justificación Metodológica}
 \parrafoIII{
-    Metodológicamente, la investigación propone un protocolo de benchmarking automatizado utilizando herramientas de perfilado de código (profiling) en entornos Linux. Siguiendo los principios de la investigación empírica en ingeniería, el valor radica en el diseño de pruebas de estrés replicables que permiten medir variables físicas (ms y MB) de manera objetiva, sirviendo como modelo para futuras evaluaciones de calidad de software asistido por inteligencia artificial.
+La investigación propone un enfoque experimental basado en técnicas de benchmarking y profiling, permitiendo la medición objetiva y replicable de métricas de rendimiento computacional, lo cual puede ser utilizado como referencia en estudios similares.
 }
 
 \tituloII{Delimitación de la investigación}
 
 \tituloIII{Delimitación Espacial}
 \parrafoIII{
-    El estudio se llevará a cabo en el laboratorio de cómputo personal del investigador y, para las pruebas de entorno controlado, se utilizarán los recursos tecnológicos de la Universidad Continental, sede Cusco, ubicada en la \textbf{Vía de Evitamiento N° 801, San Jerónimo}. Las pruebas se ejecutarán sobre hardware con arquitectura x86\_64 bajo el sistema operativo Arch Linux.
+El estudio se desarrollará en un entorno de cómputo controlado utilizando una computadora personal con arquitectura x86\_64 y sistema operativo Linux, así como recursos disponibles en la Universidad Continental, sede Cusco.
 }
 
 \tituloIII{Delimitación Temporal}
 \parrafoIII{
-    La ejecución de los experimentos, recolección de métricas y análisis estadístico se realizará entre los meses de \textbf{julio y septiembre del año 2026}, asegurando un periodo de estabilidad en el desarrollo de los algoritmos de prueba.
+La ejecución de los experimentos y análisis de resultados se realizará durante el periodo comprendido entre julio y septiembre de 2026.
 }
 
 \tituloIII{Delimitación Social}
 \parrafoIII{
-    La unidad de análisis no comprende sujetos humanos, sino los **modelos de inteligencia artificial generativa de acceso gratuito** (como GPT-4o mini y Gemini) y los algoritmos resultantes de su interacción. No obstante, los resultados están dirigidos a la comunidad académica de Ingeniería de Sistemas e Informática para fortalecer su criterio técnico.
+La investigación se centra en el análisis de algoritmos generados por inteligencia artificial, por lo que no involucra directamente sujetos humanos. No obstante, sus resultados están orientados a la comunidad académica de ingeniería de sistemas.
 }
 
 \tituloII{Hipótesis y Variables}
 
 \tituloIII{Hipótesis}
 \parrafoIII{
-    Al ser una investigación de carácter descriptivo-comparativo basada en la medición directa de rendimiento computacional, no se requiere la formulación de una hipótesis predictiva. El estudio se limita a documentar y comparar el comportamiento observado de los algoritmos bajo prueba frente a estándares de oro preestablecidos.
+Los algoritmos generados por inteligencia artificial generativa presentan un rendimiento computacional inferior, en términos de tiempo de ejecución y consumo de memoria, en comparación con implementaciones estándar.
 }
 
 \tituloIII{Definición de Variables}
 \parrafoIII{
-    Se define como variable principal la \textbf{Eficiencia Algorítmica}, que se operacionaliza mediante las siguientes dimensiones técnicas:
+La variable principal es el \textbf{Rendimiento Computacional}, evaluada mediante las siguientes dimensiones:
 }
 
 \begin{listaVar}
-    \item \textbf{Dimensión Temporal:} Medida a través del tiempo de ejecución (CPU time) en milisegundos, evaluando la respuesta del algoritmo ante el incremento de la entrada ($n$).
-    \item \textbf{Dimensión Espacial:} Medida a través del consumo máximo de memoria (Peak RAM usage) en Megabytes durante el ciclo de vida del proceso ejecutado.
+    \item \textbf{Dimensión Temporal:} Tiempo de ejecución del algoritmo, medido en milisegundos (ms).
+    \item \textbf{Dimensión Espacial:} Consumo máximo de memoria durante la ejecución, medido en megabytes (MB).
 \end{listaVar}

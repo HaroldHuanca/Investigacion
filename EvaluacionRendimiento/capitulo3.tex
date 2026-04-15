@@ -17,7 +17,128 @@
     El estudio posee un \textbf{alcance descriptivo-comparativo}. Su propósito es describir con precisión las métricas de tiempo y memoria de los algoritmos generados y, simultáneamente, comparar el desempeño entre distintos modelos de inteligencia artificial y las implementaciones óptimas de referencia \cite{hernandez2014}.
 }
 
+\tituloII{Materiales y métodos}\tituloI{METODOLOGÍA}
+
+\tituloII{Método, tipo y alcance de la investigación}
+
+\tituloIII{Método de investigación}
+\parrafoIII{
+La presente investigación adopta el método experimental, dado que se manipulan de manera controlada variables independientes —como el tipo de algoritmo, el modelo de inteligencia artificial utilizado y el tamaño de entrada— con el fin de observar su efecto sobre variables dependientes relacionadas con el rendimiento computacional. Asimismo, se emplea un enfoque cuantitativo, basado en la medición objetiva de métricas de desempeño.
+}
+
+\tituloIII{Tipo de investigación}
+\parrafoIII{
+El estudio es de tipo aplicada, debido a que busca generar conocimiento orientado a la solución de problemas prácticos en el ámbito del desarrollo de software, específicamente en la evaluación del código generado por inteligencia artificial. Asimismo, se clasifica como tecnológica, al proponer un procedimiento sistemático de evaluación basado en herramientas de benchmarking y profiling.
+}
+
+\tituloIII{Alcance de la investigación}
+\parrafoIII{
+La investigación posee un alcance descriptivo y comparativo. Es descriptiva porque caracteriza el comportamiento del rendimiento computacional de los algoritmos generados, y comparativa porque establece diferencias entre dichos algoritmos y las implementaciones estándar de referencia.
+}
+
+\tituloIII{Diseño de la investigación}
+\parrafoIII{
+El diseño es experimental comparativo de tipo transversal. Se ejecutan pruebas controladas sobre diferentes algoritmos generados por inteligencia artificial y se comparan sus métricas de rendimiento con implementaciones estándar, en un mismo entorno de ejecución y bajo condiciones controladas.
+}
+
 \tituloII{Materiales y métodos}
+
+\tituloIII{Materiales}
+\parrafoIII{
+Para la ejecución de la investigación se utilizarán los siguientes recursos:
+}
+
+\begin{itemize}
+    \item \textbf{Hardware:} Computadora con arquitectura x86\_64, procesador multinúcleo y memoria RAM suficiente para ejecutar pruebas de alto volumen de datos.
+    
+    \item \textbf{Software base:} Sistema operativo Linux (Arch Linux), seleccionado por su bajo nivel de interferencia en procesos en segundo plano.
+    
+    \item \textbf{Lenguajes de programación:} Python 3.x y C/C++, según el tipo de algoritmo generado.
+    
+    \item \textbf{Herramientas de medición:}
+    \begin{itemize}
+        \item Hyperfine: para la medición estadística de tiempos de ejecución.
+        \item GNU time: para la medición de consumo de memoria (Peak RSS).
+    \end{itemize}
+    
+    \item \textbf{Modelos de inteligencia artificial:} Modelos de acceso gratuito utilizados para la generación de código (por ejemplo, GPT y Gemini).
+\end{itemize}
+
+\tituloIII{Población y muestra}
+\parrafoIII{
+La población está conformada por algoritmos generados mediante modelos de inteligencia artificial generativa. La muestra estará constituida por un conjunto de algoritmos de ordenación (por ejemplo, QuickSort, MergeSort) y algoritmos de grafos (por ejemplo, Dijkstra), generados bajo condiciones controladas mediante prompts predefinidos.
+
+Cada algoritmo será evaluado mediante múltiples ejecuciones independientes, con el fin de obtener medidas estadísticas representativas.
+}
+
+\tituloIII{Variables de estudio}
+\parrafoIII{
+Las variables consideradas en la investigación son las siguientes:
+}
+
+\begin{itemize}
+    \item \textbf{Variable independiente:}
+    \begin{itemize}
+        \item Tipo de algoritmo generado.
+        \item Modelo de inteligencia artificial utilizado.
+        \item Tamaño de entrada ($n$).
+    \end{itemize}
+    
+    \item \textbf{Variable dependiente:}
+    \begin{itemize}
+        \item Tiempo de ejecución (ms).
+        \item Consumo de memoria (MB).
+    \end{itemize}
+\end{itemize}
+
+\tituloIII{Técnicas e instrumentos de recolección de datos}
+\parrafoIII{
+La técnica empleada es la experimentación controlada. Los instrumentos de recolección de datos corresponden a herramientas de benchmarking y profiling, específicamente Hyperfine para el tiempo de ejecución y GNU time para el consumo de memoria.
+
+Cada medición se realizará en múltiples repeticiones (mínimo 30 ejecuciones por algoritmo) para obtener valores promedio y desviación estándar, garantizando la confiabilidad de los resultados.
+}
+
+\tituloIII{Control de variables}
+\parrafoIII{
+Con el fin de garantizar la validez interna del experimento, se establecerán las siguientes condiciones de control:
+}
+
+\begin{itemize}
+    \item Ejecución en entorno "bare metal" sin virtualización.
+    \item Cierre de procesos en segundo plano no esenciales.
+    \item Uso del mismo hardware para todas las pruebas.
+    \item Ejecución de pruebas en condiciones similares de carga del sistema.
+\end{itemize}
+
+\tituloIII{Procedimiento}
+\parrafoIII{
+El procedimiento experimental se desarrollará en las siguientes fases:
+}
+
+\begin{itemize}
+    \item \textbf{Fase 1: Diseño experimental}  
+    Selección de algoritmos de ordenación y grafos, así como definición de prompts estandarizados para la generación de código.
+    
+    \item \textbf{Fase 2: Generación de algoritmos}  
+    Obtención del código fuente mediante modelos de inteligencia artificial, sin modificaciones que alteren la lógica algorítmica.
+    
+    \item \textbf{Fase 3: Preparación de datos}  
+    Generación de conjuntos de datos de distintos tamaños ($n = 10^2, 10^3, 10^4, 10^5, 10^6$).
+    
+    \item \textbf{Fase 4: Ejecución de pruebas}  
+    Ejecución de los algoritmos utilizando Hyperfine, realizando múltiples repeticiones por cada caso.
+    
+    \item \textbf{Fase 5: Recolección de métricas}  
+    Registro de tiempo de ejecución y consumo de memoria para cada ejecución.
+    
+    \item \textbf{Fase 6: Análisis de resultados}  
+    Cálculo de promedios, desviaciones estándar y comparación entre algoritmos generados y algoritmos estándar.
+\end{itemize}
+
+\tituloIII{Análisis de datos}
+\parrafoIII{
+Los datos obtenidos serán analizados mediante estadística descriptiva, utilizando medidas de tendencia central (media) y dispersión (desviación estándar). Asimismo, se realizará un análisis comparativo entre los algoritmos generados por inteligencia artificial y las implementaciones estándar, identificando diferencias significativas en términos de rendimiento computacional.
+}
 
 \tituloIII{Materiales}
 \parrafoIII{
