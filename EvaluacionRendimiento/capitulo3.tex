@@ -42,12 +42,12 @@ Para la ejecución de la investigación se utilizarán los siguientes recursos:
         \item GNU time: para la medición de consumo de memoria (Peak RSS).
     \end{itemize}
     
-    \item \textbf{Modelos de inteligencia artificial:} Modelos de acceso gratuito utilizados para la generación de código (por ejemplo, GPT y Gemini).
+    \item \textbf{Modelos de inteligencia artificial:} Modelos de acceso gratuito utilizados para la generación de código (por ejemplo, modelos de inteligencia artificial generativa de acceso gratuito, tales como GPT-4o mini y Gemini 1.5 Flash).
 \end{itemize}
 
 \tituloIII{Población y muestra}
 \parrafoIII{
-La población está conformada por algoritmos generados mediante modelos de inteligencia artificial generativa. La muestra estará constituida por un conjunto de algoritmos de ordenación (por ejemplo, QuickSort, MergeSort) y algoritmos de grafos (por ejemplo, Dijkstra), generados bajo condiciones controladas mediante prompts predefinidos.
+Las implementaciones estándar corresponden a algoritmos clásicos documentados en la literatura de referencia, tales como QuickSort, MergeSort y Dijkstra, implementados siguiendo buenas prácticas de ingeniería y optimización reconocidas. La población está conformada por algoritmos generados mediante modelos de inteligencia artificial generativa. La muestra estará constituida por un conjunto de algoritmos de ordenación (por ejemplo, QuickSort, MergeSort) y algoritmos de grafos (por ejemplo, Dijkstra), generados bajo condiciones controladas mediante prompts predefinidos.
 
 Cada algoritmo será evaluado mediante múltiples ejecuciones independientes, con el fin de obtener medidas estadísticas representativas.
 }
@@ -104,7 +104,7 @@ El procedimiento experimental se desarrollará en las siguientes fases:
     Obtención del código fuente mediante modelos de inteligencia artificial, sin modificaciones que alteren la lógica algorítmica.
     
     \item \textbf{Fase 3: Preparación de datos}  
-    Generación de conjuntos de datos de distintos tamaños ($n = 10^2, 10^3, 10^4, 10^5, 10^6$).
+    Generación de conjuntos de datos de distintos tamaños ($n = 10^2, 10^3, 10^4, 10^5, 10^6$).Los tamaños de entrada han sido seleccionados para evaluar el comportamiento del algoritmo en diferentes niveles de escalabilidad.
     
     \item \textbf{Fase 4: Ejecución de pruebas}  
     Ejecución de los algoritmos utilizando Hyperfine, realizando múltiples repeticiones por cada caso.
