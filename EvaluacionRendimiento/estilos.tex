@@ -12,19 +12,19 @@
   {CAPÍTULO \thesection}
   {1ex}
   {\MakeUppercase} % Lo aplicamos directamente al cuerpo del título
-\titlespacing{\section}{0pt}{2ex}{4ex}
+\titlespacing{\section}{0pt}{1ex}{2ex}
 
 % Título II: IZQUIERDA
 \titleformat{\subsection}
   {\normalfont\fontsize{12}{14}\bfseries}
   {\thesubsection}{1em}{}
-\titlespacing{\subsection}{0pt}{3.25ex}{1.5ex}
+\titlespacing{\subsection}{0pt}{1.5ex}{1ex}
 
 % Título III: INDENTADO
 \titleformat{\subsubsection}
   {\normalfont\fontsize{12}{14}\bfseries}
   {\thesubsubsection}{1em}{}
-\titlespacing{\subsubsection}{1.5em}{3.25ex}{1.5ex}
+\titlespacing{\subsubsection}{1.5em}{1.5ex}{1ex}
 
 % --- COMANDOS PERSONALIZADOS ---
 \newcommand{\tituloI}[1]{\section{#1}}
@@ -35,7 +35,7 @@
 \newenvironment{parrafo}[1]{
     \begin{adjustwidth}{#1}{0pt}
     \justifying % Si da error de "Undefined control sequence", borrar esta línea
-    \setlength{\parskip}{1em}
+    \setlength{\parskip}{0.5em}
     \setlength{\parindent}{0pt}
 }{
     \end{adjustwidth}
@@ -52,7 +52,7 @@
 \newcommand{\parrafoII}[1]{
     \begin{adjustwidth}{2.5em}{0pt}
         \setlength{\parindent}{0pt} % Quita sangría a todos
-        \setlength{\parskip}{1em}    % Espacio entre párrafos
+        \setlength{\parskip}{0.5em}    % Espacio entre párrafos
         \noindent #1 \par            % El \par final es vital
     \end{adjustwidth}
     \vspace{0.5em}
@@ -62,7 +62,7 @@
 \newcommand{\parrafoIII}[1]{
     \begin{adjustwidth}{5em}{0pt}
         \setlength{\parindent}{0pt}
-        \setlength{\parskip}{1em}
+        \setlength{\parskip}{0.5em}
         \noindent #1 \par
     \end{adjustwidth}
     \vspace{0.5em}

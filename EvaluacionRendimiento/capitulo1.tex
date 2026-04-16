@@ -48,29 +48,29 @@ Desde el punto de vista teórico, la investigación se sustenta en los principio
 
 \tituloIII{Justificación Práctica}
 \parrafoIII{
-Desde una perspectiva aplicada, los resultados permitirán establecer criterios técnicos para la evaluación del código generado por inteligencia artificial, contribuyendo a mejorar la calidad del software desarrollado en entornos académicos y profesionales.
+Desde una perspectiva aplicada, la presente investigación proporciona criterios técnicos fundamentales para mitigar la "deuda técnica" derivada del uso de soluciones tipo "caja negra". En un ecosistema donde el desarrollo asistido por IA es la norma, identificar ineficiencias en el consumo de memoria y tiempo de ejecución permite evitar el despliegue de software con baja escalabilidad \cite{elnashar2024performance}. Los resultados permitirán a los profesionales y estudiantes decidir con base en evidencia cuándo es imperativo realizar una implementación manual frente a una automatizada, optimizando así el uso de infraestructura computacional y reduciendo costos operativos asociados al procesamiento de grandes volúmenes de datos \cite{coignion2024performance}.
 }
 
 \tituloIII{Justificación Metodológica}
 \parrafoIII{
-La investigación propone un enfoque experimental basado en técnicas de benchmarking y profiling, permitiendo la medición objetiva y replicable de métricas de rendimiento computacional, lo cual puede ser utilizado como referencia en estudios similares.
+La investigación se justifica metodológicamente al establecer un protocolo de evaluación experimental riguroso y replicable. Ante la actual ausencia de métricas estandarizadas para medir la calidad del código generado automáticamente \cite{ghosh2024benchmarking}, este estudio propone un flujo de trabajo basado en técnicas de \textit{benchmarking} y \textit{profiling} en entornos controlados ("bare metal"). El uso de herramientas de medición de precisión y la comparación sistemática frente a implementaciones de referencia tradicionales constituye una metodología robusta que puede ser adaptada para evaluar futuros modelos de lenguaje de gran escala (LLM) en el ámbito académico y profesional \cite{tong2024codejudge}.
 }
 
 \tituloII{Delimitación de la investigación}
 
 \tituloIII{Delimitación Espacial}
 \parrafoIII{
-El estudio se desarrollará en un entorno de cómputo controlado utilizando una computadora personal con arquitectura x86\_64 y sistema operativo Linux, así como recursos disponibles en la Universidad Continental, sede Cusco.
+El estudio se desarrollará estrictamente en un entorno de cómputo controlado para eliminar variables externas como la latencia de red o la sobrecarga de capas de virtualización. Las pruebas experimentales se ejecutarán en una estación de trabajo con arquitectura x86\_64 bajo la distribución Arch Linux, seleccionada por su capacidad de ejecución con un mínimo de procesos en segundo plano. El soporte institucional y físico para la fase de análisis se centrará en la Universidad Continental, sede Cusco.
 }
 
 \tituloIII{Delimitación Temporal}
 \parrafoIII{
-La ejecución de los experimentos y análisis de resultados se realizará durante el periodo comprendido entre julio y septiembre de 2026.
+La fase de ejecución experimental, que incluye la generación de algoritmos mediante los modelos seleccionados, la recolección de métricas de rendimiento y el posterior análisis estadístico de los resultados, se llevará a cabo durante el periodo comprendido entre julio y septiembre de 2026.
 }
 
 \tituloIII{Delimitación Social}
 \parrafoIII{
-La investigación se centra en el análisis de algoritmos generados por inteligencia artificial, por lo que no involucra directamente sujetos humanos. No obstante, sus resultados están orientados a la comunidad académica de ingeniería de sistemas.
+La investigación se enfoca en la evaluación técnica de artefactos de software (algoritmos), por lo que no involucra la intervención directa sobre sujetos humanos ni el tratamiento de datos personales. No obstante, los beneficiarios directos son los estudiantes y docentes de la Escuela Profesional de Ingeniería de Sistemas de la Universidad Continental, así como la comunidad de desarrolladores que busca integrar herramientas de IA generativa de manera responsable en la formación de ingenieros \cite{huaman2024}.
 }
 
 \tituloII{Hipótesis y Variables}
