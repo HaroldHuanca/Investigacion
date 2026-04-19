@@ -3,40 +3,91 @@
 \tituloII{Método, tipo y alcance de la investigación}
 
 \tituloIII{Método de investigación}
-\parrafoIII{
-    Se empleará el \textbf{método experimental y el hipotético-deductivo}. El método experimental permitirá manipular las entradas (prompts y algoritmos) para observar y medir las variaciones en las métricas de rendimiento computacional. Complementariamente, el método deductivo se aplicará para contrastar los resultados obtenidos frente a las leyes de la complejidad asintótica ($O$) y las teorías establecidas en las ciencias de la computación \cite{hernandez2014}.
+\parrafoIII{%
+Se adopta el método cuasi-experimental. Se manipulará la lógica de validación de datos y la arquitectura de comunicación fiscal (variable independiente) para observar su efecto sobre la integridad del inventario y la eficiencia en la emisión de comprobantes (variable dependiente).%
 }
 
 \tituloIII{Tipo de investigación}
-\parrafoIII{
-    La investigación es de \textbf{tipo aplicada y tecnológica}. Es aplicada debido a que busca utilizar los conocimientos de ingeniería para evaluar la viabilidad técnica del uso de código generado por IA en entornos reales de desarrollo. Es tecnológica pues propone un marco de evaluación basado en herramientas de perfilado (profiling) para mejorar la calidad del software producido en la disciplina \cite{arias2012}.
+\parrafoIII{%
+Investigación tecnológica y aplicada, orientada a desarrollar un prototipo funcional de sistema de gestión local que valide la hipótesis de mejora en la consistencia de datos y autonomía tributaria en pequeños comercios.%
 }
 
 \tituloIII{Alcance de la investigación}
-\parrafoIII{
-    El estudio posee un \textbf{alcance descriptivo-comparativo}. Su propósito es describir con precisión las métricas de tiempo y memoria de los algoritmos generados y, simultáneamente, comparar el desempeño entre distintos modelos de inteligencia artificial y las implementaciones óptimas de referencia \cite{hernandez2014}.
+\parrafoIII{%
+Alcance descriptivo y correlacional, caracterizando las deficiencias del flujo de trabajo actual en el negocio de abarrotes y estableciendo la relación entre la implementación de reglas de negocio estrictas y la reducción de errores operativos.%
+}
+
+\tituloIII{Diseño de la investigación}
+\parrafoIII{%
+Diseño no experimental de tipo transversal. Se evaluará el rendimiento del sistema y la exactitud de los registros de stock en condiciones reales de operación durante un periodo determinado de tres meses.%
 }
 
 \tituloII{Materiales y métodos}
 
 \tituloIII{Materiales}
-\parrafoIII{
-    Para la ejecución de las pruebas de benchmarking y el procesamiento de métricas, se utilizarán los siguientes recursos:
+\parrafoIII{%
+Para la ejecución se utilizarán los siguientes recursos:
 }
-\begin{listaIII}
-    \item \textbf{Hardware:} Computadora personal con arquitectura x86\_64 (procesador multinúcleo), utilizada como entorno de ejecución "Bare Metal" para evitar la latencia de virtualización.
-    \item \textbf{Software de Base:} Sistema operativo Arch Linux, seleccionado por su mínima sobrecarga de procesos en segundo plano, permitiendo una medición más exacta de los recursos de CPU y RAM.
-    \item \textbf{Entorno de Programación:} Intérprete de Python 3.x y compilador GCC, según el lenguaje en que se generen los algoritmos de prueba.
-    \item \textbf{Instrumentos de Medición:} Herramienta \textit{Hyperfine} para la medición estadística de tiempos de ejecución y la utilidad \textit{GNU time} (o Valgrind) para el seguimiento del uso máximo de memoria residente (Peak RSS).
-\end{listaIII}
 
-\tituloIII{Métodos}
-\parrafoIII{
-    El procedimiento experimental se estructurará en las siguientes fases:
+\begin{itemize}
+    \item \textbf{Hardware:} Estación de trabajo con arquitectura x86\_64, 8GB RAM, procesador de 2 núcleos y almacenamiento SSD (configuración representativa de un servidor local de bajo costo).
+    
+    \item \textbf{Software base:} Arch Linux (entorno minimalista para optimización de recursos) y MariaDB 10.x para la persistencia de datos.
+    
+    \item \textbf{Lenguajes y librerías:} Python 3.12, framework para API local, y librerías de firma digital (como xmlsig o similares) para la generación de archivos UBL.
+    
+    \item \textbf{Herramientas de medición:} 
+    \begin{itemize}
+        \item \textit{Unittest / Pytest}: Para medir la tasa de éxito de las validaciones de stock negativo y reglas de integridad.
+        \item \textit{Logs de transacciones}: Para cuantificar el tiempo de respuesta entre la venta y la confirmación del CPE (Comprobante de Pago Electrónico).
+    \end{itemize}
+    
+    \item \textbf{Sistema de Gestión Local:} Prototipo con módulos de inventario, ventas y facturación directa.
+\end{itemize}
+
+\tituloIII{Población y muestra}
+\parrafoIII{%
+La población está compuesta por la totalidad de transacciones diarias y artículos del inventario del local de abarrotes. La muestra incluye un conjunto de 500 operaciones de venta y 50 categorías de productos seleccionadas mediante muestreo por conveniencia. Se realizarán 3 mediciones diarias de consistencia de stock para garantizar la validez estadística de los datos recogidos.%
 }
-\begin{listaIII}
-    \item \textbf{1) Fase de Diseño Experimental:} Selección de algoritmos de ordenación (ej. QuickSort) y grafos (ej. Dijkstra) y redacción de los prompts de prueba.
-    \item \textbf{2) Fase de Generación y Limpieza:} Obtención de los scripts de código desde los modelos de IA y revisión manual mínima para asegurar la compilación/ejecución sin alterar la lógica algorítmica.
-    \item \textbf{3) Fase de Benchmarking (Ejecución):} Ejecución automatizada de los algoritmos bajo diferentes cargas de datos ($n=10^2, 10^4, 10^6$) utilizando \textit{Hyperfine} para obtener medias y desviaciones estándar.
-    \item \textbf{4) Fase de Análisis:} Tabulación de resultados y generación de gráficas de complejidad temporal y espacial para su interpretación técnica.
-\end{listaIII}
+
+\tituloIII{Variables de estudio}
+\begin{itemize}
+    \item \textbf{Variables Independientes:}
+        \begin{itemize}
+            \item Sistema de gestión local: Implementación de algoritmos de validación de existencias y firma digital directa.
+        \end{itemize}
+    \item \textbf{Variables Dependientes:}
+        \begin{itemize}
+            \item Integridad del inventario: Cantidad de registros con stock negativo o discrepante.
+            \item Autonomía operativa: Reducción del tiempo de dependencia de software externo de terceros.
+        \end{itemize}
+    \item \textbf{Variables Controladas / Intervinientes:}
+        \begin{itemize}
+            \item Normativa SUNAT: Se mantiene estática bajo los estándares UBL vigentes.
+            \item Estabilidad eléctrica: Uso de sistemas de protección para evitar corrupción de la base de datos local.
+        \end{itemize}
+\end{itemize}
+
+\tituloIII{Técnicas e instrumentos}
+\parrafoIII{%
+La técnica empleada es la observación estructurada y la experimentación controlada. El instrumento consiste en una suite automatizada de pruebas de integración y una guía de observación técnica que permitirá contrastar el stock físico frente al stock reportado por el sistema de forma diaria.%
+}
+
+\tituloIII{Procedimiento}
+\parrafoIII{%
+El procedimiento se estructurará en 6 fases:
+}
+
+\begin{itemize}
+    \item \textbf{Fase 1: Diagnóstico técnico:} Análisis de las causas de la inconsistencia de datos en el sistema actual del negocio.
+    \item \textbf{Fase 2: Modelado de datos:} Diseño de la base de datos con restricciones (constraints) de nivel de motor para impedir valores negativos.
+    \item \textbf{Fase 3: Desarrollo del core:} Codificación de la lógica de negocio y el módulo de comunicación con el OSE/SUNAT.
+    \item \textbf{Fase 4: Integración local:} Instalación del software en el hardware Bare Metal y configuración del entorno Arch Linux.
+    \item \textbf{Fase 5: Pruebas de campo:} Ejecución del sistema en paralelo con la operación diaria para verificar la exactitud de los resultados.
+    \item \textbf{Fase 6: Evaluación y ajuste:} Refinamiento de las interfaces y optimización de las consultas SQL según los reportes de uso.
+\end{itemize}
+
+\tituloIII{Análisis de datos}
+\parrafoIII{%
+Se aplicará estadística descriptiva para analizar la frecuencia de errores de stock y los tiempos promedio de facturación. Se utilizará el análisis de tendencias para comparar el rendimiento del sistema propuesto frente al método anterior. El procesamiento se realizará con Python y la librería Pandas para la generación de cuadros comparativos y métricas de eficiencia.%
+}

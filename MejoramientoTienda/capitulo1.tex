@@ -1,56 +1,108 @@
 \tituloI{PLANTEAMIENTO DEL ESTUDIO}
-\tituloII{planteamiento y formulación del problema}
+
+\tituloII{Planteamiento y formulación del problema}
 
 \parrafoII{
-En el escenario actual de la transformación digital, las unidades de negocio minoristas enfrentan el desafío de integrar procesos administrativos con normativas fiscales cada vez más rigurosas. La eficiencia operativa ya no es una ventaja competitiva, sino un requisito de supervivencia que depende directamente de la integridad de los datos y la automatización de la comunicación con los entes reguladores \cite{vargas2022transformacion}.
+Según \cite{smith2023global}, la gestión de inventarios en el sector minorista ha evolucionado hacia la integración de sistemas digitales que buscan garantizar la consistencia de la información y la trazabilidad de las operaciones. En este contexto, las organizaciones han adoptado soluciones tecnológicas orientadas a reducir la intervención manual en los procesos críticos. Sin embargo, a pesar de estos avances, la persistencia de errores humanos, junto con la ausencia de mecanismos de validación en tiempo real, continúa representando un desafío significativo. Estas deficiencias impactan directamente en la precisión de los registros de stock, generando discrepancias que derivan en pérdidas económicas, desabastecimiento de productos y deterioro en la calidad del servicio al cliente.
+}
 
-A nivel global, la adopción de sistemas de planificación de recursos empresariales (ERP) en pequeñas empresas ha permitido reducir errores de inventario hasta en un 40\%, eliminando inconsistencias como los saldos negativos mediante algoritmos de validación en tiempo real \cite{smith2023global}. Sin embargo, en economías en desarrollo, muchas PYMES aún operan con sistemas híbridos o locales que carecen de una integración fluida con los servicios de facturación electrónica en la nube, generando silos de información \cite{doe2021digital}.
+\parrafoII{
+En el Perú, la digitalización de procesos comerciales ha sido impulsada por la obligatoriedad del uso de Comprobantes de Pago Electrónicos (CPE), lo que ha generado un crecimiento sostenido en la adopción de tecnologías digitales en las micro y pequeñas empresas. No obstante, como señala \cite{sunat2023informe}, esta adopción no ha sido homogénea ni completamente integrada, ya que muchas organizaciones continúan utilizando soluciones fragmentadas que dependen de proveedores externos para la facturación electrónica. Esta situación provoca la existencia de múltiples fuentes de datos que no se sincronizan adecuadamente, dificultando la gestión unificada de la información y aumentando el riesgo de inconsistencias operativas y tributarias.
+}
 
-En el contexto peruano, la Superintendencia Nacional de Aduanas y de Administración Tributaria (SUNAT) ha masificado el uso de comprobantes de pago electrónicos. No obstante, el uso de herramientas intermedias como el "Facturador SUNAT" por parte de microempresas suele generar una dependencia técnica que ralentiza el flujo de venta y propicia errores de transcripción o pérdida de datos al transformar registros internos a texto plano \cite{sunat2023informe}.
+\parrafoII{
+A nivel local, la problemática se intensifica en los comercios de abarrotes de la región Cusco, donde las limitaciones de infraestructura tecnológica condicionan la implementación de soluciones robustas. De acuerdo con \cite{cusco2024comercio}, la digitalización en este sector se caracteriza por el uso de sistemas básicos o desarrollos informales que no responden a las exigencias de control y eficiencia operativa. En muchos casos, los registros de inventario se realizan de manera manual o mediante herramientas no integradas, lo que incrementa la probabilidad de errores y reduce la capacidad de respuesta ante la alta rotación de productos propia de este tipo de negocio.
+}
 
-En la ciudad de Cusco, los pequeños comercios de abarrotes presentan una problemática particular: la coexistencia de ventas de productos de primera necesidad con servicios de oficina y bienes no gravados. Esta mezcla de actividades, sumada al uso de infraestructuras de hardware limitadas, dificulta la implementación de soluciones comerciales cerradas, obligando al uso de software artesanal que no garantiza la consistencia del stock ni la trazabilidad de las relaciones con clientes y proveedores \cite{cusco2024comercio}.
+\parrafoII{
+Las causas de esta problemática pueden analizarse desde una perspectiva técnica. Tal como se expone en \cite{doe2021digital}, la presencia de silos de información en las pequeñas empresas limita la interoperabilidad entre sistemas y afecta la consistencia de los datos. En este sentido, la ausencia de restricciones de integridad a nivel de base de datos permite la ocurrencia de inconsistencias lógicas, como la generación de stocks negativos o registros incompletos. Asimismo, la dependencia de servicios externos de facturación introduce latencias y puntos de fallo adicionales, lo que debilita la arquitectura del sistema y reduce su confiabilidad.
+}
 
-La descripción del problema se centra en un sistema local que permite inconsistencias lógicas, como existencias negativas, y una arquitectura dependiente de terceros para la fiscalización. Las causas radican en una validación insuficiente en la capa de negocio y la falta de un módulo de firma digital interna; esto genera efectos negativos como la falta de confiabilidad en los reportes de evolución de ventas y riesgos de sanciones administrativas. Un análisis prospectivo sugiere que, de no modernizarse el sistema bajo un modelo de arquitectura local robusta, la empresa perderá capacidad de análisis para la toma de decisiones y quedará vulnerable ante cambios en los protocolos de comunicación de la SUNAT \cite{garcia2023gestion}.
+\parrafoII{
+Estas deficiencias generan múltiples efectos en la operación del negocio. Entre los principales impactos se encuentran la discrepancia entre el inventario físico y el lógico, la dificultad para planificar compras de manera eficiente y la pérdida de control sobre los flujos de mercancía. Además, la dependencia de sistemas externos para la emisión de comprobantes electrónicos provoca retrasos en el punto de venta, afectando la experiencia del cliente. Según \cite{garcia2023gestion}, estos problemas no solo repercuten en la eficiencia operativa, sino también en el cumplimiento de las obligaciones tributarias, incrementando el riesgo de sanciones y afectando la sostenibilidad del negocio.
+}
+
+\parrafoII{
+Desde un enfoque prospectivo, la continuidad de estas condiciones podría generar una brecha competitiva cada vez mayor entre los pequeños comercios y las cadenas formalizadas que cuentan con sistemas integrados. La falta de control sobre la información y la dependencia tecnológica externa limitarían la capacidad de adaptación del negocio ante cambios en la normativa o en el mercado. En este sentido, resulta necesario evaluar soluciones basadas en arquitecturas locales con validaciones estrictas e integración directa de procesos críticos, que permitan mejorar la consistencia de los datos, optimizar el rendimiento del sistema y garantizar la autonomía operativa en entornos con recursos limitados.
 }
 \tituloII{Formulación del problema}
-\tituloIII{Problema General}
-\parrafoIII{¿De qué manera el desarrollo de un sistema de gestión local con integración de facturación electrónica directa e integridad de datos optimizará el control operativo y la gestión comercial en un establecimiento de abarrotes en Cusco, 2026?}
-\tituloIII{Problemas Específicos}
+
+\tituloIII{Problema general}
+
+\parrafoIII{¿De qué manera la implementación de un sistema de gestión local con integración de facturación electrónica directa e integridad de datos influye en la optimización del control operativo y la gestión comercial en un establecimiento de abarrotes en Cusco, 2026?}
+
+\tituloIII{Problemas específicos}
+
 \begin{listaPE}
-\item ¿En qué medida la implementación de restricciones de flujo de stock en el software permitirá la erradicación de saldos con valores negativos en el inventario?
-\item ¿Cómo influye el desarrollo de un módulo de comunicación directa con los servicios web de SUNAT en la reducción de la dependencia de software externo y la agilización del proceso de venta?
-\item ¿De qué forma la reestructuración de la base de datos local y la creación de dashboards analíticos mejorarán la visualización de la evolución de ventas y el seguimiento de clientes y proveedores?
+\item ¿En qué medida la implementación de un motor de validación de existencias en tiempo real reduce la presencia de saldos negativos en el inventario?
+\item ¿Cómo influye la integración de un módulo de facturación electrónica directa en la reducción de los tiempos de emisión de comprobantes en el punto de venta?
+\item ¿De qué forma la centralización de datos en una arquitectura local mejora la confiabilidad de los reportes analíticos para la toma de decisiones?
 \end{listaPE}
+
 \tituloII{Objetivos}
-\tituloIII{Objetivo General}
-\parrafoIII{Desarrollar e implementar un sistema de gestión local con facturación electrónica integrada y control de integridad de datos para optimizar los procesos administrativos y comerciales del local de abarrotes.}
-\tituloIII{Objetivos Especificos}
+
+\tituloIII{Objetivo general}
+
+\parrafoIII{Evaluar el efecto de la implementación de un sistema de gestión local con facturación electrónica integrada y control de integridad de datos en la optimización de los procesos operativos y comerciales en un comercio de abarrotes en Cusco.}
+
+\tituloIII{Objetivos específicos}
+
 \begin{listaOE}
-\item Desarrollar un módulo de inventarios con validaciones de salida que impida el registro de ventas sin existencias físicas suficientes.
-\item Integrar la arquitectura de firma digital y envío de XML directamente a la SUNAT para eliminar el uso de software puente de terceros.
-\item Implementar interfaces de reporte dinámico y gestión de relaciones (CRM básico) para el análisis de tendencias de ventas y comportamiento de proveedores.
+\item Evaluar la reducción de errores de inventario mediante la implementación de un motor de validación de transacciones.
+\item Medir la disminución del tiempo de emisión de comprobantes electrónicos mediante la integración directa con los servicios web de SUNAT bajo el estándar UBL \cite{iso2024ubl}.
+\item Analizar la mejora en la confiabilidad de los reportes de gestión a partir de la centralización de datos en una arquitectura local.
 \end{listaOE}
-\tituloII{Justificación de la Invetigación}
-\tituloIII{Justificación Teórica}
-\parrafoIII{La investigación se sustenta en la aplicación de teorías de sistemas de información y modelos de integridad de bases de datos. Busca demostrar cómo los principios de validación en tiempo real y la arquitectura de sistemas desacoplados de terceros pueden resolver problemas de inconsistencia lógica en pequeños comercios.}
-\tituloIII{Justificación Práctica}
-\parrafoIII{El proyecto resuelve directamente la falta de fiabilidad en los inventarios y la ineficiencia de depender de un software facturador externo que fragmenta el proceso de venta. Además, permite al negocio tener una visión clara de su crecimiento mediante datos centralizados en su propia infraestructura.}
-\tituloIII{Justificación Metodológica}
-\parrafoIII{Se propone un enfoque de desarrollo tecnológico basado en ingeniería de software, creando herramientas de medición y control que pueden ser replicadas en otros comercios locales que operan bajo condiciones de hardware similares pero con requerimientos fiscales modernos.}
-\tituloII{Delimitación de la Invetigación}
-\tituloIII{Delimitación Espacial}
-\parrafoIII{La investigación se llevará a cabo en el local de venta de abarrotes ubicado en la ciudad de Cusco, Perú.}
-\tituloIII{Delimitación Temporal}
-\parrafoIII{El estudio y desarrollo del sistema comprende el periodo académico entre julio y septiembre del año 2026.}
-\tituloIII{Delimitación Social}
-\parrafoIII{El proyecto está dirigido al propietario y administradores del establecimiento de abarrotes, buscando mejorar su experiencia de usuario y eficiencia administrativa.}
-\tituloII{Hipotesis y Variables}
-\tituloIII{Hipotesis}
-\parrafoIII{La implementación de un sistema de gestión local integral mejora significativamente la exactitud del inventario y reduce el tiempo de emisión de comprobantes electrónicos en el establecimiento.}
+
+\tituloII{Justificación de la investigación}
+
+\tituloIII{Justificación teórica}
+
+\parrafoIII{
+La investigación se sustenta en principios de ingeniería de software relacionados con la integridad de datos, arquitectura de sistemas y gestión de transacciones. Aporta evidencia sobre la efectividad de las validaciones a nivel de base de datos como mecanismo para garantizar consistencia en sistemas de alta transaccionalidad. Asimismo, contribuye al análisis de arquitecturas locales frente a modelos desacoplados, especialmente en contextos donde los recursos tecnológicos son limitados \cite{garcia2023gestion}.
+}
+
+\tituloIII{Justificación práctica}
+
+\parrafoIII{
+La investigación aborda una problemática real en microempresas del sector retail, proporcionando una solución tecnológica que mejora el control de inventarios, reduce errores operativos y optimiza el proceso de facturación electrónica. Esto permite incrementar la eficiencia operativa, reducir costos asociados a errores y mejorar el cumplimiento tributario sin depender de servicios externos.
+}
+
+\tituloIII{Justificación metodológica}
+
+\parrafoIII{
+Se propone un enfoque metodológico basado en la implementación y evaluación de un sistema en un entorno real, permitiendo medir el impacto de variables técnicas sobre indicadores operativos. Además, se establece un marco replicable para el desarrollo de sistemas eficientes en hardware limitado bajo entornos Linux Bare Metal, contribuyendo a futuras investigaciones aplicadas \cite{garcia2023linux}.
+}
+
+\tituloII{Delimitación de la investigación}
+
+\tituloIII{Delimitación espacial}
+
+\parrafoIII{El estudio se realiza en un establecimiento minorista de abarrotes ubicado en la provincia y departamento de Cusco.}
+
+\tituloIII{Delimitación temporal}
+
+\parrafoIII{La investigación comprende el periodo de julio a septiembre del año 2026.}
+
+\tituloIII{Delimitación social}
+
+\parrafoIII{El estudio beneficia directamente al propietario y personal administrativo del establecimiento, al mejorar la gestión operativa y la confiabilidad de la información.}
+
+\tituloII{Hipótesis y variables}
+
+\tituloIII{Hipótesis}
+
+\parrafoIII{La implementación de un sistema de gestión local con integridad de datos y facturación directa reduce los errores de inventario y disminuye el tiempo promedio de atención al cliente en el establecimiento de abarrotes.}
+
 \tituloIII{Definición de variables}
-\parrafoIII{Se han identificado las siguientes variables para el estudio, considerando el entorno de desarrollo y la operatividad del negocio:}
+
+\parrafoIII{Las variables del estudio son:}
+
 \begin{listaVar}
-\item \textbf{Variable Independiente:} Sistema de gestión local con facturación directa e integridad de datos.
-\item \textbf{Variable Dependiente:} Eficiencia operativa y confiabilidad de los registros de inventario.
-\item \textbf{Variable Interviniente:} Infraestructura de hardware local y normativas vigentes de la SUNAT.
+\item \textbf{Variable independiente:} Implementación de un sistema de gestión local con validación de integridad y facturación electrónica directa.
+\item \textbf{Variables dependientes:}
+\begin{itemize}
+\item Número de errores de inventario (stock negativo o inconsistente).
+\item Tiempo promedio de emisión de comprobantes electrónicos.
+\end{itemize}
+\item \textbf{Variables intervinientes:} Capacidad del hardware local y estabilidad del entorno operativo.
 \end{listaVar}
