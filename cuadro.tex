@@ -1,0 +1,94 @@
+\documentclass[14pt,a4paper]{extarticle} % Permite 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, 20pt
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{pdflscape}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage[table]{xcolor}
+\usepackage{setspace} % Para controlar el interlineado de las líneas de texto
+
+% --- CONFIGURACIÓN DE ESPACIADO ---
+\renewcommand{\arraystretch}{1.8} % Espacio entre el texto y las líneas de la celda
+\setlength{\tabcolsep}{10pt}      % Espacio entre columnas
+
+% Definición de columna Y con interlineado de 1.1 y fuente más pequeña
+\newcolumntype{Y}{>{\RaggedRight\setstretch{1.1}\footnotesize\arraybackslash}X}
+
+\begin{document}
+
+\begin{landscape}
+\thispagestyle{empty}
+\begin{center}
+    \textbf{\Large MATRIZ DE CONSISTENCIA} \\
+    \vspace{0.2cm}
+    \small Proyecto: Análisis comparativo del rendimiento computacional de algoritmos (IA vs Estándar)
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent
+\begin{tabularx}{\linewidth}{|Y|Y|Y|Y|Y|}
+\hline
+\rowcolor[gray]{0.9} 
+\textbf{Problemas} & \textbf{Objetivos} & \textbf{Hipótesis} & \textbf{Variables} & \textbf{Metodología} \\ \hline
+
+\textbf{Problema General:} \newline
+¿Qué diferencias existen en el rendimiento computacional, medido en tiempo de ejecución y consumo de memoria, entre los algoritmos generados por IA generativa y las implementaciones estándar? \newline
+
+\textbf{Problemas Específicos:}
+\begin{itemize}[leftmargin=*, nosep, itemsep=6pt] % Mayor separación entre puntos
+    \item \textbf{PE1:} ¿Diferencias en tiempo de ejecución bajo diferentes tamaños de entrada?
+    \item \textbf{PE2:} ¿Variación del consumo de memoria máxima (Peak RSS) ante distintos volúmenes de datos?
+    \item \textbf{PE3:} ¿Influencia del escalado de datos en la brecha de rendimiento?
+\end{itemize} 
+& 
+\textbf{Objetivo General:} \newline
+Analizar comparativamente el rendimiento computacional de algoritmos de ordenación y grafos (IA vs Estándar) evaluando tiempo y memoria. \newline
+
+\textbf{Objetivos Específicos:}
+\begin{itemize}[leftmargin=*, nosep, itemsep=6pt]
+    \item \textbf{OE1:} Evaluar el tiempo de ejecución bajo diferentes tamaños de entrada.
+    \item \textbf{OE2:} Analizar el consumo de memoria máxima ante distintos volúmenes de datos.
+    \item \textbf{OE3:} Determinar el impacto del escalado de datos en la degradación del rendimiento.
+\end{itemize} 
+& 
+\textbf{Hipótesis General:} \newline
+Existe una diferencia significativa; los algoritmos por IA presentan menor eficiencia en tiempo y memoria frente a las implementaciones estándar. \newline
+
+\textbf{Hipótesis Específicas:}
+\begin{itemize}[leftmargin=*, nosep, itemsep=6pt]
+    \item \textbf{HIP1:} El tiempo de ejecución en IA es significativamente mayor.
+    \item \textbf{HIP2:} El consumo de memoria es superior en IA por ineficiencias en gestión de estructuras.
+    \item \textbf{HIP3:} La brecha de ineficiencia se acentúa de forma no lineal al aproximarse a $10^6$ elementos.
+\end{itemize} 
+& 
+\textbf{Variables Independientes:}
+\begin{itemize}[leftmargin=*, nosep, itemsep=2pt]
+    \item \textbf{V.I.1:} Origen del Código.
+    \item \textbf{V.I.2:} Tamaño de Entrada ($n$).
+    \item \textbf{V.I.3:} Tipo de Algoritmo.
+\end{itemize}
+
+\textbf{Variables Dependientes:}
+\begin{itemize}[leftmargin=*, nosep, itemsep=2pt]
+    \item \textbf{V.D.1:} Tiempo de Ejecución.
+    \item \textbf{V.D.2:} Consumo de Memoria.
+\end{itemize} 
+& 
+\textbf{Método:} Experimental / Cuantitativo. \newline
+\textbf{Tipo:} Aplicada / Tecnológica. \newline
+\textbf{Diseño:} Experimental transversal. \newline
+
+\textbf{Muestra:} \newline
+QuickSort, MergeSort y Dijkstra (IA vs Estándar). \newline
+
+\textbf{Técnicas:} Benchmarking. \newline
+\textbf{Instrumentos:} Hyperfine y GNU time. \\ \hline
+\end{tabularx}
+
+\end{landscape}
+
+\end{document}
