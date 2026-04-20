@@ -14,6 +14,18 @@
 \usepackage{fancyhdr}
 \onehalfspacing % Interlineado 1.5 
 
+% --- Paquetes para Tablas y Anexos ---
+\usepackage{pdflscape} % Para el entorno landscape
+\usepackage{tabularx}   % Para la tabla con columnas ajustables
+\usepackage[table]{xcolor} % Para los colores en las filas (\rowcolor)
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{setspace}
+
+% --- AQUÍ SE DEFINE LA COLUMNA Y ---
+\newcolumntype{Y}{>{\RaggedRight\setstretch{1.1}\footnotesize\arraybackslash}X}
+
+
 % --- Configuración de Márgenes (Norma UC) ---
 \usepackage[a4paper, 
     left=3.81cm, 
@@ -63,6 +75,7 @@
 \include{capitulo3}
 \include{capitulo4}
 \include{capitulo5}
+\include{anexos}
 
 % --- Referencias ---
 \section*{Referencias Bibliográficas}
