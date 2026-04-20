@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+
+% --- CONFIGURACIÓN DE CODIFICACIÓN ---
+\usepackage[T1]{fontenc}      
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{cmap}             
+
+% --- PAQUETES PARA TABLAS (CRÍTICOS PARA TUS MATRICES) ---
+\usepackage{pdflscape}    % MEJOR QUE lscape: rota la página automáticamente en el visor PDF
+\usepackage{array}        
+\usepackage{tabularx}     % Permite tablas que se ajustan al ancho de la página (\linewidth)
+\usepackage{longtable}    
+\usepackage[table,xcdraw]{xcolor} % CRÍTICO: Para los colores de fondo de las celdas (EFEFEF)
+\usepackage{amsmath}      % Para símbolos matemáticos como metros (m) o porcentajes (%)
+
+% --- Paquetes Básicos ---
+\usepackage{newtxtext,newtxmath} % Times New Roman 
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\onehalfspacing % Interlineado 1.5 
+
+% --- Configuración de Márgenes (Norma UC) ---
+\usepackage[a4paper, 
+    left=3.81cm, 
+    right=2.54cm, 
+    top=2.54cm, 
+    bottom=2.54cm,
+    headheight=1.27cm,
+    footskip=1.27cm
+]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% --- Bibliografía ISO 690-2 (Numérico) ---
+\usepackage[
+    backend=biber,
+    style=iso-numeric,
+    sorting=none
+]{biblatex}
+
+\addbibresource{bibliografia.bib}
+
+% --- Estilos Personalizados para Títulos y Párrafos ---
+\input{estilos}
+
+\begin{document}
+
+\input{portada}
+
+% --- Numeración Romana para secciones preliminares ---
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+
+% --- Introducción ---
+\include{introduccion}  
+\newpage
+
+% --- Cambio a numeración arábiga para capítulos ---
+\pagenumbering{arabic}
+\setcounter{page}{1}  
+
+\include{capitulo1}
+\include{capitulo2}
+\include{capitulo3}
+\include{capitulo4}
+\include{capitulo5}
+
+% --- Referencias ---
+\newpage
+\section*{Referencias Bibliográficas}
+\addcontentsline{toc}{section}{Referencias Bibliográficas}
+\printbibliography[heading=none]
+
+% --- Anexos ---
+\include{anexos}
+
+\end{document}

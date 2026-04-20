@@ -1,0 +1,68 @@
+\tituloI{PLANTEAMIENTO DEL ESTUDIO}
+
+\tituloII{Planteamiento del problema}
+
+\parrafoII{A nivel global, la integración de la inteligencia artificial (IA) generativa en el desarrollo de software ha transformado la construcción de soluciones algorítmicas, permitiendo automatizar la escritura de código complejo. No obstante, en dominios que requieren un rigor matemático estricto, como las simulaciones físicas, investigaciones recientes sugieren que la IA puede presentar deficiencias críticas \cite{idrisov2024}. Si bien modelos de lenguaje como GPT-4 o Claude pueden producir código funcional, su capacidad para implementar con precisión leyes físicas y gestionar la estabilidad numérica es aún cuestionable \cite{niu2024efficiency}. La literatura actual indica que el código generado puede presentar errores acumulativos en los métodos de integración numérica y un rendimiento computacional subóptimo, lo que compromete su uso en software científico o de ingeniería donde la precisión es vital \cite{elnashar2024performance}.}
+
+\parrafoII{En el contexto nacional, la adopción de herramientas como GitHub Copilot y ChatGPT en la formación de ingenieros en Perú ha crecido aceleradamente. Sin embargo, existe una brecha en la evaluación técnica de estas herramientas cuando se aplican a problemas de modelado y simulación. La dependencia de soluciones automatizadas tipo “caja negra” sin un análisis de su precisión física puede desplazar el razonamiento físico-matemático crítico \cite{indecopi2023}. Esto plantea un riesgo en la calidad del software desarrollado localmente, donde la falta de validación empírica sobre la fiabilidad del código generado para simulaciones puede derivar en sistemas con errores lógicos estructurales invisibles para el desarrollador novel \cite{siddiq2023}.}
+
+\parrafoII{A nivel local, en la Universidad Continental sede Cusco, se observa que los estudiantes de Ingeniería de Sistemas emplean IA para resolver componentes lógicos de aplicaciones multimedia y videojuegos. No obstante, el desarrollo de motores físicos o simulaciones de movimiento se realiza generalmente sin un proceso sistemático de validación frente a modelos teóricos. Esta práctica dificulta la identificación de fallos en la fidelidad de la simulación cuando se enfrentan a escenarios de alta complejidad, generando una brecha en la formación técnica sobre la verificación y validación de software \cite{huaman2024}.}
+
+\parrafoII{En este contexto, la unidad de análisis de la presente investigación está constituida por algoritmos de simulación física (caída libre, colisiones y fricción) generados mediante modelos de IA generativa. La problemática central radica en la ausencia de evidencia empírica que determine si estos algoritmos presentan una precisión física aceptable y un rendimiento computacional eficiente frente a modelos matemáticos teóricos y motores de referencia como Box2D. La falta de este análisis limita la capacidad de validar la fiabilidad de la IA en contextos de ingeniería de software que exigen rigor científico.}
+
+\parrafoII{La problemática técnica subyacente se manifiesta en la incapacidad de los modelos de IA generativa para garantizar la conservación de propiedades físicas fundamentales. A diferencia de los motores de física consolidados, la IA construye algoritmos basados en la predictibilidad de caracteres y no en la resolución de ecuaciones diferenciales bajo restricciones de contorno realistas. Esto genera fenómenos de inestabilidad numérica, como la penetración de colisionadores o la divergencia de energía, donde el código parece sintácticamente impecable pero falla en la representación de la realidad física en escenarios de estrés computacional.}
+
+\parrafoII{Desde una perspectiva de rendimiento, la generación automatizada tiende a priorizar soluciones de alta legibilidad pero de baja eficiencia algorítmica. El uso de métodos de integración simples, como el de Euler, en lugar de aproximaciones más robustas como el integrador de Verlet o Runge-Kutta, introduce un error acumulativo que degrada la simulación con el paso del tiempo. Sin una evaluación que compare el uso de recursos de CPU y memoria frente a estándares de la industria, se corre el riesgo de normalizar el desarrollo de software ineficiente que colapsa al incrementar la complejidad de los elementos en escena.}
+
+\parrafoII{A nivel institucional, esta situación crea una "deuda técnica invisible" en los proyectos de los estudiantes. Al no existir un protocolo de validación sistemática, se genera una falsa sensación de competencia técnica; el estudiante asume la validez del software basándose únicamente en la salida visual y no en la integridad del dato físico. Esta brecha entre la funcionalidad aparente y la precisión real compromete la formación de ingenieros de sistemas, quienes deben ser capaces de auditar y garantizar la fiabilidad de las herramientas automatizadas en contextos de alta fidelidad.}
+
+\tituloII{Formulación del Problema}
+
+\tituloIII{Problema General}
+\parrafoIII{¿Qué efecto tiene la herramienta de inteligencia artificial y la complejidad del escenario físico sobre la precisión física y el rendimiento computacional del código generado?}
+
+\tituloIII{Problemas Específicos}
+\begin{listaPE}
+    \item ¿Cuál es el grado de error en la trayectoria y posición final de una simulación de caída libre generada por IA respecto al modelo matemático teórico?
+    \item ¿Cómo afecta la complejidad del escenario físico (colisiones y fricción) al rendimiento computacional y al consumo de memoria del código generado por IA?
+    \item ¿Qué nivel de intervención humana y correcciones lógicas requiere el código generado por IA para alcanzar una simulación físicamente estable?
+\end{listaPE}
+
+\tituloII{Objetivos}
+
+\tituloIII{Objetivo General}
+\parrafoIII{Validar la precisión física y el rendimiento computacional del código generado por modelos de inteligencia artificial generativa en la implementación de simulaciones físicas básicas.}
+
+\tituloIII{Objetivos Específicos}
+\begin{listaOE}
+    \item Contrastar el error cuadrático medio de las variables de estado en simulaciones de caída libre generadas por IA frente a las ecuaciones cinemáticas teóricas.
+    \item Medir el impacto del escalado de entidades en el tiempo de ejecución y consumo de memoria en simulaciones de colisiones generadas por IA.
+    \item Cuantificar la deuda técnica y las correcciones necesarias para evaluar la estabilidad numérica de las simulaciones físicas producidas por IA.
+\end{listaOE}
+
+\tituloII{Justificación de la investigación}
+
+\tituloIII{Justificación Teórica}
+\parrafoIII{La investigación se sustenta en los principios de la física computacional y la verificación de software. Busca contrastar la capacidad de razonamiento lógico-matemático de los modelos de IA frente a las leyes de la mecánica clásica. Aportará datos sobre la fidelidad de los métodos de integración numérica (como Euler o Verlet) implementados por la IA, contribuyendo al conocimiento sobre los límites de la IA en dominios científicos.}
+
+\tituloIII{Justificación Práctica}
+\parrafoIII{Proporciona criterios técnicos para desarrolladores que integran IA en la creación de videojuegos o simuladores médicos. Permitirá identificar si el código generado es apto para entornos de producción o si introduce riesgos de inestabilidad que degraden la experiencia del usuario o la precisión del sistema.}
+
+\tituloIII{Justificación Metodológica}
+\parrafoIII{Propone un protocolo de evaluación experimental basado en el error absoluto y el benchmarking. Establece una métrica de comparación entre la salida de un modelo de lenguaje y un motor físico estándar (Box2D), creando un flujo de trabajo replicable para futuras evaluaciones de nuevos modelos de IA.}
+
+\tituloII{Delimitación de la investigación}
+
+\tituloIII{Delimitación Espacial}
+\parrafoIII{El estudio se desarrollará en un entorno controlado bajo Arch Linux en la Universidad Continental, sede Cusco, utilizando hardware de arquitectura x86\_64 para eliminar ruidos de virtualización.}
+
+\tituloIII{Delimitación Temporal}
+\parrafoIII{La fase experimental y recolección de métricas se ejecutará entre julio y septiembre de 2026.}
+
+\tituloII{Hipótesis y Variables}
+
+\tituloIII{Hipótesis}
+\parrafoIII{El código generado por inteligencia artificial para simulaciones físicas presenta una degradación progresiva de la precisión matemática y un uso ineficiente de recursos de CPU a medida que aumenta la complejidad del escenario físico.}
+
+\tituloIII{Definición de Variables}
+\parrafoIII{La variable independiente es la \textbf{Herramienta de IA} y el \textbf{Escenario Físico}. Las variables dependientes son el \textbf{Error de Precisión} (desviación respecto al modelo teórico) y el \textbf{Rendimiento} (tiempo de ejecución y memoria).}

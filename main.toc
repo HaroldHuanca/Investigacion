@@ -1,0 +1,53 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{INTRODUCCIÓN}{\es@scroman {iii}}{}%
+\contentsline {section}{\numberline {1}PLANTEAMIENTO DEL ESTUDIO}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Planteamiento del problema}{1}{}%
+\contentsline {subsection}{\numberline {1.2}Formulación del Problema}{2}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Problema General}{2}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Problemas Específicos}{2}{}%
+\contentsline {subsection}{\numberline {1.3}Objetivos}{3}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}Objetivo General}{3}{}%
+\contentsline {subsubsection}{\numberline {1.3.2}Objetivos Específicos}{3}{}%
+\contentsline {subsection}{\numberline {1.4}Justificación de la investigación}{3}{}%
+\contentsline {subsubsection}{\numberline {1.4.1}Justificación Teórica}{3}{}%
+\contentsline {subsubsection}{\numberline {1.4.2}Justificación Práctica}{3}{}%
+\contentsline {subsubsection}{\numberline {1.4.3}Justificación Metodológica}{3}{}%
+\contentsline {subsection}{\numberline {1.5}Delimitación de la investigación}{4}{}%
+\contentsline {subsubsection}{\numberline {1.5.1}Delimitación Espacial}{4}{}%
+\contentsline {subsubsection}{\numberline {1.5.2}Delimitación Temporal}{4}{}%
+\contentsline {subsection}{\numberline {1.6}Hipótesis y Variables}{4}{}%
+\contentsline {subsubsection}{\numberline {1.6.1}Hipótesis}{4}{}%
+\contentsline {subsubsection}{\numberline {1.6.2}Definición de Variables}{4}{}%
+\contentsline {section}{\numberline {2}MARCO TEÓRICO}{5}{}%
+\contentsline {subsection}{\numberline {2.1}Antecedentes de la investigación}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Bases teóricas}{11}{}%
+\contentsline {section}{\numberline {3}METODOLOGÍA}{12}{}%
+\contentsline {subsection}{\numberline {3.1}Método, tipo y alcance de la investigación}{12}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Método de investigación}{12}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Tipo de investigación}{12}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}Alcance de la investigación}{12}{}%
+\contentsline {subsubsection}{\numberline {3.1.4}Diseño de la investigación}{12}{}%
+\contentsline {subsection}{\numberline {3.2}Materiales y métodos}{12}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Materiales}{12}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Población y muestra}{13}{}%
+\contentsline {subsubsection}{\numberline {3.2.3}Variables de estudio}{13}{}%
+\contentsline {subsubsection}{\numberline {3.2.4}Técnicas e instrumentos}{13}{}%
+\contentsline {subsubsection}{\numberline {3.2.5}Procedimiento}{13}{}%
+\contentsline {subsubsection}{\numberline {3.2.6}Análisis de datos}{14}{}%
+\contentsline {section}{\numberline {4}RESULTADOS Y DISCUSIÓN}{15}{}%
+\contentsline {subsection}{\numberline {4.1}Presentación de resultado}{15}{}%
+\contentsline {subsection}{\numberline {4.2}Discusión de resultados}{15}{}%
+\contentsline {section}{\numberline {5}CONCLUSIONES Y RECOMENDACIONES}{16}{}%
+\contentsline {section}{Referencias Bibliográficas}{17}{}%
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {6}ANEXOS}{18}{}%
+\contentsline {chapter}{ANEXOS}{18}{}%
