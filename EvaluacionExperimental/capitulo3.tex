@@ -3,68 +3,19 @@
 \tituloII{Método, tipo y alcance de la investigación}
 
 \tituloIII{Método de investigación}
-\parrafoIII{Se adopta el método experimental. Se manipularán las herramientas de IA y los escenarios físicos para observar su efecto sobre la precisión del modelo y el rendimiento del software.}
+\parrafoIII{Se adopta el método experimental. Se manipularán las herramientas de IA generativa (variable independiente) y los escenarios físicos (caída libre, colisiones y fricción) para observar su efecto sobre la precisión matemática y el rendimiento computacional (variables dependientes).}
 
 \tituloIII{Tipo de investigación}
-\parrafoIII{Investigación aplicada y tecnológica, orientada a establecer marcos de validación para el código generado automáticamente en el área de la computación física.}
+\parrafoIII{Investigación aplicada y tecnológica, orientada a establecer marcos de validación para el código generado automáticamente en el área de la computación física. El enfoque es experimental, dado que se controlan y manipulan las condiciones de generación de código para medir sus efectos en las variables dependientes.}
 
 \tituloIII{Alcance de la investigación}
-\parrafoIII{Alcance descriptivo-comparativo, caracterizando los errores de la IA y estableciendo diferencias frente a motores físicos de estándar industrial.}
+\parrafoIII{El alcance de la investigación es explicativo, ya que no solo se busca describir los errores y diferencias del código generado por IA, sino también explicar las relaciones causales entre el uso de estas herramientas y la degradación de la precisión matemática o el rendimiento computacional. Se establecen comparaciones sistemáticas frente a modelos teóricos y motores físicos de estándar industrial como Box2D.}
 
 \tituloIII{Diseño de la investigación}
-\parrafoIII{Diseño experimental comparativo de tipo transversal. Se evaluará el desempeño de los códigos generados en un único momento del tiempo bajo condiciones de hardware idénticas.}
+\parrafoIII{Se emplea un diseño experimental puro (comparativo). Se comparará el desempeño de los algoritmos de simulación física generados por IA frente a dos referencias: (1) el modelo matemático teórico (ecuaciones cinemáticas) y (2) un motor físico estándar (Box2D). Las mediciones se realizarán bajo condiciones de hardware idénticas y controladas, ejecutando un total de 30 repeticiones por cada escenario físico definido.}
 
 \tituloII{Materiales y métodos}
 
 \tituloIII{Materiales}
-\parrafoIII{Para la ejecución se utilizarán los siguientes recursos:}
 
-\begin{itemize}
-    \item \textbf{Hardware:} Estación de trabajo x86\_64, procesador multinúcleo, 16GB RAM.
-    \item \textbf{Software base:} Arch Linux (Kernel LTS) para minimizar procesos de fondo.
-    \item \textbf{Lenguajes:} Python 3.x (por su facilidad para análisis de datos) y C++ (para comparación con Box2D).
-    \item \textbf{Herramientas de medición:} 
-        \begin{itemize}
-            \item \textit{Hyperfine} para tiempos de ejecución.
-            \item \textit{GNU time} para Peak RSS (Memoria).
-            \item \textit{NumPy/Matplotlib} para el cálculo del error cuadrático medio.
-        \end{itemize}
-    \item \textbf{Modelos de IA:} GPT-4o, Claude 3.5 y Gemini 1.5 Pro.
-\end{itemize}
-
-\tituloIII{Población y muestra}
-\parrafoIII{La población son todos los modelos de IA generativa de código. La muestra está compuesta por tres escenarios físicos: caída libre, colisiones elásticas y movimiento con fricción. Se realizarán 30 ejecuciones por escenario para garantizar validez estadística.}
-
-\tituloIII{Variables de estudio}
-\begin{itemize}
-    \item \textbf{Variables Independientes:}
-        \begin{itemize}
-            \item Modelo de IA (GPT, Claude, Gemini).
-            \item Complejidad del escenario (Baja: Caída libre, Media: Fricción, Alta: Colisiones).
-        \end{itemize}
-    \item \textbf{Variables Dependientes:}
-        \begin{itemize}
-            \item Error de Precisión (Diferencia en unidades del SI respecto al modelo teórico).
-            \item Tiempo de ejecución (ms).
-            \item Consumo de memoria (MB).
-            \item Estabilidad numérica (presencia de glitches o valores infinitos).
-        \end{itemize}
-\end{itemize}
-
-\tituloIII{Técnicas e instrumentos}
-\parrafoIII{La técnica es la experimentación controlada. El instrumento es una batería de pruebas (benchmarking suite) automatizada que ejecutará el código de la IA y comparará su salida con la solución analítica del problema físico.}
-
-\tituloIII{Procedimiento}
-\parrafoIII{El procedimiento se estructurará en seis fases:}
-
-\begin{itemize}
-    \item \textbf{Fase 1: Diseño de Prompts:} Creación de instrucciones estandarizadas (Zero-shot) solicitando la implementación de leyes físicas sin librerías externas.
-    \item \textbf{Fase 2: Generación de Código:} Obtención de las soluciones de cada modelo de IA.
-    \item \textbf{Fase 3: Validación Teórica:} Definición de las ecuaciones de movimiento para cada escenario como referencia de "verdad absoluta".
-    \item \textbf{Fase 4: Ejecución de Benchmarking:} Medición de rendimiento y precisión bajo estrés (aumentando el número de partículas).
-    \item \textbf{Fase 5: Análisis de Estabilidad:} Identificación de errores lógicos (ej. objetos atravesando paredes o ganancia de energía irreal).
-    \item \textbf{Fase 6: Tabulación de Resultados:} Generación de gráficos comparativos y cálculo de desviaciones estándar.
-\end{itemize}
-
-\tituloIII{Análisis de datos}
-\parrafoIII{Se aplicará estadística descriptiva para las métricas de rendimiento y un análisis de error residual para la parte física. Se utilizará la prueba t de Student o ANOVA para determinar si las diferencias de precisión entre las distintas IAs son estadísticamente significativas.}
+\tituloIII{Métodos}

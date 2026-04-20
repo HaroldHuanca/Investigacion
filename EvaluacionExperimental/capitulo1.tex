@@ -8,30 +8,30 @@
 
 \parrafoII{A nivel local, en la Universidad Continental sede Cusco, se observa que los estudiantes de Ingeniería de Sistemas emplean IA para resolver componentes lógicos de aplicaciones multimedia y videojuegos. No obstante, el desarrollo de motores físicos o simulaciones de movimiento se realiza generalmente sin un proceso sistemático de validación frente a modelos teóricos. Esta práctica dificulta la identificación de fallos en la fidelidad de la simulación cuando se enfrentan a escenarios de alta complejidad, generando una brecha en la formación técnica sobre la verificación y validación de software \cite{huaman2024}.}
 
-\parrafoII{En este contexto, la unidad de análisis de la presente investigación está constituida por algoritmos de simulación física (caída libre, colisiones y fricción) generados mediante modelos de IA generativa. La problemática central radica en la ausencia de evidencia empírica que determine si estos algoritmos presentan una precisión física aceptable y un rendimiento computacional eficiente frente a modelos matemáticos teóricos y motores de referencia como Box2D. La falta de este análisis limita la capacidad de validar la fiabilidad de la IA en contextos de ingeniería de software que exigen rigor científico.}
+\parrafoII{En este contexto, la unidad de análisis de la presente investigación está constituida por algoritmos de simulación física (caída libre, colisiones y fricción) generados mediante modelos de IA generativa. La problemática central radica en la ausencia de evidencia empírica que determine el efecto del uso de estas herramientas en la precisión matemática y el rendimiento computacional de dichos algoritmos, en comparación con modelos teóricos y motores de referencia como Box2D. La falta de este análisis limita la capacidad de validar la fiabilidad de la IA en contextos de ingeniería de software que exigen rigor científico.}
 
 \tituloII{Formulación del Problema}
 
 \tituloIII{Problema General}
-\parrafoIII{¿Qué nivel de precisión física y rendimiento computacional presenta el código generado por inteligencia artificial generativa en la implementación de simulaciones físicas básicas en comparación con modelos teóricos y motores de referencia?}
+\parrafoIII{¿Qué efecto tiene el uso de herramientas de inteligencia artificial generativa en la precisión matemática y el rendimiento computacional de simulaciones físicas básicas?}
 
 \tituloIII{Problemas Específicos}
 \begin{listaPE}
-    \item ¿Cuál es el grado de error en la trayectoria y posición final de una simulación de caída libre generada por IA respecto al modelo matemático teórico?
-    \item ¿Cómo afecta la complejidad del escenario físico (colisiones y fricción) al rendimiento computacional y al consumo de memoria del código generado por IA?
-    \item ¿Qué nivel de intervención humana y correcciones lógicas requiere el código generado por IA para alcanzar una simulación físicamente estable?
+    \item ¿Qué efecto tiene la generación de código mediante IA en el error cuadrático medio (MSE) de trayectorias físicas?
+    \item ¿Cómo influye la complejidad del escenario físico generado por IA en el tiempo de ejecución y consumo de memoria?
+    \item ¿Qué nivel de intervención técnica (correcciones) requiere el código generado por IA para validar su estabilidad numérica?
 \end{listaPE}
 
 \tituloII{Objetivos}
 
 \tituloIII{Objetivo General}
-\parrafoIII{Evaluar la precisión física y el rendimiento computacional del código generado por modelos de inteligencia artificial generativa en la implementación de simulaciones físicas básicas.}
+\parrafoIII{Evaluar el efecto del uso de herramientas de inteligencia artificial generativa en la precisión matemática y el rendimiento computacional de simulaciones físicas básicas.}
 
 \tituloIII{Objetivos Específicos}
 \begin{listaOE}
-    \item Determinar el error cuadrático medio de las variables de estado en simulaciones de caída libre generadas por IA frente a las ecuaciones cinemáticas teóricas.
-    \item Medir el impacto del escalado de entidades en el tiempo de ejecución y consumo de memoria en simulaciones de colisiones generadas por IA.
-    \item Cuantificar la deuda técnica y las correcciones necesarias para asegurar la estabilidad numérica de las simulaciones físicas producidas por IA.
+    \item Medir el efecto de la generación de código por IA en el error cuadrático medio de trayectorias físicas respecto al modelo teórico.
+    \item Determinar el impacto de la complejidad del escenario físico en el rendimiento computacional del código generado por IA.
+    \item Validar la estabilidad numérica del código generado por IA mediante la cuantificación de las correcciones técnicas requeridas.
 \end{listaOE}
 
 \tituloII{Justificación de la investigación}
@@ -56,7 +56,18 @@
 \tituloII{Hipótesis y Variables}
 
 \tituloIII{Hipótesis}
-\parrafoIII{El código generado por inteligencia artificial para simulaciones físicas presenta una degradación progresiva de la precisión matemática y un uso ineficiente de recursos de CPU a medida que aumenta la complejidad del escenario físico.}
+\parrafoIII{\textbf{Hipótesis General:} El uso de herramientas de IA generativa produce cambios significativos (errores acumulativos e ineficiencias) en la precisión y rendimiento de las simulaciones físicas.}
+\parrafoIII{\textbf{Hipótesis Específicas:}}
+\begin{listaHE}
+    \item El código generado por IA presenta un error cuadrático medio significativamente mayor al modelo matemático estándar.
+    \item El incremento en la complejidad del escenario físico generado por IA produce un aumento no optimizado en el tiempo de ejecución.
+    \item El código de simulación generado por IA requiere intervenciones técnicas manuales para corregir inestabilidades numéricas.
+\end{listaHE}
 
 \tituloIII{Definición de Variables}
-\parrafoIII{La variable independiente es la \textbf{Herramienta de IA} y el \textbf{Escenario Físico}. Las variables dependientes son el \textbf{Error de Precisión} (desviación respecto al modelo teórico) y el \textbf{Rendimiento} (tiempo de ejecución y memoria).}
+\parrafoIII{\textbf{Variable Independiente:} Herramientas de IA generativa (uso y manipulación de prompts).}
+\parrafoIII{\textbf{Variables Dependientes:}}
+\begin{listaVD}
+    \item Precisión matemática: medida a través del error cuadrático medio (MSE) de las variables de estado (posición y velocidad) frente al modelo teórico.
+    \item Rendimiento computacional: medido a través del tiempo de ejecución (usando Hyperfine/GNU time) y el consumo de memoria RAM.
+\end{listaVD}
