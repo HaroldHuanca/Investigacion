@@ -1,0 +1,210 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{smith2023global}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=5d0ddda3a367ceb26fbaeca02e391c22}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5e20f446d2daa6c87a39214f30e3117d}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {TechPress}%
+      }
+      \strng{namehash}{d3648e9e4223ee579c5168567792ff3d}
+      \strng{fullhash}{d3648e9e4223ee579c5168567792ff3d}
+      \strng{fullhashraw}{d3648e9e4223ee579c5168567792ff3d}
+      \strng{bibnamehash}{d3648e9e4223ee579c5168567792ff3d}
+      \strng{authorbibnamehash}{d3648e9e4223ee579c5168567792ff3d}
+      \strng{authornamehash}{d3648e9e4223ee579c5168567792ff3d}
+      \strng{authorfullhash}{d3648e9e4223ee579c5168567792ff3d}
+      \strng{authorfullhashraw}{d3648e9e4223ee579c5168567792ff3d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Inventory Management Systems: A Global Perspective}
+      \field{year}{2023}
+    \endentry
+    \entry{sunat2023informe}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=d23bb6ab049452ffb29d048fd9a16e98}{%
+           family={SUNAT},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Superintendencia Nacional de Aduanas y de Administración Tributaria}%
+      }
+      \strng{namehash}{d23bb6ab049452ffb29d048fd9a16e98}
+      \strng{fullhash}{d23bb6ab049452ffb29d048fd9a16e98}
+      \strng{fullhashraw}{d23bb6ab049452ffb29d048fd9a16e98}
+      \strng{bibnamehash}{d23bb6ab049452ffb29d048fd9a16e98}
+      \strng{authorbibnamehash}{d23bb6ab049452ffb29d048fd9a16e98}
+      \strng{authornamehash}{d23bb6ab049452ffb29d048fd9a16e98}
+      \strng{authorfullhash}{d23bb6ab049452ffb29d048fd9a16e98}
+      \strng{authorfullhashraw}{d23bb6ab049452ffb29d048fd9a16e98}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Informe anual sobre la masificación de los Comprobantes de Pago Electrónicos en el Perú}
+      \field{type}{techreport}
+      \field{year}{2023}
+    \endentry
+    \entry{cusco2024comercio}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=e25800a14e5c5afbceb9da776a185234}{%
+           family={Comercio\bibnamedelimb de\bibnamedelima Cusco},
+           familyi={C\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Cámara},
+           giveni={C\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{e25800a14e5c5afbceb9da776a185234}
+      \strng{fullhash}{e25800a14e5c5afbceb9da776a185234}
+      \strng{fullhashraw}{e25800a14e5c5afbceb9da776a185234}
+      \strng{bibnamehash}{e25800a14e5c5afbceb9da776a185234}
+      \strng{authorbibnamehash}{e25800a14e5c5afbceb9da776a185234}
+      \strng{authornamehash}{e25800a14e5c5afbceb9da776a185234}
+      \strng{authorfullhash}{e25800a14e5c5afbceb9da776a185234}
+      \strng{authorfullhashraw}{e25800a14e5c5afbceb9da776a185234}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Análisis de la digitalización comercial en la región Cusco}
+      \field{year}{2024}
+    \endentry
+    \entry{doe2021digital}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=d6cfb2b8c4b3f9440ec4642438129367}{%
+           family={Doe},
+           familyi={D\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6cfb2b8c4b3f9440ec4642438129367}
+      \strng{fullhash}{d6cfb2b8c4b3f9440ec4642438129367}
+      \strng{fullhashraw}{d6cfb2b8c4b3f9440ec4642438129367}
+      \strng{bibnamehash}{d6cfb2b8c4b3f9440ec4642438129367}
+      \strng{authorbibnamehash}{d6cfb2b8c4b3f9440ec4642438129367}
+      \strng{authornamehash}{d6cfb2b8c4b3f9440ec4642438129367}
+      \strng{authorfullhash}{d6cfb2b8c4b3f9440ec4642438129367}
+      \strng{authorfullhashraw}{d6cfb2b8c4b3f9440ec4642438129367}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Economía Digital}
+      \field{title}{Silos de información en la pequeña empresa latinoamericana}
+      \field{year}{2021}
+    \endentry
+    \entry{garcia2023gestion}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8af74a917d7db576f098b532925875b6}{%
+           family={García},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=00fae63815deb07c0adac61799ed8425}{%
+           family={Quispe},
+           familyi={Q\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{820e3e11895b3ee795dd6a9a86a219d0}
+      \strng{fullhash}{820e3e11895b3ee795dd6a9a86a219d0}
+      \strng{fullhashraw}{820e3e11895b3ee795dd6a9a86a219d0}
+      \strng{bibnamehash}{820e3e11895b3ee795dd6a9a86a219d0}
+      \strng{authorbibnamehash}{820e3e11895b3ee795dd6a9a86a219d0}
+      \strng{authornamehash}{820e3e11895b3ee795dd6a9a86a219d0}
+      \strng{authorfullhash}{820e3e11895b3ee795dd6a9a86a219d0}
+      \strng{authorfullhashraw}{820e3e11895b3ee795dd6a9a86a219d0}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Peruvian Engineering}
+      \field{title}{Gestión de inventarios y cumplimiento tributario mediante sistemas locales}
+      \field{year}{2023}
+    \endentry
+    \entry{iso2024ubl}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=3b529530f722103cec15a2b20e6fc7a8}{%
+           family={Open},
+           familyi={O\bibinitperiod},
+           given={OASIS},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b529530f722103cec15a2b20e6fc7a8}
+      \strng{fullhash}{3b529530f722103cec15a2b20e6fc7a8}
+      \strng{fullhashraw}{3b529530f722103cec15a2b20e6fc7a8}
+      \strng{bibnamehash}{3b529530f722103cec15a2b20e6fc7a8}
+      \strng{authorbibnamehash}{3b529530f722103cec15a2b20e6fc7a8}
+      \strng{authornamehash}{3b529530f722103cec15a2b20e6fc7a8}
+      \strng{authorfullhash}{3b529530f722103cec15a2b20e6fc7a8}
+      \strng{authorfullhashraw}{3b529530f722103cec15a2b20e6fc7a8}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Estándar internacional adoptado por la normativa SUNAT para comprobantes electrónicos}
+      \field{title}{Universal Business Language (UBL) v2.1 Standard for Electronic Invoicing}
+      \field{year}{2024}
+    \endentry
+    \entry{garcia2023linux}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=57211c12995cbdb02c24abcd0b528ce3}{%
+           family={García},
+           familyi={G\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Editorial Universitaria}%
+      }
+      \strng{namehash}{57211c12995cbdb02c24abcd0b528ce3}
+      \strng{fullhash}{57211c12995cbdb02c24abcd0b528ce3}
+      \strng{fullhashraw}{57211c12995cbdb02c24abcd0b528ce3}
+      \strng{bibnamehash}{57211c12995cbdb02c24abcd0b528ce3}
+      \strng{authorbibnamehash}{57211c12995cbdb02c24abcd0b528ce3}
+      \strng{authornamehash}{57211c12995cbdb02c24abcd0b528ce3}
+      \strng{authorfullhash}{57211c12995cbdb02c24abcd0b528ce3}
+      \strng{authorfullhashraw}{57211c12995cbdb02c24abcd0b528ce3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Referencia para el uso de Arch Linux en hardware limitado}
+      \field{title}{Optimización de sistemas embebidos y Bare Metal sobre distribuciones Linux minimalistas}
+      \field{year}{2023}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
