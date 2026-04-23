@@ -40,17 +40,17 @@ De no establecerse un **Framework de Ingeniería de Prompts** que actúe como un
 \tituloIII{Problema General}
 
 \parrafoII{
-¿De qué manera el diseño e implementación de un Framework de Ingeniería de Prompts basado en la norma ISO/IEC 25010 influye en la optimización de la mantenibilidad y la reducción de la deuda técnica del código generado por inteligencia artificial generativa?
+¿Qué efecto tiene la implementación de un Framework de Ingeniería de Prompts basado en la norma ISO/IEC 25010 en la mantenibilidad y la deuda técnica del código generado por inteligencia artificial generativa?
 }
 
 \tituloIII{Problemas Específicos}
 
 \begin{listaPE}
-    \item  ¿En qué medida la aplicación de patrones arquitectónicos de \textit{Prompt Engineering} (como \textit{Chain-of-Thought}) en la fase de requerimientos reduce la complejidad ciclomática de McCabe en el código resultante?
+    \item  ¿Qué efecto tiene la aplicación de patrones arquitectónicos de prompts en la complejidad ciclomática de McCabe del código generado?
     
-    \item  ¿Cuál es el impacto de la ejecución de un \textit{pipeline} de análisis estático automatizado en la identificación y mitigación de redundancias lógicas en el software generado por modelos de lenguaje?
+    \item  ¿Qué efecto tiene la implementación de un pipeline de análisis estático en la reducción de la deuda técnica del software generado?
     
-    \item  ¿De qué forma la validación sistemática bajo el modelo de calidad de la norma ISO/IEC 25010 permite certificar la idoneidad técnica y la fiabilidad del código generado para entornos de producción industrial?
+    \item  ¿Qué efecto tiene la aplicación del protocolo de validación basado en ISO/IEC 25010 en el índice de mantenibilidad del código generado?
 \end{listaPE}
 
 % capitulo1_objetivos.tex
@@ -60,17 +60,17 @@ De no establecerse un **Framework de Ingeniería de Prompts** que actúe como un
 \tituloIII{Objetivo General}
 
 \parrafoIII{
-Determinar la influencia de un Framework de Ingeniería de Prompts basado en la norma ISO/IEC 25010 en la optimización de la mantenibilidad y la reducción de la deuda técnica del código fuente generado por inteligencia artificial generativa.
+Evaluar el efecto de la implementación de un Framework de Ingeniería de Prompts basado en la norma ISO/IEC 25010 en la mantenibilidad y la deuda técnica del código generado por inteligencia artificial generativa.
 }
 
 \tituloIII{Objetivos Específicos}
 
 \begin{listaOE}
-    \item Evaluar el efecto de la aplicación de patrones arquitectónicos en la estructuración de prompts sobre la complejidad ciclomática de McCabe, comparando los resultados frente a métodos de generación empírica.
+    \item Evaluar el efecto de la aplicación de patrones arquitectónicos de prompts en la complejidad ciclomática de McCabe.
     
-    \item Medir la eficiencia de un \textit{pipeline} de análisis estático automatizado en la reducción de la deuda técnica y redundancia de código, utilizando métricas cuantitativas de calidad de software.
+    \item Evaluar el efecto de la implementación de un pipeline de análisis estático en la reducción de la deuda técnica.
     
-    \item Comprobar el nivel de cumplimiento de los atributos de mantenibilidad y fiabilidad de la norma ISO/IEC 25010 en el software generado, mediante la implementación de un protocolo de validación sistemática.
+    \item Evaluar el efecto de la aplicación del protocolo de validación basado en ISO/IEC 25010 en el índice de mantenibilidad.
 \end{listaOE}
 
 % capitulo1_justificacion.tex
@@ -116,56 +116,30 @@ El estudio se desarrollará durante el periodo académico 2026-I, comprendido en
 La investigación está dirigida a la comunidad de ingeniería de software, específicamente a desarrolladores, arquitectos de sistemas y analistas de calidad (QA). Los resultados beneficiarán directamente a las organizaciones tecnológicas locales en Cusco que buscan estandarizar el uso de herramientas de inteligencia artificial generativa bajo marcos de cumplimiento internacional.
 }
 
-\tituloIII{Delimitación Conceptual o Temática}
-
-\parrafoII{
-El estudio se circunscribe al área de la Ingeniería de Software y la Gestión de Calidad de Sistemas. Se centra específicamente en la relación entre la **Ingeniería de Prompts** y los atributos de **Mantenibilidad** definidos por la norma **ISO/IEC 25010**, utilizando la **Complejidad Ciclomática de McCabe** como métrica cuantitativa de control estructural. La investigación se limitará al análisis de código generado en lenguajes de programación de alto nivel (Python y TypeScript) para arquitecturas de microservicios, excluyendo otros dominios como el desarrollo de sistemas embebidos o lógica de bajo nivel.
-}
-
-\tituloIII{Delimitación Tecnológica}
-
-\parrafoII{
-Se emplearán modelos de lenguaje de gran escala (LLMs) de acceso abierto (como Llama 3 o similares) para validar la eficacia del Framework propuesto. Para el análisis de la deuda técnica y las métricas de calidad, se utilizarán las herramientas \textit{SonarQube} y \textit{Radon}. El alcance tecnológico no contempla el re-entrenamiento (fine-tuning) de los modelos, sino la optimización de los resultados a través de la ingeniería de instrucciones en la capa de aplicación.
-}
-\tituloII{Hipótesis y Variables}
-
-\tituloIII{Hipótesis}
-\parrafoIII{\textbf{Hipótesis General:} El uso de herramientas de IA generativa produce cambios significativos (errores acumulativos e ineficiencias) en la precisión y rendimiento de las simulaciones físicas.}
-\parrafoIII{\textbf{Hipótesis Específicas:}}
-\begin{listaHE}
-    \item El código generado por IA presenta un error cuadrático medio significativamente mayor al modelo matemático estándar.
-    \item El incremento en la complejidad del escenario físico generado por IA produce un aumento no optimizado en el tiempo de ejecución.
-    \item El código de simulación generado por IA requiere intervenciones técnicas manuales para corregir inestabilidades numéricas.
-\end{listaHE}
-
-\tituloIII{Definición de Variables}
-\parrafoIII{\textbf{Variable Independiente:} Herramientas de IA generativa (uso y manipulación de prompts).}
-\parrafoIII{\textbf{Variables Dependientes:}}
-\begin{listaVD}
-    \item Precisión matemática: medida a través del error cuadrático medio (MSE) de las variables de estado (posición y velocidad) frente al modelo teórico.
-    \item Rendimiento computacional: medido a través del tiempo de ejecución (usando Hyperfine/GNU time) y el consumo de memoria RAM.
-\end{listaVD}% capitulo1_hipotesis_variables.tex
-
 \tituloII{Hipótesis y Variables}
 
 \tituloIII{Hipótesis}
 
-\parrafoIII{\textbf{Hipótesis General:} La implementación de un Framework de Ingeniería de Prompts basado en la norma ISO/IEC 25010 reduce significativamente la deuda técnica y optimiza la calidad estructural del código fuente generado por inteligencia artificial generativa.}
+\parrafoIII{\textbf{Hipótesis General:} La implementación de un Framework de Ingeniería de Prompts basado en la norma ISO/IEC 25010 reduce significativamente la deuda técnica y mejora la mantenibilidad del código generado por inteligencia artificial generativa en comparación con métodos empíricos.}
 
 \parrafoIII{\textbf{Hipótesis Específicas:}}
 \begin{listaHE}
-    \item La aplicación de patrones arquitectónicos en la estructuración de prompts disminuye la complejidad ciclomática de McCabe en comparación con los métodos de generación empírica.
-    \item La integración de un \textit{pipeline} de análisis estático automatizado identifica y mitiga redundancias lógicas, mejorando el índice de mantenibilidad del software resultante.
-    \item El uso del protocolo de validación sistemática bajo el estándar ISO/IEC 25010 incrementa la fiabilidad y la idoneidad técnica del código generado para su despliegue en entornos de producción.
+    \item El código generado mediante el uso de patrones arquitectónicos de prompts presenta menor complejidad ciclomática que el código generado mediante métodos empíricos.
+    \item El código generado con un pipeline de análisis estático presenta menor deuda técnica que el generado sin dicho pipeline.
+    \item El código generado bajo el protocolo de validación basado en ISO/IEC 25010 presenta un mayor índice de mantenibilidad que el código generado sin dicho protocolo.
 \end{listaHE}
 
 \tituloIII{Definición de Variables}
 
-\parrafoIII{\textbf{Variable Independiente (X):} Framework de Ingeniería de Prompts basado en la norma ISO/IEC 25010 (Metodología de estructuración de instrucciones).}
+\parrafoIII{\textbf{Variable Independiente (X):} Aplicación del Framework de Ingeniería de Prompts}
+\begin{itemize}[nosep]
+        \item Nivel 1: Sin framework (método empírico)
+        \item Nivel 2: Con framework estructurado
+    \end{itemize}
 
 \parrafoIII{\textbf{Variables Dependientes (Y):}}
 \begin{listaVD}
     \item \textbf{Mantenibilidad del Software:} Medida a través del índice de mantenibilidad y la complejidad ciclomática de McCabe utilizando herramientas de análisis estático (SonarQube/Radon).
     \item \textbf{Deuda Técnica:} Medida a través del tiempo estimado de refactorización y la densidad de defectos detectados por el \textit{pipeline} automatizado.
-    \item \textbf{Fiabilidad Sistémica:} Medida a través del porcentaje de cumplimiento de los requisitos de idoneidad técnica establecidos en la norma ISO/IEC 25010.
+    %\item \textbf{Fiabilidad Sistémica:} Medida a través del porcentaje de cumplimiento de los requisitos de idoneidad técnica establecidos en la norma ISO/IEC 25010.
 \end{listaVD}
