@@ -1,0 +1,171 @@
+% capitulo1.tex
+
+\tituloI{EL PROBLEMA DE INVESTIGACIÓN}
+
+\tituloII{Planteamiento del Problema}
+
+\parrafoII{
+A nivel global, la integración de la Inteligencia Artificial Generativa (IAG) en el ciclo de vida del desarrollo de software ha transformado la productividad de la industria; sin embargo, ha introducido un fenómeno crítico denominado "deuda técnica automatizada". Según \cite{hou2024large}, el código generado por modelos de lenguaje de gran escala (LLMs) a menudo carece de una visión arquitectónica integral, lo que resulta en sistemas con baja mantenibilidad y una complejidad estructural elevada. La tendencia actual indica un aumento en la velocidad de codificación, pero un impacto negativo en la calidad interna del software, contraviniendo los modelos de calidad establecidos por la norma \cite{iso25010}.
+}
+
+\parrafoII{
+En el contexto nacional, el Perú atraviesa un proceso de aceleración digital donde las empresas de tecnología buscan optimizar costos mediante herramientas de IA. El \cite{inei2024tecnologia} reporta un incremento en el uso de servicios en la nube y herramientas de automatización en el sector servicios; no obstante, existe una brecha significativa en la aplicación de estándares de calidad de software. Las empresas peruanas están integrando código generado por IA sin protocolos de validación, lo que eleva el riesgo de fallos sistémicos en sectores críticos como el financiero y comercial.
+}
+
+\parrafoII{
+A nivel local en Cusco, el ecosistema de desarrollo de software, compuesto principalmente por startups y pequeñas unidades de TI, enfrenta limitaciones de infraestructura técnica y acceso a especialistas en aseguramiento de la calidad (QA). Según el \cite{concytec2023transformacion}, la región sur muestra un interés creciente en la digitalización de servicios, pero la implementación de soluciones basadas en IA se realiza de forma empírica. Esto se manifiesta en sistemas que, aunque funcionales inicialmente, presentan una rápida degradación técnica, dificultando su escalabilidad y soporte a largo plazo en las empresas locales.
+}
+
+
+\parrafoII{
+El problema central se identifica como la **insuficiente calidad estructural y la elevada deuda técnica** presente en el software generado mediante inteligencia artificial generativa cuando no se aplican marcos de ingeniería de software. Desde la perspectiva de la Ingeniería de Sistemas, esto representa una falla en la gestión de la información y los procesos de digitalización, ya que el código resultante no cumple con los atributos de mantenibilidad, confiabilidad y eficiencia de desempeño definidos por estándares internacionales. La ausencia de un método sistemático para estructurar los requerimientos técnicos (prompts) deriva en la creación de ``cajas negras'' de código que son difíciles de auditar y optimizar.
+}
+
+\parrafoII{
+Las causas de esta problemática son multidimensionales. En el plano técnico, se observa una dependencia de modelos de IA de acceso abierto que, si bien son potentes, requieren de una guía estructural para evitar la redundancia lógica. A nivel organizacional, existe una presión por reducir los tiempos de entrega (Time-to-Market), lo que lleva a omitir las fases de análisis estático y validación de arquitectura. En el factor humano, destaca la carencia de competencias en ingeniería de prompts aplicada a la ingeniería de software, tratando a la IA como una herramienta de consulta y no como un componente de un pipeline de producción sistémico.
+}
+
+\parrafoII{
+Las consecuencias de persistir en este modelo empírico de desarrollo son graves. Operativamente, las organizaciones enfrentarán un incremento exponencial en los costos de mantenimiento preventivo y correctivo. Económicamente, la deuda técnica acumulada puede superar el valor del activo de software, llevando a la quiebra técnica de proyectos. Socialmente, la baja confiabilidad de los sistemas puede resultar en la pérdida de integridad de datos sensibles y una desconfianza generalizada hacia la digitalización basada en IA. No se trata solo de un error de sintaxis, sino de un compromiso de la resiliencia organizacional.
+}
+
+
+\parrafoII{
+De no establecerse un **Framework de Ingeniería de Prompts** que actúe como un filtro de calidad basado en la norma \cite{iso25010}, la industria del software se enfrentará a una saturación de sistemas heredados (legacy) generados por IA que serán imposibles de mantener. Prospectivamente, el éxito de la ingeniería de sistemas en la próxima década dependerá de la capacidad de los profesionales para sistematizar la interacción con la IA, transformando la generación de código de un proceso aleatorio a una disciplina de ingeniería predictiva y controlada, asegurando que la tecnología sea un motor de eficiencia y no un generador de inestabilidad sistémica.
+}
+% capitulo1_formulacion.tex
+
+\tituloII{Formulación del Problema}
+
+\tituloIII{Problema General}
+
+\parrafoII{
+¿De qué manera el diseño e implementación de un Framework de Ingeniería de Prompts basado en la norma ISO/IEC 25010 influye en la optimización de la mantenibilidad y la reducción de la deuda técnica del código generado por inteligencia artificial generativa?
+}
+
+\tituloIII{Problemas Específicos}
+
+\begin{listaPE}
+    \item  ¿En qué medida la aplicación de patrones arquitectónicos de \textit{Prompt Engineering} (como \textit{Chain-of-Thought}) en la fase de requerimientos reduce la complejidad ciclomática de McCabe en el código resultante?
+    
+    \item  ¿Cuál es el impacto de la ejecución de un \textit{pipeline} de análisis estático automatizado en la identificación y mitigación de redundancias lógicas en el software generado por modelos de lenguaje?
+    
+    \item  ¿De qué forma la validación sistemática bajo el modelo de calidad de la norma ISO/IEC 25010 permite certificar la idoneidad técnica y la fiabilidad del código generado para entornos de producción industrial?
+\end{listaPE}
+
+% capitulo1_objetivos.tex
+
+\tituloII{Objetivos de la Investigación}
+
+\tituloIII{Objetivo General}
+
+\parrafoIII{
+Determinar la influencia de un Framework de Ingeniería de Prompts basado en la norma ISO/IEC 25010 en la optimización de la mantenibilidad y la reducción de la deuda técnica del código fuente generado por inteligencia artificial generativa.
+}
+
+\tituloIII{Objetivos Específicos}
+
+\begin{listaOE}
+    \item Evaluar el efecto de la aplicación de patrones arquitectónicos en la estructuración de prompts sobre la complejidad ciclomática de McCabe, comparando los resultados frente a métodos de generación empírica.
+    
+    \item Medir la eficiencia de un \textit{pipeline} de análisis estático automatizado en la reducción de la deuda técnica y redundancia de código, utilizando métricas cuantitativas de calidad de software.
+    
+    \item Comprobar el nivel de cumplimiento de los atributos de mantenibilidad y fiabilidad de la norma ISO/IEC 25010 en el software generado, mediante la implementación de un protocolo de validación sistemática.
+\end{listaOE}
+
+% capitulo1_justificacion.tex
+
+\tituloII{Justificación de la Investigación}
+
+\tituloIII{Justificación Teórica}
+
+\parrafoII{
+Desde una perspectiva teórica, esta investigación se justifica por la necesidad de integrar los paradigmas de la Inteligencia Artificial Generativa con los modelos clásicos de calidad de software. El estudio profundiza en la relación entre la estructuración de instrucciones en lenguaje natural (Ingeniería de Prompts) y la complejidad estructural del código fuente, utilizando como base la teoría de la Complejidad Ciclomática de McCabe y los pilares de mantenibilidad de la norma ISO/IEC 25010. Este trabajo aporta un nuevo marco conceptual que permite entender a la IA no solo como una herramienta de productividad, sino como un componente sistémico que requiere de rigor arquitectónico para garantizar la sostenibilidad tecnológica a largo plazo.
+}
+
+\tituloIII{Justificación Práctica}
+
+\parrafoII{
+En el ámbito práctico, la investigación resuelve el problema crítico de la acumulación de deuda técnica en los departamentos de TI que han adoptado el uso empírico de la IA. Al proporcionar un Framework de Ingeniería de Prompts validado, se dota a los ingenieros de software de una herramienta metodológica que reduce los tiempos de refactorización y los costos operativos asociados al mantenimiento preventivo. La implementación de este marco permite que las soluciones de software generadas sean profesionalmente aptas para entornos de producción, minimizando los riesgos de fallos lógicos y optimizando el ciclo de vida de desarrollo en las organizaciones tecnológicas actuales.
+}
+
+\tituloIII{Justificación Metodológica}
+
+\parrafoII{
+Metodológicamente, el estudio propone un protocolo de experimentación y medición sistemática que puede ser replicado en futuros estudios sobre ingeniería de software asistida. Se justifica mediante la creación de un \textit{pipeline} de evaluación que combina el análisis estático de código con la validación normativa internacional. Esta propuesta establece procedimientos claros para cuantificar la calidad del código generado, transformando una actividad que actualmente es subjetiva y variable en un proceso de ingeniería controlado, medible y auditable, sentando un precedente para la estandarización del uso de LLMs en la formación académica y profesional.
+}
+% capitulo1_delimitacion.tex
+
+\tituloII{Delimitación de la Investigación}
+
+\tituloIII{Delimitación Espacial}
+
+\parrafoII{
+La investigación se llevará a cabo en el Laboratorio de Ingeniería de Sistemas de la Universidad Continental, sede Cusco. El entorno de experimentación estará constituido por nodos computacionales locales (clústeres de pruebas) bajo arquitectura Linux, donde se desplegarán los modelos de lenguaje y las herramientas de análisis estático de código para garantizar un control estricto sobre las variables de red y procesamiento.
+}
+
+\tituloIII{Delimitación Temporal}
+
+\parrafoII{
+El estudio se desarrollará durante el periodo académico 2026-I, comprendido entre los meses de marzo y julio de 2026. Este cronograma incluye las fases de diseño del Framework, la ejecución de las pruebas experimentales automatizadas, el procesamiento de métricas de calidad y la redacción del informe final de resultados.
+}
+
+\tituloIII{Delimitación Social}
+
+\parrafoII{
+La investigación está dirigida a la comunidad de ingeniería de software, específicamente a desarrolladores, arquitectos de sistemas y analistas de calidad (QA). Los resultados beneficiarán directamente a las organizaciones tecnológicas locales en Cusco que buscan estandarizar el uso de herramientas de inteligencia artificial generativa bajo marcos de cumplimiento internacional.
+}
+
+\tituloIII{Delimitación Conceptual o Temática}
+
+\parrafoII{
+El estudio se circunscribe al área de la Ingeniería de Software y la Gestión de Calidad de Sistemas. Se centra específicamente en la relación entre la **Ingeniería de Prompts** y los atributos de **Mantenibilidad** definidos por la norma **ISO/IEC 25010**, utilizando la **Complejidad Ciclomática de McCabe** como métrica cuantitativa de control estructural. La investigación se limitará al análisis de código generado en lenguajes de programación de alto nivel (Python y TypeScript) para arquitecturas de microservicios, excluyendo otros dominios como el desarrollo de sistemas embebidos o lógica de bajo nivel.
+}
+
+\tituloIII{Delimitación Tecnológica}
+
+\parrafoII{
+Se emplearán modelos de lenguaje de gran escala (LLMs) de acceso abierto (como Llama 3 o similares) para validar la eficacia del Framework propuesto. Para el análisis de la deuda técnica y las métricas de calidad, se utilizarán las herramientas \textit{SonarQube} y \textit{Radon}. El alcance tecnológico no contempla el re-entrenamiento (fine-tuning) de los modelos, sino la optimización de los resultados a través de la ingeniería de instrucciones en la capa de aplicación.
+}
+\tituloII{Hipótesis y Variables}
+
+\tituloIII{Hipótesis}
+\parrafoIII{\textbf{Hipótesis General:} El uso de herramientas de IA generativa produce cambios significativos (errores acumulativos e ineficiencias) en la precisión y rendimiento de las simulaciones físicas.}
+\parrafoIII{\textbf{Hipótesis Específicas:}}
+\begin{listaHE}
+    \item El código generado por IA presenta un error cuadrático medio significativamente mayor al modelo matemático estándar.
+    \item El incremento en la complejidad del escenario físico generado por IA produce un aumento no optimizado en el tiempo de ejecución.
+    \item El código de simulación generado por IA requiere intervenciones técnicas manuales para corregir inestabilidades numéricas.
+\end{listaHE}
+
+\tituloIII{Definición de Variables}
+\parrafoIII{\textbf{Variable Independiente:} Herramientas de IA generativa (uso y manipulación de prompts).}
+\parrafoIII{\textbf{Variables Dependientes:}}
+\begin{listaVD}
+    \item Precisión matemática: medida a través del error cuadrático medio (MSE) de las variables de estado (posición y velocidad) frente al modelo teórico.
+    \item Rendimiento computacional: medido a través del tiempo de ejecución (usando Hyperfine/GNU time) y el consumo de memoria RAM.
+\end{listaVD}% capitulo1_hipotesis_variables.tex
+
+\tituloII{Hipótesis y Variables}
+
+\tituloIII{Hipótesis}
+
+\parrafoIII{\textbf{Hipótesis General:} La implementación de un Framework de Ingeniería de Prompts basado en la norma ISO/IEC 25010 reduce significativamente la deuda técnica y optimiza la calidad estructural del código fuente generado por inteligencia artificial generativa.}
+
+\parrafoIII{\textbf{Hipótesis Específicas:}}
+\begin{listaHE}
+    \item La aplicación de patrones arquitectónicos en la estructuración de prompts disminuye la complejidad ciclomática de McCabe en comparación con los métodos de generación empírica.
+    \item La integración de un \textit{pipeline} de análisis estático automatizado identifica y mitiga redundancias lógicas, mejorando el índice de mantenibilidad del software resultante.
+    \item El uso del protocolo de validación sistemática bajo el estándar ISO/IEC 25010 incrementa la fiabilidad y la idoneidad técnica del código generado para su despliegue en entornos de producción.
+\end{listaHE}
+
+\tituloIII{Definición de Variables}
+
+\parrafoIII{\textbf{Variable Independiente (X):} Framework de Ingeniería de Prompts basado en la norma ISO/IEC 25010 (Metodología de estructuración de instrucciones).}
+
+\parrafoIII{\textbf{Variables Dependientes (Y):}}
+\begin{listaVD}
+    \item \textbf{Mantenibilidad del Software:} Medida a través del índice de mantenibilidad y la complejidad ciclomática de McCabe utilizando herramientas de análisis estático (SonarQube/Radon).
+    \item \textbf{Deuda Técnica:} Medida a través del tiempo estimado de refactorización y la densidad de defectos detectados por el \textit{pipeline} automatizado.
+    \item \textbf{Fiabilidad Sistémica:} Medida a través del porcentaje de cumplimiento de los requisitos de idoneidad técnica establecidos en la norma ISO/IEC 25010.
+\end{listaVD}

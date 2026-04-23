@@ -1,0 +1,140 @@
+% --- Paquetes Necesarios ---
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{changepage}
+\usepackage{ragged2e} % Si falla, podemos comentar esta línea
+
+% --- CONFIGURACIÓN DE TÍTULOS ---
+
+% Título I: CENTRADO CON SALTO
+\titleformat{\section}[display]
+  {\normalfont\fontsize{12}{14}\bfseries\centering} % Quitamos \uppercase de aquí
+  {CAPÍTULO \thesection}
+  {1ex}
+  {\MakeUppercase} % Lo aplicamos directamente al cuerpo del título
+\titlespacing{\section}{0pt}{1ex}{2ex}
+
+% Título II: IZQUIERDA
+\titleformat{\subsection}
+  {\normalfont\fontsize{12}{14}\bfseries}
+  {\thesubsection}{1em}{}
+\titlespacing{\subsection}{0pt}{1.5ex}{1ex}
+
+% Título III: INDENTADO
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{12}{14}\bfseries}
+  {\thesubsubsection}{1em}{}
+\titlespacing{\subsubsection}{1.5em}{1.5ex}{1ex}
+
+% --- COMANDOS PERSONALIZADOS ---
+\newcommand{\tituloI}[1]{\section{#1}}
+\newcommand{\tituloII}[1]{\subsection{#1}}
+\newcommand{\tituloIII}[1]{\subsubsection{#1}}
+
+% --- ENTORNO PARA PÁRRAFOS (Versión Estable) ---
+\newenvironment{parrafo}[1]{
+    \begin{adjustwidth}{#1}{0pt}
+    \justifying % Si da error de "Undefined control sequence", borrar esta línea
+    \setlength{\parskip}{0.5em}
+    \setlength{\parindent}{0pt}
+}{
+    \end{adjustwidth}
+}
+
+% --- COMANDOS PARA PÁRRAFOS SIN SANGRÍA (CORREGIDOS) ---
+
+% Párrafo para Título I
+\newcommand{\parrafoI}[1]{
+    \noindent #1\par\vspace{1em}
+}
+
+% Párrafo para Título II (Margen 2.5em)
+\newcommand{\parrafoII}[1]{
+    \begin{adjustwidth}{2.5em}{0pt}
+        \setlength{\parindent}{0pt} % Quita sangría a todos
+        \setlength{\parskip}{0.5em}    % Espacio entre párrafos
+        \noindent #1 \par            % El \par final es vital
+    \end{adjustwidth}
+    \vspace{0.5em}
+}
+
+% Párrafo para Título III (Margen 5em)
+\newcommand{\parrafoIII}[1]{
+    \begin{adjustwidth}{5em}{0pt}
+        \setlength{\parindent}{0pt}
+        \setlength{\parskip}{0.5em}
+        \noindent #1 \par
+    \end{adjustwidth}
+    \vspace{0.5em}
+}
+% --- LISTAS PERSONALIZADAS POR NIVEL ---
+
+% Lista para Nivel I (Margen 0)
+\newlist{listaI}{itemize}{1}
+\setlist[listaI]{
+    label=\textbullet,
+    nosep,
+    leftmargin=1.5em, % Espacio para que la viñeta no se salga al margen
+    topsep=0.5em,     % Espacio de 0.5em con el título
+    after=\vspace{1em}
+}
+
+% Lista para Nivel II (Alineada con Parrafo II)
+\newlist{listaII}{itemize}{1}
+\setlist[listaII]{
+    label=\textbullet,
+    nosep,
+    leftmargin=4.0em, % 2.5em del parrafo + 1.5em para la viñeta
+    topsep=0.5em,
+    after=\vspace{1em}
+}
+
+% Lista para Nivel III (Alineada con Parrafo III)
+\newlist{listaIII}{itemize}{1}
+\setlist[listaIII]{
+    label=\textbullet,
+    nosep,
+    leftmargin=5.8em, % 4.5em del parrafo + 1.5em para la viñeta
+    topsep=0.5em,     % Aquí controlamos la distancia exacta al título
+    after=\vspace{1em}
+}
+
+\newlist{listaOE}{enumerate}{1}
+\setlist[listaOE]{
+    label=\textbf{OE\arabic*}, % Define el formato OE1, OE2...
+    leftmargin=7.7em,             % Alineado con el margen del Título III
+    labelsep=1em,               % Espacio entre el código y el texto
+    nosep                       % Elimina espacios verticales excesivos
+}
+
+\newlist{listaPE}{enumerate}{1}
+\setlist[listaPE]{
+    label=\textbf{PE\arabic*}, % Define el formato PE1, PE2...
+    leftmargin=7.7em,             % Alineado con el margen del Título III
+    labelsep=1em,               % Espacio entre el código y el texto
+    nosep                       % Elimina espacios verticales excesivos
+}
+
+\newlist{listaVar}{enumerate}{1}
+\setlist[listaVar]{
+    label=\textbf{VAR\arabic*}, % Define el formato PE1, PE2...
+    leftmargin=7.7em,             % Alineado con el margen del Título III
+    labelsep=1em,               % Espacio entre el código y el texto
+    nosep                       % Elimina espacios verticales excesivos
+}
+
+\newlist{listaHE}{enumerate}{1}
+\setlist[listaHE]{
+    label=\textbf{HE\arabic*}, % Define el formato PE1, PE2...
+    leftmargin=7.7em,             % Alineado con el margen del Título III
+    labelsep=1em,               % Espacio entre el código y el texto
+    nosep                       % Elimina espacios verticales excesivos
+}
+
+\newlist{listaVD}{enumerate}{1}
+\setlist[listaVD]{
+    label=\textbf{VD\arabic*}, % Define el formato PE1, PE2...
+    leftmargin=7.7em,             % Alineado con el margen del Título III
+    labelsep=1em,               % Espacio entre el código y el texto
+    nosep                       % Elimina espacios verticales excesivos
+}
