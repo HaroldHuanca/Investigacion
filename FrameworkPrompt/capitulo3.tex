@@ -17,5 +17,21 @@
 \tituloII{Materiales y métodos}
 
 \tituloIII{Materiales}
+\parrafoIII{Los materiales empleados en la investigación se categorizan en recursos de hardware y software especializados para el desarrollo y análisis de sistemas:}
+
+\begin{listaIII}
+    \item \textbf{Recursos de Hardware:} Se utilizará una estación de trabajo con arquitectura x86\_64, procesador de múltiples núcleos y un mínimo de 16GB de RAM para garantizar la ejecución fluida de contenedores de análisis estático y modelos de lenguaje locales (clúster de pruebas bajo entorno Arch Linux).
+    \item \textbf{Modelos de Lenguaje (LLMs):} Se emplearán modelos de acceso abierto como Llama 3 (8B/70B) y Mistral, seleccionados por su reproducibilidad y capacidad de procesamiento de lógica de programación.
+    \item \textbf{Herramientas de Análisis Estático:} Se integrará \textit{SonarQube} (edición Community) para la medición de la deuda técnica e índices de mantenibilidad, y la librería \textit{Radon} para el cálculo automatizado de la Complejidad Ciclomática de McCabe.
+    \item \textbf{Entorno de Desarrollo y Ejecución:} Uso de \textit{Docker} para la orquestación de servicios de métricas y \textit{Python/TypeScript} como lenguajes objetivo para la generación de código de microservicios.
+\end{listaIII}
 
 \tituloIII{Métodos}
+\parrafoIII{El procedimiento se divide en fases secuenciales que aseguran el rigor del diseño cuasi-experimental:}
+
+\begin{listaIIInum}
+    \item \textbf{Fase de Línea Base (Pre-prueba):} Se ejecutará una serie de 50 peticiones de generación de código (prompts empíricos) sin estructura definida. Los resultados se procesarán a través del pipeline de análisis estático para establecer las métricas iniciales de mantenibilidad y deuda técnica.
+    \item \textbf{Aplicación del Framework (Tratamiento):} Se aplicará el Framework de Ingeniería de Prompts diseñado, utilizando patrones arquitectónicos (como \textit{Chain-of-Thought} y estructuración basada en ISO 25010) para las mismas solicitudes de desarrollo de software.
+    \item \textbf{Fase de Medición (Post-prueba):} El código resultante del grupo experimental será sometido nuevamente al pipeline automatizado. Se recolectarán los datos de complejidad, densidad de defectos y tiempo estimado de remediación.
+    \item \textbf{Análisis Estadístico de Datos:} Se realizará una comparación de medias utilizando pruebas de significancia (como \textit{t-Student} o \textit{U de Mann-Whitney}) para validar las hipótesis planteadas, determinando si la mejora en la calidad estructural es estadísticamente significativa frente al método empírico.
+\end{listaIIInum}

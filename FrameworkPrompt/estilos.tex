@@ -99,6 +99,16 @@
     after=\vspace{1em}
 }
 
+% Definición corregida para listas numeradas de Nivel III
+\newlist{listaIIInum}{enumerate}{1} % Cambiado itemize por enumerate
+\setlist[listaIIInum]{
+    label=\arabic*.,      % El asterisco indica que use el contador de esta lista
+    nosep,
+    leftmargin=6.2em,     
+    topsep=0.5em,         
+    after=\vspace{1em}
+}
+
 \newlist{listaOE}{enumerate}{1}
 \setlist[listaOE]{
     label=\textbf{OE\arabic*}, % Define el formato OE1, OE2...
