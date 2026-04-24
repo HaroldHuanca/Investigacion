@@ -1,52 +1,65 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{INTRODUCCIÓN}{\es@scroman {ii}}{}%
-\contentsline {section}{\numberline {1}PLANTEAMIENTO DEL ESTUDIO}{1}{}%
-\contentsline {subsection}{\numberline {1.1}Planteamiento del problema}{1}{}%
+\contentsline {section}{INTRODUCCIÓN}{\es@scroman {iii}}{}%
+\contentsline {section}{\numberline {1}EL PROBLEMA DE INVESTIGACIÓN}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Planteamiento del Problema}{1}{}%
 \contentsline {subsection}{\numberline {1.2}Formulación del Problema}{2}{}%
 \contentsline {subsubsection}{\numberline {1.2.1}Problema General}{2}{}%
 \contentsline {subsubsection}{\numberline {1.2.2}Problemas Específicos}{2}{}%
-\contentsline {subsection}{\numberline {1.3}Objetivos}{2}{}%
-\contentsline {subsubsection}{\numberline {1.3.1}Objetivo General}{2}{}%
-\contentsline {subsubsection}{\numberline {1.3.2}Objetivos Específicos}{2}{}%
-\contentsline {subsection}{\numberline {1.4}Justificación de la investigación}{2}{}%
-\contentsline {subsubsection}{\numberline {1.4.1}Justificación Teórica}{2}{}%
+\contentsline {subsection}{\numberline {1.3}Objetivos de la Investigación}{3}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}Objetivo General}{3}{}%
+\contentsline {subsubsection}{\numberline {1.3.2}Objetivos Específicos}{3}{}%
+\contentsline {subsection}{\numberline {1.4}Justificación de la Investigación}{3}{}%
+\contentsline {subsubsection}{\numberline {1.4.1}Justificación Teórica}{3}{}%
 \contentsline {subsubsection}{\numberline {1.4.2}Justificación Práctica}{3}{}%
-\contentsline {subsubsection}{\numberline {1.4.3}Justificación Metodológica}{3}{}%
-\contentsline {subsection}{\numberline {1.5}Delimitación de la investigación}{3}{}%
-\contentsline {subsubsection}{\numberline {1.5.1}Delimitación Espacial}{3}{}%
-\contentsline {subsubsection}{\numberline {1.5.2}Delimitación Temporal}{3}{}%
-\contentsline {subsection}{\numberline {1.6}Hipótesis y Variables}{3}{}%
-\contentsline {subsubsection}{\numberline {1.6.1}Hipótesis}{3}{}%
-\contentsline {subsubsection}{\numberline {1.6.2}Definición de Variables}{4}{}%
-\contentsline {section}{\numberline {2}METODOLOGÍA}{5}{}%
-\contentsline {subsection}{\numberline {2.1}Método, tipo y alcance de la investigación}{5}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}Método de investigación}{5}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}Tipo de investigación}{5}{}%
-\contentsline {subsubsection}{\numberline {2.1.3}Alcance de la investigación}{5}{}%
-\contentsline {subsubsection}{\numberline {2.1.4}Diseño de la investigación}{5}{}%
-\contentsline {subsection}{\numberline {2.2}Materiales y métodos}{5}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Materiales}{5}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Métodos}{5}{}%
-\contentsline {section}{\numberline {3}RESULTADOS Y DISCUSIÓN}{6}{}%
-\contentsline {subsection}{\numberline {3.1}Presentación de resultado}{6}{}%
-\contentsline {subsection}{\numberline {3.2}Discusión de resultados}{6}{}%
-\contentsline {section}{\numberline {4}CONCLUSIONES Y RECOMENDACIONES}{7}{}%
-\contentsline {section}{ANEXOS}{8}{}%
-\contentsline {section}{Referencias Bibliográficas}{9}{}%
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
-\babel@toc {spanish}{}\relax 
+\contentsline {subsubsection}{\numberline {1.4.3}Justificación Metodológica}{4}{}%
+\contentsline {subsection}{\numberline {1.5}Delimitación de la Investigación}{4}{}%
+\contentsline {subsubsection}{\numberline {1.5.1}Delimitación Espacial}{4}{}%
+\contentsline {subsubsection}{\numberline {1.5.2}Delimitación Temporal}{4}{}%
+\contentsline {subsubsection}{\numberline {1.5.3}Delimitación Social}{4}{}%
+\contentsline {subsection}{\numberline {1.6}Hipótesis y Variables}{4}{}%
+\contentsline {subsubsection}{\numberline {1.6.1}Hipótesis}{4}{}%
+\contentsline {subsubsection}{\numberline {1.6.2}Definición de Variables}{5}{}%
+\contentsline {section}{\numberline {2}MARCO TEÓRICO}{6}{}%
+\contentsline {subsection}{\numberline {2.1}Antecedentes de la investigación}{6}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Antecedentes Internacionales}{6}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Antecedentes Nacionales}{9}{}%
+\contentsline {subsubsection}{\numberline {2.1.3}Antecedentes Locales}{11}{}%
+\contentsline {subsection}{\numberline {2.2}Bases teóricas}{11}{}%
+\contentsline {section}{\numberline {3}METODOLOGÍA}{12}{}%
+\contentsline {subsection}{\numberline {3.1}Método, tipo y alcance de la investigación}{12}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Método de investigación}{12}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Tipo de investigación}{12}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}Alcance de la investigación}{12}{}%
+\contentsline {subsubsection}{\numberline {3.1.4}Diseño de la investigación}{12}{}%
+\contentsline {subsection}{\numberline {3.2}Materiales y métodos}{13}{}%
+\contentsline {subsection}{\numberline {3.3}Materiales y métodos}{13}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Materiales}{13}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Recursos de Infraestructura y Hardware}{13}{}%
+\contentsline {paragraph}{\numberline {3.3.2.1} Estación de Trabajo de Alto Rendimiento}{13}{}%
+\contentsline {paragraph}{\numberline {3.3.2.2} Entorno de Ejecución y Nodos Computacionales}{13}{}%
+\contentsline {subsubsection}{\numberline {3.3.3} Recursos Lógicos y Modelos de Inteligencia Artificial}{14}{}%
+\contentsline {paragraph}{\numberline {3.3.3.1}Modelos de Lenguaje de Gran Escala (LLMs) de Acceso Abierto}{14}{}%
+\contentsline {paragraph}{\numberline {3.3.3.2}Entorno de Orquestación y Contenerización}{14}{}%
+\contentsline {subsubsection}{\numberline {3.3.4} Herramientas de Análisis Estático y Desarrollo}{14}{}%
+\contentsline {paragraph}{\numberline {3.3.4.1} Framework de Evaluación de Calidad de Código}{14}{}%
+\contentsline {paragraph}{\numberline {3.3.4.2} Ecosistema de Lenguajes de Programación Objetivo}{15}{}%
+\contentsline {subsubsection}{\numberline {3.3.5} Métodos}{15}{}%
+\contentsline {subsubsection}{\numberline {3.3.6}Ingeniería de Prompts y Diseño del Framework}{15}{}%
+\contentsline {paragraph}{\numberline {3.3.6.1}Conceptualización del Framework basado en ISO/IEC 25010}{15}{}%
+\contentsline {paragraph}{\numberline {3.3.6.2}Aplicación de Patrones Arquitectónicos de Prompts}{15}{}%
+\contentsline {subsubsection}{\numberline {3.3.7} Desarrollo y Generación de Código de Microservicios}{15}{}%
+\contentsline {paragraph}{\numberline {3.3.7.1}Configuración del Entorno de Generación}{15}{}%
+\contentsline {paragraph}{\numberline {3.3.7.2}Ejecución de Pruebas de Generación}{16}{}%
+\contentsline {subsubsection}{\numberline {3.3.8} Pipeline de Análisis Estático y Validación de Calidad}{16}{}%
+\contentsline {paragraph}{\numberline {3.3.8.1}Proceso de Evaluación de Métricas de Código}{16}{}%
+\contentsline {paragraph}{\numberline {3.3.8.2}Validación y Control de Calidad}{16}{}%
+\contentsline {subsection}{\numberline {3.4}Sustento Teórico de la Metodología}{16}{}%
+\contentsline {section}{\numberline {4}RESULTADOS Y DISCUSIÓN}{17}{}%
+\contentsline {subsection}{\numberline {4.1}Presentación de resultado}{17}{}%
+\contentsline {subsection}{\numberline {4.2}Discusión de resultados}{17}{}%
+\contentsline {section}{\numberline {5}CONCLUSIONES Y RECOMENDACIONES}{18}{}%
+\contentsline {section}{ANEXOS}{19}{}%
+\contentsline {section}{Referencias Bibliográficas}{20}{}%
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 

@@ -1,4 +1,5 @@
 % --- Paquetes Necesarios ---
+
 \usepackage[utf8]{inputenc}
 \usepackage{titlesec}
 \usepackage{changepage}
@@ -26,10 +27,23 @@
   {\thesubsubsection}{1em}{}
 \titlespacing{\subsubsection}{1.5em}{1.5ex}{1ex}
 
+% --- CONFIGURACIÓN DE PROFUNDIDAD DE NUMERACIÓN ---
+\setcounter{secnumdepth}{4} % Permite numerar hasta el nivel 4 (tituloIV)
+\setcounter{tocdepth}{4}    % Opcional: Incluye el nivel 4 en el índice (si lo deseas)
+% Título IV: MÁS INDENTADO
+\titleformat{\paragraph}
+    {\normalfont\fontsize{12}{14}\bfseries}
+    {\theparagraph} % <-- Esto es lo que imprime el 1.1.1.1
+    {1em}
+    {}
+\titlespacing{\paragraph}{4.0em}{1.5ex}{1ex}
+
 % --- COMANDOS PERSONALIZADOS ---
 \newcommand{\tituloI}[1]{\section{#1}}
 \newcommand{\tituloII}[1]{\subsection{#1}}
 \newcommand{\tituloIII}[1]{\subsubsection{#1}}
+\newcommand{\tituloIV}[1]{\paragraph{#1}\mbox{}\\} 
+% El \mbox{}\\} es para asegurar que el párrafo empiece en la línea siguiente si así lo deseas
 
 % --- ENTORNO PARA PÁRRAFOS (Versión Estable) ---
 \newenvironment{parrafo}[1]{
@@ -61,6 +75,15 @@
 % Párrafo para Título III (Margen 5em)
 \newcommand{\parrafoIII}[1]{
     \begin{adjustwidth}{5em}{0pt}
+        \setlength{\parindent}{0pt}
+        \setlength{\parskip}{0.5em}
+        \noindent #1 \par
+    \end{adjustwidth}
+    \vspace{0.5em}
+}
+% Párrafo para Título IV (Margen 6.5em o 7.0em según tu preferencia de escalado)
+\newcommand{\parrafoIV}[1]{
+    \begin{adjustwidth}{7.0em}{0pt}
         \setlength{\parindent}{0pt}
         \setlength{\parskip}{0.5em}
         \noindent #1 \par
