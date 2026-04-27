@@ -132,6 +132,16 @@
     after=\vspace{1em}
 }
 
+% Lista para Nivel III (Alineada con Parrafo III)
+\newlist{listaIV}{itemize}{1}
+\setlist[listaIV]{
+    label=\textbullet,
+    nosep,
+    leftmargin=7em, % 4.5em del parrafo + 1.5em para la viñeta
+    topsep=0.5em,     % Aquí controlamos la distancia exacta al título
+    after=\vspace{1em}
+}
+
 \newlist{listaOE}{enumerate}{1}
 \setlist[listaOE]{
     label=\textbf{OE\arabic*}, % Define el formato OE1, OE2...

@@ -22,16 +22,15 @@ El problema central se identifica como la insuficiente calidad estructural y la 
 }
 
 \parrafoII{
-Las causas de esta problemática son multidimensionales. En el plano técnico, se observa una dependencia de modelos de IA de acceso abierto que, si bien son potentes, requieren de una guía estructural para evitar la redundancia lógica. A nivel organizacional, existe una presión por reducir los tiempos de entrega (Time-to-Market), lo que lleva a omitir las fases de análisis estático y validación de arquitectura. En el factor humano, destaca la carencia de competencias en ingeniería de prompts aplicada a la ingeniería de software, tratando a la IA como una herramienta de consulta y no como un componente de un pipeline de producción sistémico.
+Las causas de esta problemática son multidimensionales. En el plano técnico, se observa una dependencia de modelos de IA que, a pesar de su capacidad funcional, generan un incremento del 34\% en la complejidad ciclomática y una redundancia lógica 2.1 veces superior a la del código humano \cite{asfandyar2024evaluating}, evidenciando que los LLMs requieren de una guía estructural y arquitectónica para asegurar la mantenibilidad \cite{formgren2024capabilities}. A nivel organizacional, la presión por reducir los tiempos de entrega (\textit{Time-to-Market}) fomenta la acumulación de deuda técnica autoadmitida (\textit{Self-Admitted Technical Debt} - SATD) y la omisión de fases críticas de validación \cite{gutierrez2024analisis, cuatecontzi2023identificacion}. Finalmente, en el factor humano, persiste una carencia de competencias en ingeniería de prompts aplicada sistemáticamente, lo que deriva en una degradación de la calidad denominada \textit{PromptDebt} \cite{aljohani2024promptdebt}, limitando el uso de la IA a una herramienta de consulta en lugar de integrarla como un componente robusto en un \textit{pipeline} de producción profesional \cite{medianero2024algoritmos, diaz2024optimizacion}.
+}
+\parrafoII{
+Las consecuencias de persistir en este modelo empírico de desarrollo son graves. Operativamente, las organizaciones enfrentarán un incremento exponencial en los costos de mantenimiento preventivo y correctivo, debido a que el código generado por IA sin supervisión técnica demanda un esfuerzo de refinamiento masivo para alcanzar estándares profesionales \cite{azeem2024ai}. Económicamente, la deuda técnica acumulada puede superar el valor del activo de software, pues el incremento en la complejidad y la redundancia lógica elevan los costos de evolución del sistema hasta volverlo insostenible \cite{asfandyar2024evaluating, romero2024business}. Socialmente, la baja confiabilidad de los sistemas pone en riesgo la integridad de datos sensibles, comprometiendo la confianza en la digitalización nacional y regional \cite{sgtd2024estrategia, gore2025plan}. Como advierte la literatura reciente, no se trata de errores sintácticos aislados, sino de una degradación estructural o \textit{PromptDebt} que compromete directamente la resiliencia y la competitividad organizacional \cite{aljohani2024promptdebt, gutierrez2024analisis}.
 }
 
-\parrafoII{
-Las consecuencias de persistir en este modelo empírico de desarrollo son graves. Operativamente, las organizaciones enfrentarán un incremento exponencial en los costos de mantenimiento preventivo y correctivo. Económicamente, la deuda técnica acumulada puede superar el valor del activo de software, llevando a la quiebra técnica de proyectos. Socialmente, la baja confiabilidad de los sistemas puede resultar en la pérdida de integridad de datos sensibles y una desconfianza generalizada hacia la digitalización basada en IA. No se trata solo de un error de sintaxis, sino de un compromiso de la resiliencia organizacional.
-}
-
 
 \parrafoII{
-De no establecerse un **Framework de Ingeniería de Prompts** que actúe como un filtro de calidad basado en la norma \cite{iso25010}, la industria del software se enfrentará a una saturación de sistemas heredados (legacy) generados por IA que serán imposibles de mantener. Prospectivamente, el éxito de la ingeniería de sistemas en la próxima década dependerá de la capacidad de los profesionales para sistematizar la interacción con la IA, transformando la generación de código de un proceso aleatorio a una disciplina de ingeniería predictiva y controlada, asegurando que la tecnología sea un motor de eficiencia y no un generador de inestabilidad sistémica.
+De no establecerse un \textbf{Framework de Ingeniería de Prompts} que actúe como un filtro de calidad basado en la norma \cite{iso25010}, la industria del software se enfrentará a una saturación de sistemas heredados (\textit{legacy}) generados por IA que resultarán inmanejables a mediano plazo \cite{yu2026large, aljohani2024promptdebt}. Prospectivamente, el éxito de la ingeniería de sistemas en la próxima década dependerá de la capacidad de los profesionales para sistematizar la interacción con los LLMs, transformando la generación de código de un proceso aleatorio a una disciplina de ingeniería predictiva y controlada \cite{medianero2024algoritmos, diaz2024optimizacion}. Solo mediante la adopción de estrategias de gobernanza y métricas de calidad adaptadas a la era generativa se podrá asegurar que la tecnología cumpla con los objetivos de transformación digital nacional, actuando como un motor de eficiencia y no como un generador de inestabilidad sistémica en infraestructuras críticas \cite{sgtd2024estrategia, ortega2026arquitecturas}.
 }
 % capitulo1_formulacion.tex
 
@@ -76,46 +75,36 @@ Evaluar el efecto de la implementación de un Framework de Ingeniería de Prompt
 % capitulo1_justificacion.tex
 
 \tituloII{Justificación de la Investigación}
-
 \tituloIII{Justificación Teórica}
-
 \parrafoIII{
-Desde una perspectiva teórica, esta investigación se justifica por la necesidad de integrar los paradigmas de la Inteligencia Artificial Generativa con los modelos clásicos de calidad de software. El estudio profundiza en la relación entre la estructuración de instrucciones en lenguaje natural (Ingeniería de Prompts) y la complejidad estructural del código fuente, utilizando como base la teoría de la Complejidad Ciclomática de McCabe y los pilares de mantenibilidad de la norma ISO/IEC 25010. Este trabajo aporta un nuevo marco conceptual que permite entender a la IA no solo como una herramienta de productividad, sino como un componente sistémico que requiere de rigor arquitectónico para garantizar la sostenibilidad tecnológica a largo plazo.
+La investigación se justifica teóricamente al proponer una convergencia necesaria entre la Ingeniería de Software clásica y el paradigma emergente de la Inteligencia Artificial Generativa (IAG). Ante el fenómeno de la "caja negra" que representan los LLMs, este estudio aporta un marco conceptual que vincula el determinismo de la norma ISO/IEC 25010 con la naturaleza estocástica del lenguaje natural. Al integrar la Teoría de la Complejidad de McCabe con la estructuración de instrucciones, se genera un nuevo conocimiento sobre cómo la semántica del \textit{prompt} impacta directamente en el grafo de flujo de control del software resultante. Este trabajo expande la frontera del conocimiento al tratar a la IA no como un ente aislado, sino como un agente dentro de un sistema sociotécnico que requiere de gobernanza arquitectónica para mitigar la entropía del código.
 }
 
 \tituloIII{Justificación Práctica}
-
 \parrafoIII{
-En el ámbito práctico, la investigación resuelve el problema crítico de la acumulación de deuda técnica en los departamentos de TI que han adoptado el uso empírico de la IA. Al proporcionar un Framework de Ingeniería de Prompts validado, se dota a los ingenieros de software de una herramienta metodológica que reduce los tiempos de refactorización y los costos operativos asociados al mantenimiento preventivo. La implementación de este marco permite que las soluciones de software generadas sean profesionalmente aptas para entornos de producción, minimizando los riesgos de fallos lógicos y optimizando el ciclo de vida de desarrollo en las organizaciones tecnológicas actuales.
+En la práctica, el estudio aborda la crisis de mantenibilidad generada por el uso empírico de la IAG en la industria. Al proporcionar un Framework validado, se ofrece una solución tangible al problema de la "PromptDebt", permitiendo que las organizaciones reduzcan el tiempo de refactorización manual y los costos operativos de soporte de nivel 3 \cite{romero2024business}. La implementación de este marco transforma el uso de la IA de un asistente de autocompletado a un motor de generación de microservicios profesionalmente aptos para infraestructuras críticas, garantizando que el ahorro inicial en tiempo de codificación no se traduzca en una deuda técnica impagable a mediano plazo \cite{asfandyar2024evaluating}.
 }
 
 \tituloIII{Justificación Metodológica}
-
 \parrafoIII{
-Metodológicamente, el estudio propone un protocolo de experimentación y medición sistemática que puede ser replicado en futuros estudios sobre ingeniería de software asistida. Se justifica mediante la creación de un \textit{pipeline} de evaluación que combina el análisis estático de código con la validación normativa internacional. Esta propuesta establece procedimientos claros para cuantificar la calidad del código generado, transformando una actividad que actualmente es subjetiva y variable en un proceso de ingeniería controlado, medible y auditable, sentando un precedente para la estandarización del uso de LLMs en la formación académica y profesional.
+Metodológicamente, la investigación establece un precedente de auditoría técnica para el código sintético. Se justifica mediante el diseño de un \textit{pipeline} de evaluación experimental que elimina la subjetividad en la apreciación de la calidad del código. Al combinar herramientas de análisis estático (como SonarQube) con protocolos de validación normativa, se propone un modelo de experimentación replicable y escalable. Este procedimiento permite transformar la "Ingeniería de Prompts" de una técnica de ensayo y error en una disciplina de ingeniería medible, auditable y controlada, proporcionando métricas precisas para la toma de decisiones en la gestión de proyectos tecnológicos.
 }
-% capitulo1_delimitacion.tex
 
 \tituloII{Delimitación de la Investigación}
-
 \tituloIII{Delimitación Espacial}
-
 \parrafoIII{
-La investigación se llevará a cabo en el Laboratorio de Ingeniería de Sistemas de la Universidad Continental, sede Cusco. El entorno de experimentación estará constituido por nodos computacionales locales (clústeres de pruebas) bajo arquitectura Linux, donde se desplegarán los modelos de lenguaje y las herramientas de análisis estático de código para garantizar un control estricto sobre las variables de red y procesamiento.
+El estudio se desarrollará en el Laboratorio de Ingeniería de Sistemas de la Universidad Continental, sede Cusco. La infraestructura tecnológica consistirá en estaciones de trabajo bajo el sistema operativo Arch Linux, configuradas para la gestión de contenedores y despliegue de microservicios. Se utilizarán modelos de lenguaje de última generación a través de APIs y entornos locales para garantizar la trazabilidad de los datos y minimizar la latencia de red, asegurando un entorno de pruebas controlado y aislado de interferencias externas.
 }
 
 \tituloIII{Delimitación Temporal}
-
 \parrafoIII{
-El estudio se desarrollará durante el periodo académico 2026-I, comprendido entre los meses de marzo y julio de 2026. Este cronograma incluye las fases de diseño del Framework, la ejecución de las pruebas experimentales automatizadas, el procesamiento de métricas de calidad y la redacción del informe final de resultados.
+La investigación es de corte transversal y se ejecutará durante el periodo académico 2026-I, abarcando desde marzo hasta julio de 2026. Este periodo permite una observación secuencial que inicia con la delimitación algorítmica \cite{medianero2024algoritmos}, continúa con la fase de experimentación intensiva y concluye con el análisis estadístico de la deuda técnica acumulada frente a los umbrales de la norma ISO 25010.
 }
 
 \tituloIII{Delimitación Social}
-
 \parrafoIII{
-La investigación está dirigida a la comunidad de ingeniería de software, específicamente a desarrolladores, arquitectos de sistemas y analistas de calidad (QA). Los resultados beneficiarán directamente a las organizaciones tecnológicas locales en Cusco que buscan estandarizar el uso de herramientas de inteligencia artificial generativa bajo marcos de cumplimiento internacional.
+El alcance social del estudio se circunscribe a los actores del ecosistema de desarrollo de software: ingenieros de sistemas, arquitectos de soluciones y especialistas en aseguramiento de la calidad (QA). Se enfoca particularmente en la comunidad técnica de la región Cusco, buscando profesionalizar el uso de la IAG en las Mypes tecnológicas y en la formación de futuros ingenieros, alineándose con las estrategias nacionales de transformación digital y ética en IA \cite{sgtd2024estrategia, gobperu2024ia}.
 }
-
 \tituloII{Hipótesis y Variables}
 
 \tituloIII{Hipótesis}
