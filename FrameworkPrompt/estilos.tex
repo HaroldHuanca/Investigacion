@@ -5,6 +5,9 @@
 \usepackage{changepage}
 \usepackage{ragged2e} % Si falla, podemos comentar esta línea
 
+\setlength{\parindent}{0pt}
+\setlength{\parindent}{0pt}
+
 % --- CONFIGURACIÓN DE TÍTULOS ---
 
 % Título I: CENTRADO CON SALTO
@@ -48,7 +51,7 @@
 % --- ENTORNO PARA PÁRRAFOS (Versión Estable) ---
 \newenvironment{parrafo}[1]{
     \begin{adjustwidth}{#1}{0pt}
-    \justifying % Si da error de "Undefined control sequence", borrar esta línea
+    %\justifying % Si da error de "Undefined control sequence", borrar esta línea
     \setlength{\parskip}{0.5em}
     \setlength{\parindent}{0pt}
 }{
@@ -58,37 +61,37 @@
 % --- COMANDOS PARA PÁRRAFOS SIN SANGRÍA (CORREGIDOS) ---
 
 % Párrafo para Título I
-\newcommand{\parrafoI}[1]{
-    \noindent #1\par\vspace{1em}
+\newcommand{\parrafoI}[1]{%
+    \noindent\ignorespaces#1\par\vspace{1em}%
 }
 
 % Párrafo para Título II (Margen 2.5em)
-\newcommand{\parrafoII}[1]{
-    \begin{adjustwidth}{2.5em}{0pt}
-        \setlength{\parindent}{0pt} % Quita sangría a todos
-        \setlength{\parskip}{0.5em}    % Espacio entre párrafos
-        \noindent #1 \par            % El \par final es vital
-    \end{adjustwidth}
-    \vspace{0.5em}
+\newcommand{\parrafoII}[1]{%
+    \begin{adjustwidth}{2.5em}{0pt}%
+        \setlength{\parindent}{0pt}%
+        \setlength{\parskip}{0.5em}%
+        \noindent\ignorespaces#1\par%
+    \end{adjustwidth}%
+    \vspace{0.5em}%
 }
 
 % Párrafo para Título III (Margen 5em)
-\newcommand{\parrafoIII}[1]{
-    \begin{adjustwidth}{5em}{0pt}
-        \setlength{\parindent}{0pt}
-        \setlength{\parskip}{0.5em}
-        \noindent #1 \par
-    \end{adjustwidth}
-    \vspace{0.5em}
+\newcommand{\parrafoIII}[1]{%
+    \begin{adjustwidth}{5em}{0pt}%
+        \setlength{\parindent}{0pt}%
+        \setlength{\parskip}{0.5em}%
+        \noindent\ignorespaces#1\par%
+    \end{adjustwidth}%
+    \vspace{0.5em}%
 }
 % Párrafo para Título IV (Margen 6.5em o 7.0em según tu preferencia de escalado)
-\newcommand{\parrafoIV}[1]{
-    \begin{adjustwidth}{8.4em}{0pt}
-        \setlength{\parindent}{0pt}
-        \setlength{\parskip}{0.5em}
-        \noindent #1 \par
-    \end{adjustwidth}
-    \vspace{0.5em}
+\newcommand{\parrafoIV}[1]{%
+    \begin{adjustwidth}{8.4em}{0pt}%
+        \setlength{\parindent}{0pt}%
+        \setlength{\parskip}{0.5em}%
+        \noindent\ignorespaces#1\par%
+    \end{adjustwidth}%
+    \vspace{0.5em}%
 }
 % --- LISTAS PERSONALIZADAS POR NIVEL ---
 
