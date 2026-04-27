@@ -38,11 +38,11 @@ Memoria RAM & Mínimo 16 GB \\ \hline
 \caption{Especificaciones técnicas de la estación de trabajo.}
 \end{table}
 
-\parrafoI{
+\parrafoIV{
 \textbf{Función dentro del sistema:} Actúa como el host principal para el despliegue de contenedores y la gestión de flujos de datos entre los modelos de IA y las herramientas de métricas.
 }
 
-\parrafoI{
+\parrafoIV{
 \textbf{Uso en la solución:} Provee la potencia de cálculo necesaria para procesar las 50 peticiones de generación de código por grupo y ejecutar simultáneamente los servicios de SonarQube.
 }
 
@@ -51,16 +51,16 @@ Memoria RAM & Mínimo 16 GB \\ \hline
 Definido como el ecosistema de software de bajo nivel y red local configurado para el control estricto de variables de procesamiento.
 }
 
-\begin{listaPE}
+\begin{listaIV}
     \item \textbf{Sistema Operativo:} Distribución Linux (específicamente Arch Linux para el clúster de pruebas).
     \item \textbf{Infraestructura:} Nodos computacionales locales configurados en el Laboratorio de Ingeniería de Sistemas de la Universidad Continental, sede Cusco[cite: 80, 121].
-\end{listaPE}
+\end{listaIV}
 
-\parrafoI{
+\parrafoIV{
 \textbf{Función dentro del sistema:} Garantiza un entorno de ejecución aislado que minimiza la latencia de red y asegura la reproducibilidad de los experimentos[cite: 81, 121].
 }
 
-\parrafoI{
+\parrafoIV{
 \textbf{Relación con la arquitectura:} Constituye la capa de infraestructura (On-premise) sobre la cual se despliega el clúster de pruebas y los servicios de análisis.
 }
 
@@ -82,11 +82,11 @@ Mistral & v0.1 / v0.3 & Validación de reproducibilidad y consistencia. \\ \hlin
 \caption{Modelos de lenguaje seleccionados para la investigación.}
 \end{table}
 
-\parrafoI{
+\parrafoIV{
 \textbf{Función dentro del sistema:} Actúan como el agente generador de código fuente que será sometido a evaluación bajo las métricas de mantenibilidad y deuda técnica.
 }
 
-\parrafoI{
+\parrafoIV{
 \textbf{Uso en la solución:} Reciben las instrucciones (prompts) estructuradas bajo los lineamientos del framework basado en la norma ISO/IEC 25010 para producir módulos de microservicios.
 }
 
@@ -95,12 +95,12 @@ Mistral & v0.1 / v0.3 & Validación de reproducibilidad y consistencia. \\ \hlin
 Capa de virtualización a nivel de sistema operativo utilizada para empaquetar y ejecutar los servicios de análisis y modelos de forma aislada y replicable.
 }
 
-\begin{listaPE}
+\begin{listaIV}
     \item \textbf{Motor de contenedores:} Docker para el aislamiento de servicios.
     \item \textbf{Orquestación:} Gestión de dependencias y despliegue de SonarQube y Radon.
-\end{listaPE}
+\end{listaIV}
 
-\parrafoI{
+\parrafoIV{
 \textbf{Relación con la arquitectura:} Permite la integración del pipeline de análisis estático con los nodos computacionales, asegurando que el entorno de experimentación sea independiente del hardware subyacente.
 }
 
@@ -111,44 +111,44 @@ Capa de virtualización a nivel de sistema operativo utilizada para empaquetar y
 Conjunto de herramientas de software destinadas a la inspección automática del código fuente sin necesidad de ejecución, permitiendo identificar vulnerabilidades estructurales.
 }
 
-\begin{listaPE}
+\begin{listaIV}
     \item \textbf{SonarQube (Community Edition):} Plataforma central para la medición de la deuda técnica y densidad de defectos.
     \item \textbf{Librería Radon:} Herramienta de línea de comandos en Python para el cálculo de la Complejidad Ciclomática de McCabe.
-\end{listaPE}
+\end{listaIV}
 
 \tituloIV{ Ecosistema de Lenguajes de Programación Objetivo}
 \parrafoIV{
 Lenguajes de alto nivel seleccionados para la generación de código, representativos del desarrollo actual de microservicios:
 }
 
-\begin{listaPE}
+\begin{listaIV}
     \item \textbf{Python:} Utilizado para la generación de lógica de procesamiento de datos.
     \item \textbf{TypeScript:} Utilizado para la validación de arquitectura de servicios escalables y tipado fuerte.
-\end{listaPE}
+\end{listaIV}
 
 \tituloIII{ Métodos}
 
 \tituloIII{Ingeniería de Prompts y Diseño del Framework}
 
 \tituloIV{Conceptualización del Framework basado en ISO/IEC 25010}
-\parrafoI{
+\parrafoIV{
 Proceso de traducción de los atributos de calidad definidos en la norma internacional hacia una estructura lógica de instrucciones para modelos de lenguaje. Se centra en la descomposición de la Mantenibilidad en sub-características como modularidad y analizabilidad.
 }
 
-\begin{listaPE}
+\begin{listaIV}
     \item \textbf{Justificación:} Garantiza que el código generado cumpla con estándares industriales para su evolución futura.
     \item \textbf{Artefactos:} Matriz de trazabilidad Norma-Prompt y Plantilla Maestra del Framework.
-\end{listaPE}
+\end{listaIV}
 
 \tituloIV{Aplicación de Patrones Arquitectónicos de Prompts}
 \parrafoIV{
 Implementación de técnicas avanzadas de estructuración para guiar el razonamiento del modelo de IA hacia soluciones óptimas.
 }
 
-\begin{listaPE}
+\begin{listaIV}
     \item \textbf{Chain-of-Thought (CoT):} Descomposición de problemas lógicos en pasos secuenciales.
     \item \textbf{Few-Shot Prompting:} Inclusión de ejemplos de código de alta calidad como referencia arquitectónica.
-\end{listaPE}
+\end{listaIV}
 
 \tituloIII{ Desarrollo y Generación de Código de Microservicios}
 
@@ -162,10 +162,10 @@ Preparación de la infraestructura lógica para la ejecución de modelos en un e
 Ejecución del protocolo cuasi-experimental dividido en dos fases:
 }
 
-\begin{listaPE}
+\begin{listaIV}
     \item \textbf{Grupo Control (Pre-prueba):} Generación de 50 módulos utilizando prompts empíricos abiertos.
     \item \textbf{Grupo Experimental (Post-prueba):} Generación de módulos aplicando el Framework estructurado.
-\end{listaPE}
+\end{listaIV}
 
 \tituloIII{ Pipeline de Análisis Estático y Validación de Calidad}
 
@@ -179,16 +179,16 @@ Implementación de un flujo automatizado para la extracción de metadatos técni
 Procedimiento de verificación del cumplimiento normativo y análisis de significancia estadística.
 }
 
-\begin{listaPE}
+\begin{listaIV}
     \item \textbf{Técnicas:} Uso de pruebas t-Student o U de Mann-Whitney para comparar las medias de los grupos control y experimental.
     \item \textbf{Criterio de Ingeniería:} Asegurar la sostenibilidad tecnológica mediante la reducción del tiempo estimado de remediación.
-\end{listaPE}
+\end{listaIV}
 
 \tituloII{Sustento Teórico de la Metodología}
-\parrafoI{
+\parrafoII{
 La integración de la norma ISO/IEC 25010 dentro de la ingeniería de prompts se fundamenta en la necesidad de establecer métricas de calidad interna en sistemas generados por IA[cite: 2]. Según Hou et al. (2024), la ausencia de rigor arquitectónico en el uso de LLMs deriva en una deuda técnica acumulada que compromete la mantenibilidad a largo plazo[cite: 1]. 
 }
 
-\parrafoI{
+\parrafoII{
 A nivel regional, la adopción de estas tecnologías en el sur del Perú requiere marcos de cumplimiento que aseguren la resiliencia organizacional frente a la degradación del software[cite: 4]. El uso de herramientas como SonarQube y Radon permite operacionalizar estos estándares internacionales en datos cuantitativos y auditables[cite: 3].
 }

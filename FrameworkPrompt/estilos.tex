@@ -42,7 +42,7 @@
 \newcommand{\tituloI}[1]{\section{#1}}
 \newcommand{\tituloII}[1]{\subsection{#1}}
 \newcommand{\tituloIII}[1]{\subsubsection{#1}}
-\newcommand{\tituloIV}[1]{\paragraph{#1}\mbox{}\\} 
+\newcommand{\tituloIV}[1]{\paragraph{#1}} 
 % El \mbox{}\\} es para asegurar que el párrafo empiece en la línea siguiente si así lo deseas
 
 % --- ENTORNO PARA PÁRRAFOS (Versión Estable) ---
@@ -83,7 +83,7 @@
 }
 % Párrafo para Título IV (Margen 6.5em o 7.0em según tu preferencia de escalado)
 \newcommand{\parrafoIV}[1]{
-    \begin{adjustwidth}{7.0em}{0pt}
+    \begin{adjustwidth}{8.4em}{0pt}
         \setlength{\parindent}{0pt}
         \setlength{\parskip}{0.5em}
         \noindent #1 \par
@@ -137,7 +137,7 @@
 \setlist[listaIV]{
     label=\textbullet,
     nosep,
-    leftmargin=7em, % 4.5em del parrafo + 1.5em para la viñeta
+    leftmargin=9.5em, % 4.5em del parrafo + 1.5em para la viñeta
     topsep=0.5em,     % Aquí controlamos la distancia exacta al título
     after=\vspace{1em}
 }
