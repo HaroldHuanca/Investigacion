@@ -22,10 +22,14 @@
 \usepackage{ragged2e}
 \usepackage{setspace}
 \usepackage{adjustbox}
+\usepackage{float}
+\usepackage{multirow}
 
 % --- AQUÍ SE DEFINE LA COLUMNA Y ---
 \newcolumntype{Y}{>{\RaggedRight\setstretch{1.1}\footnotesize\arraybackslash}X}
 
+% --- Paquete para Diagramas de Gantt ---
+\usepackage{pgfgantt}
 
 % --- Configuración de Márgenes (Norma UC) ---
 \usepackage[a4paper, 
@@ -46,7 +50,9 @@
 \usepackage[
     backend=biber,
     style=iso-numeric,
-    sorting=none
+    sorting=none,
+    language=spanish,
+    abbreviate=false
 ]{biblatex}
 
 \addbibresource{bibliografia.bib}

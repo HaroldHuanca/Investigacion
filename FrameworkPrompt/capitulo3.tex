@@ -15,8 +15,6 @@
 \parrafoIII{El diseño de la investigación es **experimental**, específicamente bajo un esquema **cuasi-experimental con pre-prueba y post-prueba**. Se utilizará un grupo de control donde la generación de código se realizará mediante métodos empíricos (prompts abiertos) y un grupo experimental donde se aplicará el Framework de Ingeniería de Prompts diseñado. Las mediciones de pre-prueba y post-prueba se realizarán utilizando herramientas de análisis estático (SonarQube/Radon) para comparar la evolución de la calidad estructural del software en ambos escenarios.}
 
 \tituloII{Materiales y métodos}
-
-\tituloII{Materiales y métodos}
 \tituloIII{Materiales}
 
 \tituloIII{Recursos de Infraestructura y Hardware}
@@ -53,11 +51,11 @@ Definido como el ecosistema de software de bajo nivel y red local configurado pa
 
 \begin{listaIV}
     \item \textbf{Sistema Operativo:} Distribución Linux (específicamente Arch Linux para el clúster de pruebas).
-    \item \textbf{Infraestructura:} Nodos computacionales locales configurados en el Laboratorio de Ingeniería de Sistemas de la Universidad Continental, sede Cusco[cite: 80, 121].
+    \item \textbf{Infraestructura:} Nodos computacionales locales configurados en el Laboratorio de Ingeniería de Sistemas de la Universidad Continental, sede Cusco.
 \end{listaIV}
 
 \parrafoIV{
-\textbf{Función dentro del sistema:} Garantiza un entorno de ejecución aislado que minimiza la latencia de red y asegura la reproducibilidad de los experimentos[cite: 81, 121].
+\textbf{Función dentro del sistema:} Garantiza un entorno de ejecución aislado que minimiza la latencia de red y asegura la reproducibilidad de los experimentos.
 }
 
 \parrafoIV{
@@ -126,6 +124,85 @@ Lenguajes de alto nivel seleccionados para la generación de código, representa
     \item \textbf{TypeScript:} Utilizado para la validación de arquitectura de servicios escalables y tipado fuerte.
 \end{listaIV}
 
+\tituloIII{Planificación del Proyecto}
+
+\tituloIV{Presupuesto}
+\parrafoIV{
+El presupuesto del proyecto ha sido estructurado considerando los recursos necesarios para la ejecución del proceso experimental, incluyendo recursos humanos, infraestructura, servicios y costos operativos. Esta distribución permite garantizar la viabilidad técnica y económica del estudio.
+}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|c|c|c|c|}
+\hline
+\textbf{Categoría} & \textbf{Ítem} & \textbf{Cant.} & \textbf{Unidad} & \textbf{P. Unit (S/.)} & \textbf{Total (S/.)} \\ \hline
+
+\multirow{2}{*}{Recursos Humanos}
+& Investigador principal & 6 & mes & 1500 & 9000 \\ \cline{2-6}
+& Asistente de investigación & 4 & mes & 800 & 3200 \\ \hline
+
+\multirow{2}{*}{Equipamiento}
+& Estación de trabajo & 1 & unidad & 3000 & 3000 \\ \cline{2-6}
+& Periféricos & 1 & lote & 200 & 200 \\ \hline
+
+\multirow{2}{*}{Software}
+& Herramientas de desarrollo & 1 & licencia & 0 & 0 \\ \cline{2-6}
+& Consumo API LLM & 1 & uso & 500 & 500 \\ \hline
+
+\multirow{3}{*}{Servicios}
+& Internet & 6 & mes & 100 & 600 \\ \cline{2-6}
+& Electricidad & 6 & mes & 80 & 480 \\ \cline{2-6}
+& Impresión & 1 & lote & 150 & 150 \\ \hline
+
+\multirow{2}{*}{Otros}
+& Movilidad & 10 & salida & 20 & 200 \\ \cline{2-6}
+& Contingencia (5\%) & 1 & global & -- & 876 \\ \hline
+
+\multicolumn{5}{|r|}{\textbf{TOTAL}} & \textbf{18,206} \\ \hline
+\end{tabular}
+\caption{Estructura del presupuesto del proyecto.}
+\end{table}
+
+\parrafoIV{
+\textbf{Criterio de estimación:} El presupuesto prioriza el componente de recursos humanos, dado que la investigación se fundamenta en actividades de análisis, diseño experimental y validación. Los costos de software se mantienen reducidos debido al uso de herramientas open source, mientras que se considera un margen de contingencia para cubrir variaciones operativas.
+}
+
+\tituloIV{Cronograma de Actividades}
+
+\parrafoIV{
+El cronograma del proyecto ha sido estructurado en un horizonte temporal de 24 semanas, comprendido entre julio y diciembre de 2026. Se ha definido una secuencia lógica que integra actividades de investigación, desarrollo experimental y validación, permitiendo la superposición controlada de tareas para optimizar el tiempo de ejecución.
+}
+
+\begin{center}
+\resizebox{\textwidth}{!}{
+\begin{ganttchart}[
+    y unit title=0.5cm,
+    y unit chart=0.6cm,
+    vgrid, hgrid,
+    title height=1,
+    bar/.style={fill=gray!50}
+]{1}{24}
+
+\gantttitle{Cronograma del Proyecto (Julio - Diciembre 2026)}{24} \\
+\gantttitlelist{1,...,24}{1} \\
+
+\ganttbar{Planteamiento del problema}{1}{2} \\
+\ganttbar{Revisión de literatura}{3}{6} \\
+\ganttbar{Diseño metodológico}{7}{9} \\
+\ganttbar{Configuración del entorno}{10}{11} \\
+\ganttbar{Recolección de datos}{10}{14} \\
+\ganttbar{Generación de código (Experimentos)}{12}{16} \\
+\ganttbar{Análisis de métricas}{17}{19} \\
+\ganttbar{Redacción del informe}{20}{22} \\
+\ganttbar{Revisión y ajustes finales}{23}{24} \\
+
+\end{ganttchart}
+}
+\end{center}
+\parrafoIV{
+\textbf{Criterio de planificación:} Se ha optado por un enfoque semi-paralelo en la ejecución de actividades críticas, particularmente en la fase experimental, donde la generación de código y la recolección de datos se desarrollan de manera concurrente. Esta estrategia reduce el tiempo total del proyecto sin comprometer la validez de los resultados.
+}
+
 \tituloIII{ Métodos}
 
 \tituloIII{Ingeniería de Prompts y Diseño del Framework}
@@ -186,9 +263,9 @@ Procedimiento de verificación del cumplimiento normativo y análisis de signifi
 
 \tituloII{Sustento Teórico de la Metodología}
 \parrafoII{
-La integración de la norma ISO/IEC 25010 dentro de la ingeniería de prompts se fundamenta en la necesidad de establecer métricas de calidad interna en sistemas generados por IA[cite: 2]. Según Hou et al. (2024), la ausencia de rigor arquitectónico en el uso de LLMs deriva en una deuda técnica acumulada que compromete la mantenibilidad a largo plazo[cite: 1]. 
+La integración de la norma ISO/IEC 25010 dentro de la ingeniería de prompts se fundamenta en la necesidad de establecer métricas de calidad interna en sistemas generados por IA. Según Hou et al. (2024), la ausencia de rigor arquitectónico en el uso de LLMs deriva en una deuda técnica acumulada que compromete la mantenibilidad a largo plazo. 
 }
 
 \parrafoII{
-A nivel regional, la adopción de estas tecnologías en el sur del Perú requiere marcos de cumplimiento que aseguren la resiliencia organizacional frente a la degradación del software[cite: 4]. El uso de herramientas como SonarQube y Radon permite operacionalizar estos estándares internacionales en datos cuantitativos y auditables[cite: 3].
+A nivel regional, la adopción de estas tecnologías en el sur del Perú requiere marcos de cumplimiento que aseguren la resiliencia organizacional frente a la degradación del software. El uso de herramientas como SonarQube y Radon permite operacionalizar estos estándares internacionales en datos cuantitativos y auditables.
 }
