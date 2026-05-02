@@ -91,6 +91,10 @@ Mistral & v0.1 / v0.3 & Validación de reproducibilidad y consistencia. \\ \hlin
 \textbf{Uso en la solución:} Reciben las instrucciones (prompts) estructuradas bajo los lineamientos del framework basado en la norma ISO/IEC 25010 para producir módulos de microservicios.
 }
 
+\parrafoIV{
+\textbf{Lenguaje y entorno de desarrollo:} El experimento se desarrollará utilizando el lenguaje de programación Python, debido a su amplia adopción en entornos de desarrollo asistido por inteligencia artificial y su compatibilidad con herramientas de análisis estático como Radon y SonarQube. Asimismo, se empleará un enfoque basado en microservicios utilizando frameworks ligeros como FastAPI para la generación de módulos evaluables.
+}
+
 \tituloIV{Entorno de Orquestación y Contenerización}
 \parrafoIV{
 Capa de virtualización a nivel de sistema operativo utilizada para empaquetar y ejecutar los servicios de análisis y modelos de forma aislada y replicable.
@@ -141,30 +145,31 @@ El presupuesto del proyecto ha sido estructurado considerando los recursos neces
 \textbf{Categoría} & \textbf{Ítem} & \textbf{Cant.} & \textbf{Unidad} & \textbf{P. Unit (S/.)} & \textbf{Total (S/.)} \\ \hline
 
 \multirow{2}{*}{Recursos Humanos}
-& Investigador principal & 6 & mes & 1500 & 9000 \\ \cline{2-6}
-& Asistente de investigación & 4 & mes & 800 & 3200 \\ \hline
+& Investigador principal & 6 & mes & 0 & 0 \\ \cline{2-6}
+& Asistente de investigación & 0 & mes & 0 & 0 \\ \hline
 
 \multirow{2}{*}{Equipamiento}
-& Estación de trabajo & 1 & unidad & 3000 & 3000 \\ \cline{2-6}
+& Estación de trabajo & 1 & unidad & 0 & 0 \\ \cline{2-6}
 & Periféricos & 1 & lote & 200 & 200 \\ \hline
 
 \multirow{2}{*}{Software}
-& Herramientas de desarrollo & 1 & licencia & 0 & 0 \\ \cline{2-6}
-& Consumo API LLM & 1 & uso & 500 & 500 \\ \hline
+& Herramientas open source & 1 & uso & 0 & 0 \\ \cline{2-6}
+& Consumo API LLM & 1 & uso & 0 & 0 \\ \hline
 
-\multirow{3}{*}{Servicios}
+\multirow{2}{*}{Servicios}
 & Internet & 6 & mes & 100 & 600 \\ \cline{2-6}
-& Electricidad & 6 & mes & 80 & 480 \\ \cline{2-6}
+& Electricidad & 6 & mes & 80 & 480 \\ \hline
+
+\multirow{1}{*}{Otros}
 & Impresión & 1 & lote & 150 & 150 \\ \hline
 
-\multirow{2}{*}{Otros}
-& Movilidad & 10 & salida & 20 & 200 \\ \cline{2-6}
-& Contingencia (5\%) & 1 & global & -- & 876 \\ \hline
-
-\multicolumn{5}{|r|}{\textbf{TOTAL}} & \textbf{18,206} \\ \hline
+\multicolumn{5}{|r|}{\textbf{TOTAL}} & \textbf{1,430} \\ \hline
 \end{tabular}
-\caption{Estructura del presupuesto del proyecto.}
+\caption{Estructura del presupuesto ajustado del proyecto.}
 \end{table}
+\parrafoIV{
+El experimento utilizará modelos de lenguaje de acceso gratuito o con planes académicos, lo cual elimina costos asociados al consumo de API, manteniendo la viabilidad económica del estudio. El proyecto será ejecutado por el investigador como parte de su formación académica, por lo que no se consideran costos salariales.
+}
 
 \parrafoIV{
 \textbf{Criterio de estimación:} El presupuesto prioriza el componente de recursos humanos, dado que la investigación se fundamenta en actividades de análisis, diseño experimental y validación. Los costos de software se mantienen reducidos debido al uso de herramientas open source, mientras que se considera un margen de contingencia para cubrir variaciones operativas.
@@ -182,7 +187,6 @@ El cronograma del proyecto ha sido estructurado en un horizonte temporal de 24 s
     y unit title=0.5cm,
     y unit chart=0.6cm,
     vgrid, hgrid,
-    title height=1,
     bar/.style={fill=gray!50}
 ]{1}{24}
 
@@ -190,18 +194,21 @@ El cronograma del proyecto ha sido estructurado en un horizonte temporal de 24 s
 \gantttitlelist{1,...,24}{1} \\
 
 \ganttbar{Planteamiento del problema}{1}{2} \\
-\ganttbar{Revisión de literatura}{3}{6} \\
-\ganttbar{Diseño metodológico}{7}{9} \\
-\ganttbar{Configuración del entorno}{10}{11} \\
-\ganttbar{Recolección de datos}{10}{14} \\
-\ganttbar{Generación de código (Experimentos)}{12}{16} \\
+\ganttbar{Revisión de literatura}{2}{6} \\
+\ganttbar{Diseño metodológico}{5}{8} \\
+\ganttbar{Definición del protocolo experimental}{7}{9} \\
+\ganttbar{Configuración del entorno}{8}{10} \\
+\ganttbar{Prueba piloto}{10}{11} \\
+\ganttbar{Ejecución de experimentos}{11}{16} \\
+\ganttbar{Recolección de datos}{11}{16} \\
 \ganttbar{Análisis de métricas}{17}{19} \\
-\ganttbar{Redacción del informe}{20}{22} \\
-\ganttbar{Revisión y ajustes finales}{23}{24} \\
+\ganttbar{Redacción del informe}{14}{22} \\
+\ganttbar{Revisión y ajustes finales}{22}{24} \\
 
 \end{ganttchart}
 }
 \end{center}
+
 \parrafoIV{
 \textbf{Criterio de planificación:} Se ha optado por un enfoque semi-paralelo en la ejecución de actividades críticas, particularmente en la fase experimental, donde la generación de código y la recolección de datos se desarrollan de manera concurrente. Esta estrategia reduce el tiempo total del proyecto sin comprometer la validez de los resultados.
 }
