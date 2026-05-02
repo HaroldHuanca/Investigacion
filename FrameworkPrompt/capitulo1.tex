@@ -5,7 +5,7 @@
 \tituloII{Planteamiento del Problema}
 
 \parrafoII{
-A nivel global, la integración de la Inteligencia Artificial Generativa (IAG) en el ciclo de vida del desarrollo de software ha transformado la productividad de la industria; no obstante, ha introducido un fenómeno crítico denominado "deuda técnica automatizada". Investigaciones recientes como la de Hou et al. \cite{hou2024large} sostienen que el código generado por modelos de lenguaje de gran escala (LLMs) a menudo carece de una visión arquitectónica integral, derivando en sistemas con una complejidad estructural elevada. Esta tendencia sugiere un incremento sustancial en la velocidad de codificación, pero a costa de una degradación en la mantenibilidad, lo que contraviene los estándares de calidad interna establecidos por la norma ISO/IEC 25010 \cite{iso25010}.
+A nivel global, la integración de la Inteligencia Artificial Generativa (IAG) en el ciclo de vida del desarrollo de software ha transformado la productividad de la industria; no obstante, ha introducido un fenómeno crítico denominado "deuda técnica automatizada". Investigaciones recientes como la de Hou et al. \cite{hou2024large} sostienen que el código generado por modelos de lenguaje de gran escala (LLMs) a menudo carece de una visión arquitectónica integral, derivando en sistemas con una complejidad estructural elevada. Esta tendencia sugiere un incremento sustancial en la velocidad de codificación, pero a costa de una degradación en la mantenibilidad, lo que contraviene los estándares de calidad interna establecidos por la norma ISO/IEC 25010 \cite{iso25010}. Diversos estudios han evidenciado que el código generado por modelos de lenguaje de gran escala presenta limitaciones en términos de mantenibilidad y calidad estructural. Por ejemplo, investigaciones recientes señalan que el uso de LLMs en generación de código puede introducir complejidad innecesaria y deuda técnica acumulada, especialmente cuando no se aplican lineamientos estructurados de diseño o validación \cite{liu2023refined, aljohani2024promptdebt}. Estos hallazgos evidencian la necesidad de establecer marcos metodológicos que orienten la generación de código hacia estándares de calidad definidos.
 }
 
 \parrafoII{
@@ -32,7 +32,9 @@ Las consecuencias de persistir en este modelo empírico de desarrollo son graves
 \parrafoII{
 De no establecerse un \textbf{Framework de Ingeniería de Prompts} que actúe como un filtro de calidad basado en la norma \cite{iso25010}, la industria del software se enfrentará a una saturación de sistemas heredados (\textit{legacy}) generados por IA que resultarán inmanejables a mediano plazo \cite{hou2024large, aljohani2024promptdebt}. Prospectivamente, el éxito de la ingeniería de sistemas en la próxima década dependerá de la capacidad de los profesionales para sistematizar la interacción con los LLMs, transformando la generación de código de un proceso aleatorio a una disciplina de ingeniería predictiva y controlada \cite{medianero2024algoritmos, diaz2024optimizacion}. Solo mediante la adopción de estrategias de gobernanza y métricas de calidad adaptadas a la era generativa se podrá asegurar que la tecnología cumpla con los objetivos de transformación digital nacional, actuando como un motor de eficiencia y no como un generador de inestabilidad sistémica en infraestructuras críticas \cite{sgtd2024estrategia, ortega2026arquitecturas}.
 }
-% capitulo1_formulacion.tex
+\parrafoII{
+La unidad de análisis está constituida por módulos de código fuente generados por modelos de lenguaje de gran escala (LLMs), específicamente implementaciones de microservicios desarrolladas en lenguajes de programación como Python y TypeScript. Cada unidad será evaluada mediante métricas de calidad interna para determinar su nivel de mantenibilidad y deuda técnica.
+}
 
 \tituloII{Formulación del Problema}
 
@@ -132,3 +134,54 @@ El alcance social del estudio se circunscribe a los actores del ecosistema de de
     \item \textbf{Deuda Técnica:} Medida a través del tiempo estimado de refactorización y la densidad de defectos detectados por el \textit{pipeline} automatizado.
     %\item \textbf{Fiabilidad Sistémica:} Medida a través del porcentaje de cumplimiento de los requisitos de idoneidad técnica establecidos en la norma ISO/IEC 25010.
 \end{listaVD}
+
+\tituloIII{Operacionalización de Variables}
+
+\begin{table}[H]
+\centering
+\caption{Operacionalización de Variables}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{
+p{2.8cm} 
+p{2.8cm} 
+>{\RaggedRight\arraybackslash}X 
+p{2.2cm} 
+p{2.2cm}
+}
+\toprule
+\textbf{Variable} & \textbf{Dimensión} & \textbf{Indicador} & \textbf{Técnica} & \textbf{Instrumento} \\
+\midrule
+
+\textbf{Framework de Prompts (VI)} 
+& Aplicación estructurada 
+& Uso de patrones como Chain-of-Thought y Few-shot prompting 
+& Experimental 
+& Plantilla de prompts \\
+
+\midrule
+
+\textbf{Mantenibilidad (VD1)} 
+& Calidad interna 
+& Índice de mantenibilidad 
+& Análisis estático 
+& SonarQube \\
+& Complejidad 
+& Complejidad ciclomática 
+& Análisis estático 
+& Radon \\
+
+\midrule
+
+\textbf{Deuda técnica (VD2)} 
+& Esfuerzo 
+& Tiempo de remediación 
+& Análisis automático 
+& SonarQube \\
+& Calidad 
+& Densidad de defectos 
+& Análisis automático 
+& SonarQube \\
+
+\bottomrule
+\end{tabularx}
+\end{table}
