@@ -29,6 +29,7 @@ Se refiere a la unidad de procesamiento centralizada destinada a la ejecución d
 
 \begin{table}[h]
 \centering
+\caption{Especificaciones técnicas de la estación de trabajo.}
 \begin{tabular}{|l|l|}
 \hline
 \textbf{Componente} & \textbf{Especificación Técnica} \\ \hline
@@ -36,7 +37,6 @@ Arquitectura & x86\_64 \\ \hline
 Procesador & Multinúcleo (Multi-core) \\ \hline
 Memoria RAM & Mínimo 16 GB \\ \hline
 \end{tabular}
-\caption{Especificaciones técnicas de la estación de trabajo.}
 \end{table}
 
 \parrafoIV{
@@ -74,13 +74,13 @@ Constituyen los motores de inferencia probabilística basados en arquitecturas d
 
 \begin{table}[h]
 \centering
+\caption{Modelos de lenguaje seleccionados para la investigación.}
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Modelo} & \textbf{Versión/Parámetros} & \textbf{Aplicación Principal} \\ \hline
 Llama 3 & 8B / 70B & Generación de microservicios y lógica compleja. \\ \hline
 Mistral & v0.1 / v0.3 & Validación de reproducibilidad y consistencia. \\ \hline
 \end{tabular}
-\caption{Modelos de lenguaje seleccionados para la investigación.}
 \end{table}
 
 \parrafoIV{
@@ -140,6 +140,7 @@ El presupuesto del proyecto ha sido estructurado considerando los recursos neces
 
 \begin{table}[H]
 \centering
+\caption{Estructura del presupuesto ajustado del proyecto.}
 \begin{tabular}{|l|l|c|c|c|c|}
 \hline
 \textbf{Categoría} & \textbf{Ítem} & \textbf{Cant.} & \textbf{Unidad} & \textbf{P. Unit (S/.)} & \textbf{Total (S/.)} \\ \hline
@@ -165,7 +166,6 @@ El presupuesto del proyecto ha sido estructurado considerando los recursos neces
 
 \multicolumn{5}{|r|}{\textbf{TOTAL}} & \textbf{1,430} \\ \hline
 \end{tabular}
-\caption{Estructura del presupuesto ajustado del proyecto.}
 \end{table}
 \parrafoIV{
 El experimento utilizará modelos de lenguaje de acceso gratuito o con planes académicos, lo cual elimina costos asociados al consumo de API, manteniendo la viabilidad económica del estudio. El proyecto será ejecutado por el investigador como parte de su formación académica, por lo que no se consideran costos salariales.
@@ -181,58 +181,11 @@ El experimento utilizará modelos de lenguaje de acceso gratuito o con planes ac
 El cronograma del proyecto ha sido estructurado en un horizonte temporal de 24 semanas, comprendido entre julio y diciembre de 2026. Se ha definido una secuencia lógica que integra actividades de investigación, desarrollo experimental y validación, permitiendo la superposición controlada de tareas para optimizar el tiempo de ejecución.
 }
 
-\begin{center}
-\resizebox{\textwidth}{!}{
-\begin{ganttchart}[
-    y unit title=0.5cm,
-    y unit chart=0.6cm,
-    vgrid, hgrid,
-    bar/.style={fill=gray!50}
-]{1}{24}
-
-\gantttitle{Cronograma del Proyecto (Julio - Diciembre 2026)}{24} \\
-\gantttitlelist{1,...,24}{1} \\
-
-\ganttbar{Planteamiento del problema}{1}{2} \\
-\ganttbar{Revisión de literatura}{2}{6} \\
-\ganttbar{Diseño metodológico}{5}{8} \\
-\ganttbar{Definición del protocolo experimental}{7}{9} \\
-\ganttbar{Configuración del entorno}{8}{10} \\
-\ganttbar{Prueba piloto}{10}{11} \\
-\ganttbar{Ejecución de experimentos}{11}{16} \\
-\ganttbar{Recolección de datos}{11}{16} \\
-\ganttbar{Análisis de métricas}{17}{19} \\
-\ganttbar{Redacción del informe}{14}{22} \\
-\ganttbar{Revisión y ajustes finales}{22}{24} \\
-
-\end{ganttchart}
-}
-\end{center}
-
 \begin{figure}[H]
 \centering
-\begin{ganttchart}[
-    vgrid, hgrid,
-    time slot format=isodate,
-    bar height=0.6
-]{2026-07-01}{2026-11-17}
-
-\gantttitlecalendar{year, month=name, week} \\
-
-\ganttbar{Planteamiento del problema}{2026-07-01}{2026-07-14} \\
-\ganttbar{Revisión de literatura}{2026-07-08}{2026-08-04} \\
-\ganttbar{Diseño metodológico}{2026-07-29}{2026-08-18} \\
-\ganttbar{Protocolo experimental}{2026-08-12}{2026-08-25} \\
-\ganttbar{Configuración del entorno}{2026-08-19}{2026-09-01} \\
-\ganttbar{Prueba piloto}{2026-09-02}{2026-09-08} \\
-\ganttbar{Ejecución de experimentos}{2026-09-09}{2026-10-13} \\
-\ganttbar{Recolección de datos}{2026-09-09}{2026-10-13} \\
-\ganttbar{Análisis de métricas}{2026-10-14}{2026-11-03} \\
-\ganttbar{Redacción del informe}{2026-09-23}{2026-11-03} \\
-\ganttbar{Revisión final}{2026-11-04}{2026-11-17}
-
-\end{ganttchart}
-\caption{Cronograma del proyecto}
+\caption{Cronograma del proyecto elaborado en ProjectLibre}
+\includegraphics[width=0.95\textwidth]{gantt.png}
+\label{fig:gantt}
 \end{figure}
 
 \parrafoIV{

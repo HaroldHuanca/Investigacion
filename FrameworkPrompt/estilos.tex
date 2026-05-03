@@ -4,6 +4,7 @@
 \usepackage{titlesec}
 \usepackage{changepage}
 \usepackage{ragged2e} % Si falla, podemos comentar esta línea
+\usepackage{caption}
 
 \setlength{\parindent}{0pt}
 \setlength{\parindent}{0pt}
@@ -183,4 +184,20 @@
     leftmargin=7.7em,             % Alineado con el margen del Título III
     labelsep=1em,               % Espacio entre el código y el texto
     nosep                       % Elimina espacios verticales excesivos
+}
+
+% Tablas
+\captionsetup[table]{
+    name=Tabla,
+    labelsep=period,
+    justification=centering,
+    singlelinecheck=false
+}
+
+% Figuras
+\captionsetup[figure]{
+    name=Figura,
+    labelsep=period,
+    justification=centering,
+    singlelinecheck=false
 }
