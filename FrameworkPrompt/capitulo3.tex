@@ -111,13 +111,13 @@ Capa de virtualización a nivel de sistema operativo utilizada para empaquetar y
 
 \tituloIII{ Herramientas de Análisis Estático y Desarrollo}
 
-\tituloIV{ Framework de Evaluación de Calidad de Código}
+\tituloIV{Framework de Evaluación de Calidad de Código}
 \parrafoIV{
 Conjunto de herramientas de software destinadas a la inspección automática del código fuente sin necesidad de ejecución, permitiendo identificar vulnerabilidades estructurales.
 }
 
 \begin{listaIV}
-    \item \textbf{SonarQube (Community Edition):} Plataforma central para la medición de la deuda técnica y densidad de defectos.
+    \item \textbf{SonarQube (Community Edition):} Plataforma central para la medición de la deuda técnica y densidad de defectos. Para el experimento, se configurará un \textit{Quality Gate} estricto, definiendo como métrica de fallo cualquier módulo generado que supere un ratio de deuda técnica del 5\% o que presente vulnerabilidades críticas en el atributo de mantenibilidad.
     \item \textbf{Librería Radon:} Herramienta de línea de comandos en Python para el cálculo de la Complejidad Ciclomática de McCabe.
 \end{listaIV}
 
@@ -209,6 +209,32 @@ El cronograma del proyecto ha sido estructurado en un horizonte temporal de 24 s
 }
 \end{center}
 
+\begin{figure}[H]
+\centering
+\begin{ganttchart}[
+    vgrid, hgrid,
+    time slot format=isodate,
+    bar height=0.6
+]{2026-07-01}{2026-11-17}
+
+\gantttitlecalendar{year, month=name, week} \\
+
+\ganttbar{Planteamiento del problema}{2026-07-01}{2026-07-14} \\
+\ganttbar{Revisión de literatura}{2026-07-08}{2026-08-04} \\
+\ganttbar{Diseño metodológico}{2026-07-29}{2026-08-18} \\
+\ganttbar{Protocolo experimental}{2026-08-12}{2026-08-25} \\
+\ganttbar{Configuración del entorno}{2026-08-19}{2026-09-01} \\
+\ganttbar{Prueba piloto}{2026-09-02}{2026-09-08} \\
+\ganttbar{Ejecución de experimentos}{2026-09-09}{2026-10-13} \\
+\ganttbar{Recolección de datos}{2026-09-09}{2026-10-13} \\
+\ganttbar{Análisis de métricas}{2026-10-14}{2026-11-03} \\
+\ganttbar{Redacción del informe}{2026-09-23}{2026-11-03} \\
+\ganttbar{Revisión final}{2026-11-04}{2026-11-17}
+
+\end{ganttchart}
+\caption{Cronograma del proyecto}
+\end{figure}
+
 \parrafoIV{
 \textbf{Criterio de planificación:} Se ha optado por un enfoque semi-paralelo en la ejecución de actividades críticas, particularmente en la fase experimental, donde la generación de código y la recolección de datos se desarrollan de manera concurrente. Esta estrategia reduce el tiempo total del proyecto sin comprometer la validez de los resultados.
 }
@@ -263,11 +289,12 @@ Implementación de un flujo automatizado para la extracción de metadatos técni
 
 \tituloIV{Validación y Control de Calidad}
 \parrafoIV{
-Procedimiento de verificación del cumplimiento normativo y análisis de significancia estadística.
+Procedimiento de verificación del cumplimiento normativo y análisis de significancia estadística para la contrastación de las hipótesis planteadas.
 }
 
 \begin{listaIV}
-    \item \textbf{Técnicas:} Uso de pruebas t-Student o U de Mann-Whitney para comparar las medias de los grupos control y experimental.
+    \item \textbf{Pruebas de Normalidad:} Previo al análisis comparativo, se aplicará la prueba de Shapiro-Wilk (considerando el tamaño de muestra $n=50$ por grupo) para determinar si los datos métricos presentan una distribución normal.
+    \item \textbf{Técnicas de Contraste:} Con base en los resultados de normalidad, se utilizará la prueba paramétrica t-Student (si existe normalidad) o la prueba no paramétrica U de Mann-Whitney (si no existe normalidad) para comparar las medias de los grupos control y experimental.
     \item \textbf{Criterio de Ingeniería:} Asegurar la sostenibilidad tecnológica mediante la reducción del tiempo estimado de remediación.
 \end{listaIV}
 
