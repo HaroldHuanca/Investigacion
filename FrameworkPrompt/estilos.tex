@@ -13,7 +13,7 @@
 
 % Título I: CENTRADO CON SALTO
 \titleformat{\section}[display]
-  {\normalfont\fontsize{12}{14}\bfseries\centering} % Quitamos \uppercase de aquí
+  {\normalfont\fontsize{12}{14}\bfseries\centering\setstretch{1.5}} % Quitamos \uppercase de aquí
   {CAPÍTULO \thesection}
   {1ex}
   {\MakeUppercase} % Lo aplicamos directamente al cuerpo del título
@@ -21,13 +21,13 @@
 
 % Título II: IZQUIERDA
 \titleformat{\subsection}
-  {\normalfont\fontsize{12}{14}\bfseries}
+  {\normalfont\fontsize{12}{14}\bfseries\setstretch{1.5}}
   {\thesubsection}{1em}{}
 \titlespacing{\subsection}{0pt}{1.5ex}{1ex}
 
 % Título III: INDENTADO
 \titleformat{\subsubsection}
-  {\normalfont\fontsize{12}{14}\bfseries}
+  {\normalfont\fontsize{12}{14}\bfseries\setstretch{1.5}}
   {\thesubsubsection}{1em}{}
 \titlespacing{\subsubsection}{1.5em}{1.5ex}{1ex}
 
@@ -36,7 +36,7 @@
 \setcounter{tocdepth}{4}    % Opcional: Incluye el nivel 4 en el índice (si lo deseas)
 % Título IV: MÁS INDENTADO
 \titleformat{\paragraph}
-    {\normalfont\fontsize{12}{14}\bfseries}
+    {\normalfont\fontsize{12}{14}\bfseries\setstretch{1.5}}
     {\theparagraph} % <-- Esto es lo que imprime el 1.1.1.1
     {1em}
     {}
@@ -52,6 +52,7 @@
 % --- ENTORNO PARA PÁRRAFOS (Versión Estable) ---
 \newenvironment{parrafo}[1]{
     \begin{adjustwidth}{#1}{0pt}
+    \setstretch{1.5}%
     %\justifying % Si da error de "Undefined control sequence", borrar esta línea
     
     \setlength{\parindent}{0pt}
@@ -63,12 +64,14 @@
 
 % Párrafo para Título I
 \newcommand{\parrafoI}[1]{%
+    \setstretch{1.5}%
     \noindent\ignorespaces#1\par\vspace{1em}%
 }
 
 % Párrafo para Título II (Margen 2.5em)
 \newcommand{\parrafoII}[1]{%
-    \begin{adjustwidth}{2.5em}{0pt}%
+    \begin{adjustwidth}{2.3em}{0pt}%
+        \setstretch{1.5}%
         \setlength{\parindent}{0pt}%
         \noindent\ignorespaces#1\par%
     \end{adjustwidth}%
@@ -76,14 +79,16 @@
 
 % Párrafo para Título III (Margen 5em)
 \newcommand{\parrafoIII}[1]{%
-    \begin{adjustwidth}{5em}{0pt}%
+    \begin{adjustwidth}{4.5em}{0pt}%
+        \setstretch{1.5}%
         \setlength{\parindent}{0pt}%
         \noindent\ignorespaces#1\par%
     \end{adjustwidth}%
 }
 % Párrafo para Título IV (Margen 6.5em o 7.0em según tu preferencia de escalado)
 \newcommand{\parrafoIV}[1]{%
-    \begin{adjustwidth}{8.4em}{0pt}%
+    \begin{adjustwidth}{7.8em}{0pt}%
+        \setstretch{1.5}%
         \setlength{\parindent}{0pt}%
         \noindent\ignorespaces#1\par%
     \end{adjustwidth}%
@@ -97,6 +102,7 @@
     nosep,
     leftmargin=1.5em, % Espacio para que la viñeta no se salga al margen
     topsep=0.5em,     % Espacio de 0.5em con el título
+    before=\setstretch{1.5},
     after=\vspace{1em}
 }
 
@@ -107,6 +113,7 @@
     nosep,
     leftmargin=4.0em, % 2.5em del parrafo + 1.5em para la viñeta
     topsep=0.5em,
+    before=\setstretch{1.5},
     after=\vspace{1em}
 }
 
@@ -117,6 +124,7 @@
     nosep,
     leftmargin=5.8em, % 4.5em del parrafo + 1.5em para la viñeta
     topsep=0.5em,     % Aquí controlamos la distancia exacta al título
+    before=\setstretch{1.5},
     after=\vspace{1em}
 }
 
@@ -125,34 +133,38 @@
 \setlist[listaIIInum]{
     label=\arabic*.,      % El asterisco indica que use el contador de esta lista
     nosep,
-    leftmargin=6.2em,     
-    topsep=0.5em,         
+    leftmargin=6.2em,
+    topsep=0.5em,
+    before=\setstretch{1.5},
     after=\vspace{1em}
 }
 
-% Lista para Nivel III (Alineada con Parrafo III)
+% Lista para Nivel IV (Alineada con Parrafo IV)
 \newlist{listaIV}{itemize}{1}
 \setlist[listaIV]{
     label=\textbullet,
     nosep,
-    leftmargin=9.5em, % 4.5em del parrafo + 1.5em para la viñeta
+    leftmargin=8.6em, % 4.5em del parrafo + 1.5em para la viñeta
     topsep=0.5em,     % Aquí controlamos la distancia exacta al título
+    before=\setstretch{1.5},
     after=\vspace{1em}
 }
 
 \newlist{listaOE}{enumerate}{1}
 \setlist[listaOE]{
     label=\textbf{OE\arabic*}, % Define el formato OE1, OE2...
-    leftmargin=7.7em,             % Alineado con el margen del Título III
+    leftmargin=7.5em,             % Alineado con el margen del Título III
     labelsep=1em,               % Espacio entre el código y el texto
+    before=\setstretch{1.5},
     nosep                       % Elimina espacios verticales excesivos
 }
 
 \newlist{listaPE}{enumerate}{1}
 \setlist[listaPE]{
     label=\textbf{PE\arabic*}, % Define el formato PE1, PE2...
-    leftmargin=7.7em,             % Alineado con el margen del Título III
+    leftmargin=7.3em,             % Alineado con el margen del Título III
     labelsep=1em,               % Espacio entre el código y el texto
+    before=\setstretch{1.5},
     nosep                       % Elimina espacios verticales excesivos
 }
 
@@ -161,22 +173,25 @@
     label=\textbf{VAR\arabic*}, % Define el formato PE1, PE2...
     leftmargin=7.7em,             % Alineado con el margen del Título III
     labelsep=1em,               % Espacio entre el código y el texto
+    before=\setstretch{1.5},
     nosep                       % Elimina espacios verticales excesivos
 }
 
 \newlist{listaHE}{enumerate}{1}
 \setlist[listaHE]{
     label=\textbf{HE\arabic*}, % Define el formato PE1, PE2...
-    leftmargin=8em,             % Alineado con el margen del Título III
+    leftmargin=7.5em,             % Alineado con el margen del Título III
     labelsep=1em,               % Espacio entre el código y el texto
+    before=\setstretch{1.5},
     nosep                       % Elimina espacios verticales excesivos
 }
 
 \newlist{listaVD}{enumerate}{1}
 \setlist[listaVD]{
     label=\textbf{VD\arabic*}, % Define el formato PE1, PE2...
-    leftmargin=8em,             % Alineado con el margen del Título III
+    leftmargin=7.5em,             % Alineado con el margen del Título III
     labelsep=1em,               % Espacio entre el código y el texto
+    before=\setstretch{1.5},
     nosep                       % Elimina espacios verticales excesivos
 }
 

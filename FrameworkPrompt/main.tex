@@ -12,7 +12,6 @@
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
-\onehalfspacing % Interlineado 1.5 
 
 % --- Paquetes para Tablas y Anexos ---
 \usepackage{pdflscape} % Para el entorno landscape
@@ -31,6 +30,7 @@
 % --- Paquete para Diagramas de Gantt ---
 \usepackage{tikz}
 \usepackage{pgfgantt}
+
 
 % --- Configuración de Márgenes (Norma UC) ---
 \usepackage[a4paper, 
@@ -61,18 +61,21 @@
 % --- Estilos Personalizados para Títulos y Párrafos ---
 \input{estilos}
 
+% --- Aplicar Interlineado 1.5 ---
+\onehalfspacing
+
 \begin{document}
 
 \input{portada}
 
 % --- Numeración Romana para secciones preliminares ---
 \pagenumbering{roman}
-\tableofcontents
+{\setstretch{1.5}\tableofcontents}
 \newpage
 \renewcommand{\listtablename}{Índice de Tablas}
-\listoftables         % Índice de tablas
+{\setstretch{1.5}\listoftables}         % Índice de tablas
 \newpage
-\listoffigures        % Índice de figuras
+{\setstretch{1.5}\listoffigures}        % Índice de figuras
 
 % --- Introducción (sigue en numeración romana automática) ---
 \include{introduccion}  % La introducción debe usar \section* sin numerar
@@ -93,6 +96,6 @@
 % --- Referencias ---
 \section*{Referencias Bibliográficas}
 \addcontentsline{toc}{section}{Referencias Bibliográficas}
-\printbibliography[heading=none]
+{\setstretch{1.5}\printbibliography[heading=none]}
 
 \end{document}
