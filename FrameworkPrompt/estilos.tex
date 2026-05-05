@@ -53,7 +53,7 @@
 \newenvironment{parrafo}[1]{
     \begin{adjustwidth}{#1}{0pt}
     %\justifying % Si da error de "Undefined control sequence", borrar esta línea
-    \setlength{\parskip}{0.5em}
+    
     \setlength{\parindent}{0pt}
 }{
     \end{adjustwidth}
@@ -70,29 +70,23 @@
 \newcommand{\parrafoII}[1]{%
     \begin{adjustwidth}{2.5em}{0pt}%
         \setlength{\parindent}{0pt}%
-        \setlength{\parskip}{0.5em}%
         \noindent\ignorespaces#1\par%
     \end{adjustwidth}%
-    \vspace{0.5em}%
 }
 
 % Párrafo para Título III (Margen 5em)
 \newcommand{\parrafoIII}[1]{%
     \begin{adjustwidth}{5em}{0pt}%
         \setlength{\parindent}{0pt}%
-        \setlength{\parskip}{0.5em}%
         \noindent\ignorespaces#1\par%
     \end{adjustwidth}%
-    \vspace{0.5em}%
 }
 % Párrafo para Título IV (Margen 6.5em o 7.0em según tu preferencia de escalado)
 \newcommand{\parrafoIV}[1]{%
     \begin{adjustwidth}{8.4em}{0pt}%
         \setlength{\parindent}{0pt}%
-        \setlength{\parskip}{0.5em}%
         \noindent\ignorespaces#1\par%
     \end{adjustwidth}%
-    \vspace{0.5em}%
 }
 % --- LISTAS PERSONALIZADAS POR NIVEL ---
 
